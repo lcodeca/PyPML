@@ -39,7 +39,7 @@ def _main():
     _begin_sec = 0
     _end_sec = 8000
 
-    traci.start(['sumo', '-c', 'test_scenario/sumo.cfg'], port=42042)
+    traci.start(['sumo-gui', '-c', 'test_scenario/sumo.cfg'], port=42042)
 
     parking_monitor_options = {
         'addStepListener': True,
@@ -79,16 +79,16 @@ def _main():
                         ### OPTIMIZE VEHICLE
                         availability = monitor.get_free_places(stopping_place,
                                                                vclass=vehicle['vClass'],
-                                                               with_projections=True,
-                                                               with_uncertainty=True)
-                        if availability < 10:
+                                                               with_projections=False,
+                                                               with_uncertainty=False)
+                        if availability < 1:
                             alternatives = monitor.get_closest_parkings(stopping_place, num=25)
                             for trtime, alt in alternatives:
                                 alt_availability = monitor.get_free_places(
                                     alt, vclass=vehicle['vClass'],
-                                    with_projections=True, with_uncertainty=True)
+                                    with_projections=False, with_uncertainty=False)
                                 print(step, trtime, alt, alt_availability)
-                                if alt_availability > 10:
+                                if alt_availability > 1:
                                     ## reroute vehicle
                                     route = None
                                     try:
@@ -117,8 +117,8 @@ def _main():
         traceback.print_exception(exc_type, exc_value, exc_traceback, limit=10, file=sys.stdout)
 
     finally:
-        for parking in monitor.get_parking_iterator():
-            print(parking)
+        # for parking in monitor.get_parking_iterator():
+        #     print(parking)
         traci.close()
 
 if __name__ == '__main__':
