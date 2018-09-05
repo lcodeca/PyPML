@@ -35,7 +35,7 @@ else:
              Please declare the environment variable 'SUMO_TOOLS'""")
 
 class ParkingMonitor(traci.StepListener):
-    """ StepListener class for the parking monitor """
+    """ SUMO StepListener class for the parking monitoring. """
 
     _logger = None
     _options = None
@@ -88,8 +88,77 @@ class ParkingMonitor(traci.StepListener):
         else:
             self._logger = None
 
-    def __init__(self, traci_handler, options, time=0):
-        """ Initialize the knowlegde base for the monitor. """
+    def __init__(self, traci_handler, options, time=0.0):
+        """ Initialize the knowlegde base for the parking monitor.
+
+        traci_handler: already initialized TraCI socket that is going to be used by PyPML
+        options:       in order to reduce the number of parameters and increase the flexibility,
+                       the complete initialization is done using a dict()
+        time:          beginning of the simulation in seconds (for statistical and logging purposes)
+
+        Options format:
+        {
+            'addStepListener': Boolean. Ff True, pypml is added as step listener in SUMO.
+                               In case it's False the function step() must be called by hand every
+                               simulation step.
+            'logging': {
+                'stdout': Boolean. If True, the logging will be both file and stdout.
+                'filename': String. Name of the logging file.
+                'level': Logging level as defined in the logging library. E.g.: logging.DEBUG
+            },
+            'sumo_parking_file': String. Path and file name of the SUMO additional file defining the
+                                 parkings.
+            'blacklist': List of strings. List of the parking IDS ans defined in sumo that must be
+                         excluded from the monitoring.
+            'vclasses': Set of strings. Set of vTypes, as defined in SUMO, comprehensive of all the
+                        vehicles used in the simulation.
+            'generic_conf': List. List of generic configuration applied to all the parking areas.
+            'specific_conf': Dictionary. Dictionary of configuration applied to specific parking
+                             areas.
+            'subscriptions': {
+                'only_parkings': Boolean. If True, PyPML subscribes only to the vehicles that have
+                                 a <stop> define at the beginning of the simulation.
+            },
+        }
+
+        Example of generic_conf:
+        'cond' is an expression (prefix notation) that is going to be evaluate agains all the
+               parking areas.
+        'set_to' is a list of 'parameter' -> {value/expression} that are going to be applied if
+                 'cond' is true.
+        [
+            {
+                'cond': ['>', 'total_capacity', 50],
+                'set_to': [
+                    ['uncertainty', {
+                        'mu': 0.0,
+                        'sigma': ['*', 'total_capacity', 0.20]
+                        }
+                    ],
+                ],
+            },
+        ]
+        In this example, every parkign area with more than 50 places will have an uncertainty with
+            sigma equal to 20% of the capacity.
+
+        Example of specific_conf:
+        Each parking area needs a specific entry in the dictionary.
+        The values that can be set are:
+            'capacity_by_class'
+            'subscriptions_by_class'
+            'uncertainty'
+        and the values are assigned, so they must be complete.
+
+        {
+            'parking_id': {
+                'capacity_by_class': {
+                    'vType': number,
+                    ...
+                    'vType': number,
+                },
+            },
+        }
+        """
 
         self._options = options
 
@@ -269,7 +338,11 @@ class ParkingMonitor(traci.StepListener):
     ## ===============================         OVERLOADS         =============================== ##
 
     def step(self, t=0):
-        """ TraCI StepListener caller"""
+        """ TraCI StepListener caller.
+
+            In order to be independent from the call, t is not used and the time is directly
+            retrieved using simulation.getTime().
+        """
         time = self._traci_handler.simulation.getTime()
         self._monitor_vehicles(time)
         self._update_vehicles_db(time)
@@ -297,7 +370,11 @@ class ParkingMonitor(traci.StepListener):
         return (flags & 128) == 128
 
     def get_parking_access(self, parking):
-        """ Given a parking ID, returns the lane information. """
+        """ Given a parking ID, returns the lane information.
+            Raise an Exception in canse the requested parking id does not exist.
+
+            parking: String. Parking area ID as defined in SUMO.
+        """
         if parking in self._parking_db.keys():
             return self._parking_db[parking]['sumo']['lane']
         raise Exception('Parking {} does not exist.'.format(parking))
@@ -415,10 +492,7 @@ class ParkingMonitor(traci.StepListener):
                         self._logger.critical('[%d] Unsubscription failed.', step)
 
     def _check_occupancy(self, step=0):
-        """
-        Gather parking current occupancy.
-            :param step=0: simulation time.
-        """
+        """ Gather parking current occupancy. """
         for parking in self._parking_db:
             occupancy = int(self._traci_handler.simulation.getParameter(parking,
                                                                         'parkingArea.occupancy'))
@@ -500,7 +574,10 @@ class ParkingMonitor(traci.StepListener):
     ## ===============================          REROUTERS         ============================== ##
 
     def get_rerouter_iterator(self, step):
-        """ Return the correct rerouter info for the given step. """
+        """ Return the rerouter info for the given step.
+
+            step: Float. Simulation time in seconds.
+        """
         for value in self._routers_db.values():
             current = None
             for end, parkings in value['intervals']:
@@ -531,13 +608,22 @@ class ParkingMonitor(traci.StepListener):
             yield value
 
     def get_vehicle(self, vehicle):
-        """ Return the vehicle with the given ID or None if not existent."""
+        """ Return the vehicle with the given ID or None if not existent.
+
+            vehicle: String. Vehicle ID as defined in SUMO.
+        """
         if vehicle in self._vehicles_db:
             return copy.deepcopy(self._vehicles_db[vehicle])
         return None
 
     def set_vehicle_param(self, vehicle, param, value):
-        """ Set the param=value in the vehicle with the given ID and return True, if it exist."""
+        """ Set the param=value in the vehicle with the given ID.
+            Returns False if the vehicle does not exist.
+
+            vehicle: String. Vehicle ID as defined in SUMO.
+            param:   String. Parameters name.
+            value:   Any. Value for the parameter.
+            """
         if vehicle in self._vehicles_db:
             self._vehicles_db[vehicle][param] = value
             return True
@@ -546,14 +632,17 @@ class ParkingMonitor(traci.StepListener):
     ## ===============================          PARKINGS         =============================== ##
 
     def get_parking_iterator(self):
-        """ Return the parking info. """
+        """ Return the parking iterator. """
         for value in self._parking_db.values():
             yield copy.deepcopy(value)
 
-    def get_parking(self, parking_id):
-        """ Return the parking area with the given ID or None if not existent."""
-        if parking_id in self._parking_db:
-            return copy.deepcopy(self._parking_db[parking_id])
+    def get_parking(self, parking):
+        """ Return the parking area with the given ID or None if not existent.
+
+            parking: String. Parking area ID as defined in SUMO.
+        """
+        if parking in self._parking_db:
+            return copy.deepcopy(self._parking_db[parking])
         return None
 
     def compute_parking_travel_time(self):
@@ -601,7 +690,14 @@ class ParkingMonitor(traci.StepListener):
             distances.sort()
 
     def get_closest_parkings(self, parking, num=None):
-        """ Return the 'num' closest (travel time) parkings. """
+        """ Return the 'num' closest parkings by travel time from the requested parking.
+            It requires the travel time structure initialization using
+            compute_parking_travel_time(), it raises an Exception if the structure is not yet
+            initialized.
+
+            parking: String. Parking area ID as defined in SUMO.
+            num:     Int. Number of element to be returned.
+        """
 
         if not self._static_parking_travel_time:
             raise Exception('Estimated travel time structure for parkings is not initialized.')
@@ -617,13 +713,23 @@ class ParkingMonitor(traci.StepListener):
     ## ============================     PARKING SUBSCRIPTIONS      ============================= ##
 
     def get_parking_subscriptions(self, parking):
-        """ Given a parking ID, returns the subscriptions information. """
+        """ Given a parking ID, returns the subscriptions information.
+            Raises an Exception if the requested parking area does not exist.
+
+            parking: String. Parking area ID as defined in SUMO.
+        """
         if parking in self._parking_db.keys():
             return copy.deepcopy(self._parking_db[parking]['subscriptions_by_class'])
         raise Exception('Parking {} does not exist.'.format(parking))
 
     def set_parking_subscriptions(self, parking, subscriptions):
-        """ Set the given subsctiption to the parking id. """
+        """ Set the given subsctiption to the parking id.
+            Raises an Exception if the requested parking area does not exist or
+            if the subscriptions are not in a valid format.
+
+            parking:       String. Parking area ID as defined in SUMO.
+            subscriptions: Dict. { 'vType': int, .., 'vType': int }
+        """
         if parking in self._parking_db:
             self._parking_db[parking]['subscriptions_by_class'] = subscriptions
             self._validate_parking_subscriptions(parking)
@@ -634,6 +740,12 @@ class ParkingMonitor(traci.StepListener):
         """ Add the vehicle to the subscription list of the parking area.
             Returns False iif the number of already subscribed vehicles is equal to the number
             of spots available for that specific vclass.
+            Raises an Exception if the requested parking area does not exist or
+            if the subscriptions are not initialized.
+
+            parking: String. Parking area ID as defined in SUMO.
+            vclass:  String. vType as defined in SUMO.
+            vehicle: String. Vehicle ID as defined in SUMO.
         """
         if parking in self._parking_db:
             if vclass in self._parking_db[parking]['subscriptions_by_class']:
@@ -650,7 +762,14 @@ class ParkingMonitor(traci.StepListener):
             raise Exception('Parking {} does not exist.'.format(parking))
 
     def remove_subscribed_vehicle(self, parking, vclass, vehicle):
-        """ Remove the vehicles from the subscriptions of the given parking id. """
+        """ Remove the vehicles from the subscriptions of the given parking id.
+            Raises an Exception if the requested parking area does not exist or
+            if the subscriptions are not initialized.
+
+            parking: String. Parking area ID as defined in SUMO.
+            vclass:  String. vType as defined in SUMO.
+            vehicle: String. Vehicle ID as defined in SUMO.
+        """
         if parking in self._parking_db:
             if vclass in self._parking_db[parking]['subscriptions_by_class']:
                 _capacity, vehicles = self._parking_db[parking]['subscriptions_by_class'][vclass]
@@ -668,7 +787,11 @@ class ParkingMonitor(traci.StepListener):
     ## ============================       PARKING PROJECTIONS      ============================= ##
 
     def get_parking_projections(self, parking):
-        """ Given a parking ID, returns the projections information. """
+        """ Given a parking ID, returns the projections information.
+            Raises an Exception if the requested parking area does not exist.
+
+            parking: String. Parking area ID as defined in SUMO.
+        """
         if parking in self._parking_db.keys():
             return copy.deepcopy(self._parking_db[parking]['projection_by_class'])
         raise Exception('Parking {} does not exist.'.format(parking))
@@ -677,7 +800,15 @@ class ParkingMonitor(traci.StepListener):
 
     def get_free_places(self, parking, with_uncertainty=False,
                         vclass=None, with_projections=False, with_subscriptions=False):
-        """ Returns the free places in a given parking area. """
+        """ Returns the free places in a given parking area.
+            Raises an Exception if the requested parking area does not exist.
+
+            parking:            String. Parking area ID as defined in SUMO.
+            with_uncertainty:   Boolean. If True, uncertainty is applied.
+            vclass:             String. If set, returns values only for the specified vType.
+            with_projections:   Boolean. If True, projections are taken into account.
+            with_subscriptions: Boolean. If True, subscriptions are taken into account.
+        """
 
         if parking not in self._parking_db.keys():
             raise Exception('Parking {} does not exist.'.format(parking))
@@ -726,13 +857,23 @@ class ParkingMonitor(traci.StepListener):
                 total_projections - total_subscriptions + error)
 
     def get_parking_capacity_vclass(self, parking):
-        """ Given a parking ID, returns the capacity by vclass information. """
+        """ Given a parking ID, returns the capacity by vclass information.
+            Raises an Exception if the requested parking area does not exist.
+
+            parking: String. Parking area ID as defined in SUMO.
+        """
         if parking in self._parking_db.keys():
             return copy.deepcopy(self._parking_db[parking]['capacity_by_class'])
         raise Exception('Parking {} does not exist.'.format(parking))
 
     def set_parking_capacity_vclass(self, parking, capacities):
-        """ Set the given capacity by vclass to the parking id. """
+        """ Set the given capacity by vclass to the parking id.
+            Raises an Exception if the requested parking area does not exist or
+            if the capacities are not in a valid format.
+
+            parking:    String. Parking area ID as defined in SUMO.
+            capacities: Dict. { 'vType': int, .., 'vType': int }
+        """
         if parking in self._parking_db:
             self._parking_db[parking]['capacity_by_class'] = capacities
             self._validate_parking_capacity(parking)
