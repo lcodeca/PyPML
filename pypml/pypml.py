@@ -51,6 +51,7 @@ class ParkingMonitor(traci.StepListener):
     _static_parking_travel_time = collections.defaultdict(list)
 
     _traci_handler = None
+    _traci_arrived_list = None
     _traci_departed_list = None
     _traci_vehicle_subscription = None
     _traci_simulation_subscriptions = None
@@ -206,15 +207,15 @@ class ParkingMonitor(traci.StepListener):
                             }
                         else:
                             ## not sure what this can be
-                            parking[key] = value
+                            parking[key] = copy.deepcopy(value)
 
             ## Apply SPECIFIC VALUES
             if pid in options['specific_conf'].keys():
                 if 'capacity_by_class' in options['specific_conf'][pid]:
-                    parking['capacity_by_class'] = (
+                    parking['capacity_by_class'] = copy.deepcopy(
                         options['specific_conf'][pid]['capacity_by_class'])
                 if 'subscriptions_by_class' in options['specific_conf'][pid]:
-                    parking['subscriptions_by_class'] = (
+                    parking['subscriptions_by_class'] = copy.deepcopy(
                         options['specific_conf'][pid]['subscriptions_by_class'])
                 if 'uncertainty' in options['specific_conf'][pid]:
                     parking['uncertainty'] = {
@@ -381,7 +382,7 @@ class ParkingMonitor(traci.StepListener):
 
     ## ===============================         MONITORING        =============================== ##
 
-    def _monitor_vehicles(self, step=0):
+    def _monitor_vehicles(self, step):
         """ Create subscriptions for the vehicles with planned stops in parking areas. """
         self._traci_departed_list = self._traci_handler.simulation.getDepartedIDList()
         for vehicle in self._traci_departed_list:
@@ -418,11 +419,17 @@ class ParkingMonitor(traci.StepListener):
                 'history': [],
                 'vClass': v_class,
                 'passengers': passengers,
+                'arrived': None,
             }
 
             ## update parking projections
             for area in _new_stops:
                 self._parking_db[area]['projections_by_class'][v_class].add(vehicle)
+
+        self._traci_arrived_list = self._traci_handler.simulation.getArrivedIDList()
+        for vehicle in self._traci_arrived_list:
+            if vehicle in self._vehicles_db:
+                self._vehicles_db[vehicle]['arrived'] = step
 
     @staticmethod
     def _is_same_destinations(a_stops, b_stops):
@@ -435,7 +442,7 @@ class ParkingMonitor(traci.StepListener):
                 return False
         return True
 
-    def _update_vehicles_db(self, step=0):
+    def _update_vehicles_db(self, step):
         """ Update subscriptions and vechiles database. """
         self._traci_vehicle_subscription = self._traci_handler.vehicle.getAllSubscriptionResults()
         for vehicle, data in self._traci_vehicle_subscription.items():
@@ -491,7 +498,7 @@ class ParkingMonitor(traci.StepListener):
                     if self._logger:
                         self._logger.critical('[%d] Unsubscription failed.', step)
 
-    def _check_occupancy(self, step=0):
+    def _check_occupancy(self, step):
         """ Gather parking current occupancy. """
         for parking in self._parking_db:
             occupancy = int(self._traci_handler.simulation.getParameter(parking,
@@ -505,7 +512,7 @@ class ParkingMonitor(traci.StepListener):
         if self._vehicles_db[vehicle]['history']:
             return self._vehicles_db[vehicle]['history'][-1][0][2]
 
-    def _update_parking_db(self, step=0):
+    def _update_parking_db(self, step):
         """ Update subscriptions and parking database. """
 
         self._check_occupancy(step)
@@ -625,7 +632,7 @@ class ParkingMonitor(traci.StepListener):
             value:   Any. Value for the parameter.
             """
         if vehicle in self._vehicles_db:
-            self._vehicles_db[vehicle][param] = value
+            self._vehicles_db[vehicle][param] = copy.deepcopy(value)
             return True
         return False
 
@@ -731,7 +738,7 @@ class ParkingMonitor(traci.StepListener):
             subscriptions: Dict. { 'vType': int, .., 'vType': int }
         """
         if parking in self._parking_db:
-            self._parking_db[parking]['subscriptions_by_class'] = subscriptions
+            self._parking_db[parking]['subscriptions_by_class'] = copy.deepcopy(subscriptions)
             self._validate_parking_subscriptions(parking)
         else:
             raise Exception('Parking {} does not exist.'.format(parking))
@@ -750,8 +757,10 @@ class ParkingMonitor(traci.StepListener):
         if parking in self._parking_db:
             if vclass in self._parking_db[parking]['subscriptions_by_class']:
                 _capacity, vehicles = self._parking_db[parking]['subscriptions_by_class'][vclass]
+                if vehicle in vehicles:
+                    return False
                 if len(vehicles) < _capacity:
-                    vehicles.append(vehicle)
+                    vehicles.add(vehicle)
                     return True
                 # subscription full
                 return False
@@ -875,7 +884,7 @@ class ParkingMonitor(traci.StepListener):
             capacities: Dict. { 'vType': int, .., 'vType': int }
         """
         if parking in self._parking_db:
-            self._parking_db[parking]['capacity_by_class'] = capacities
+            self._parking_db[parking]['capacity_by_class'] = copy.deepcopy(capacities)
             self._validate_parking_capacity(parking)
         else:
             raise Exception('Parking {} does not exist.'.format(parking))
@@ -907,7 +916,16 @@ class ParkingMonitor(traci.StepListener):
                                 parking, self._options['vclasses']))
 
         total = 0
-        for value in self._parking_db[parking]['occupancy_by_class'].values():
+        for v_class, value in self._parking_db[parking]['occupancy_by_class'].items():
+            if self._parking_db[parking]['capacity_by_class']:
+                info = (
+                    "The occupancy in parking area {} for vType {} is {} of {}.".format(
+                        parking, v_class, len(value),
+                        self._parking_db[parking]['capacity_by_class'][v_class]))
+                if self._logger:
+                    self._logger.debug(info)
+                if len(value) > self._parking_db[parking]['capacity_by_class'][v_class]:
+                    raise Exception(info)
             total += len(value)
         if total != self._parking_db[parking]['total_occupancy']:
             raise Exception("""The total occupancy for parking area {} is {} but it must be """
