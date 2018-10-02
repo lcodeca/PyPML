@@ -9,12 +9,18 @@ Reqirements:
 * Due to [Issue #4518](https://github.com/eclipse/sumo/issues/4518) it requires the development
   version of [SUMO](https://github.com/eclipse/sumo.git) in order to use multi-threading.
 
+Tested with:
+* Eclipse SUMO Version Development 5345f89a38 (Build features: Linux-4.18.0-1-amd64 x86_64 GNU 8.2.0 Proj GUI GDAL FFmpeg OSG GL2PS SWIG)
+* Eclipse SUMO Version 1.0.1 ( Build features: Linux-4.18.0-1-amd64 Proj GUI GDAL FFmpeg OSG GL2PS SWIG)
+
 Installation:
 * Install: `pip3 install .` from the root directory, or `python3 setup.py install`
 * Development install: `pip3 install -e .` or `python3 setup.py develop`
 
 Examples:
-* Given the ~under development~ status of the project, detailed examples are/will be provided.
+* Given the ~under development~ status of the project, examples are provided.
+  * examples/simple.example.py
+  * examples/subscriptions.example.py
 
 Important:
 * PyPML behavior in case of multiple TraCI servers is umpredictable due to how the subscription are
