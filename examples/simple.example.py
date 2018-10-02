@@ -36,16 +36,16 @@ else:
 def _main():
     """ Example of parking management in SUMO. """
 
-    traci.start(['sumo-gui', '-c', 'test_scenario/sumo.cfg'], port=42042)
+    traci.start(['sumo', '-c', 'test_scenario/sumo.simple.cfg'], port=42041)
 
     parking_monitor_options = {
         'addStepListener': True,
         'logging': {
             'stdout': False,
-            'filename': 'lib.example.log',
+            'filename': 'simple.example.log',
             'level': logging.DEBUG,
         },
-        'sumo_parking_file': 'test_scenario/parkings.add.xml',
+        'sumo_parking_file': 'test_scenario/parkings.small.add.xml',
         'blacklist': [],
         'vclasses': {'truck', 'passenger', 'motorcycle'},
         'generic_conf': [],
@@ -64,6 +64,9 @@ def _main():
 
         ## PARKING OPTIMIZATION
         for vehicle in monitor.get_vehicle_iterator():
+            if vehicle['arrived']:
+                ## the vehicle is not in the simulation anymore
+                continue
             if not vehicle['edge'] or ':' in vehicle['edge']:
                 ## the vehicle is on an intersection and the change would not be safe.
                 continue

@@ -1,7 +1,7 @@
 <routes>
     <vTypeDistribution id="default">
-        <vType vClass="truck"      id="truck"       probability=".25"/>
+        <vType vClass="truck"      id="truck"       probability=".15"/>
         <vType vClass="passenger"  id="passenger"   probability=".50"/>
-        <vType vClass="motorcycle" id="motorcycle"  probability=".25"/>
+        <vType vClass="motorcycle" id="motorcycle"  probability=".35"/>
     </vTypeDistribution>
 </routes>
