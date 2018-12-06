@@ -3,6 +3,12 @@ PyPML - Python Parking Monitor Library for SUMO
 Contacts: Lara CODECA [codeca@eurecom.fr], A-Team [a-team@eurecom.fr]
 This project is licensed under the terms of the GPLv3 license.
 
+If you use PyPML, cite us with:
+* L. Codeca; J. Erdmann; J. Härri.
+"A SUMO-Based Parking Management Framework for Large-Scale Smart Cities Simulations",
+VNC 2018, IEEE Vehicular Networking Conference,
+December 5-7, 2018, Taipei, Taiwan.
+
 --------
 Reqirements:
 * It requires at least [SUMO 1.0](https://github.com/eclipse/sumo/tree/v1_0_0).
