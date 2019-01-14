@@ -37,8 +37,8 @@ else:
 def _main():
     """ Example of parking management in SUMO. """
 
-    ## TESTED WITH: SUMO 1.0.1
-    # traci.start(['/home/drone/Applications/SUMO/sumo-1.0.1/bin/sumo',
+    ## TESTED WITH: SUMO 1.1.0
+    # traci.start(['/home/drone/Applications/SUMO/sumo-1.1.0/bin/sumo',
     #              '-c', 'test_scenario/sumo.subscriptions.cfg'], port=42042)
     ## Running with the last-monday development version
     traci.start(['sumo', '-c', 'test_scenario/sumo.subscriptions.cfg'], port=42042)
