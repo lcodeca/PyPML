@@ -564,7 +564,7 @@ class ParkingMonitor(traci.StepListener):
                                               step, vehicle)
                 self._vehicles_db[vehicle]['stopped'] = True
                 if self._logger:
-                    self._logger.debug('[%d] Vehicle %s is not stopped anymore.',
+                    self._logger.debug('[%d] Vehicle %s is stopping.',
                                        step, vehicle)
                 parking_area = self._get_parking_area_from_vehicle(vehicle)
                 if parking_area in self._parking_db:
