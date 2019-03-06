@@ -86,6 +86,10 @@ def _main():
             if vehicle['arrived']:
                 ## the vehicle is not in the simulation anymore
                 continue
+            if vehicle['stopped']:
+                ## the vehicle is stopped and it does not require additional 
+                ## parking changes at least for the moment
+                continue
             if vehicle['id'] in vehicles_with_subscriptions:
                 # nothing to be done here
                 continue

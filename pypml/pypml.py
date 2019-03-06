@@ -345,6 +345,8 @@ class ParkingMonitor(traci.StepListener):
             retrieved using simulation.getTime().
         """
         time = self._traci_handler.simulation.getTime()
+        if self._logger:
+            self._logger.debug('Simulation time: %d', time)
         self._monitor_vehicles(time)
         self._update_vehicles_db(time)
         self._update_parking_db(time)
@@ -420,6 +422,7 @@ class ParkingMonitor(traci.StepListener):
                 'vClass': v_class,
                 'passengers': passengers,
                 'arrived': None,
+                'stopped': False,
             }
 
             ## update parking projections
@@ -523,6 +526,10 @@ class ParkingMonitor(traci.StepListener):
         if self._traci_ending_stop_subscriptions:
              ## Update parking capacity by vClass
             for vehicle in self._traci_ending_stop_subscriptions:
+                self._vehicles_db[vehicle]['stopped'] = False
+                if self._logger:
+                    self._logger.debug('[%d] Vehicle %s is not stopped anymore.',
+                                       step, vehicle)
                 parking_area = self._get_parking_area_from_vehicle(vehicle)
                 if parking_area in self._parking_db:
                     v_class = self._vehicles_db[vehicle]['vClass']
@@ -555,6 +562,10 @@ class ParkingMonitor(traci.StepListener):
                     if self._logger:
                         self._logger.critical('[%d] Vehicle %s is parked but not in the DB.',
                                               step, vehicle)
+                self._vehicles_db[vehicle]['stopped'] = True
+                if self._logger:
+                    self._logger.debug('[%d] Vehicle %s is not stopped anymore.',
+                                       step, vehicle)
                 parking_area = self._get_parking_area_from_vehicle(vehicle)
                 if parking_area in self._parking_db:
                     v_class = self._vehicles_db[vehicle]['vClass']

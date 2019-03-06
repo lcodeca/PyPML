@@ -71,6 +71,10 @@ def _main():
             if vehicle['arrived']:
                 ## the vehicle is not in the simulation anymore
                 continue
+            if vehicle['stopped']:
+                ## the vehicle is stopped and it does not require additional 
+                ## parking changes at least for the moment
+                continue
             if not vehicle['edge'] or ':' in vehicle['edge']:
                 ## the vehicle is on an intersection and the change would not be safe.
                 continue
