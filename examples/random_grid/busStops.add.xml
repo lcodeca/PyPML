@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+    <busStop id="busStop_-1016_1_10" lane="-1016_1" friendlyPos="1" startPos="50.0" endPos="70.0"/>
+    <busStop id="busStop_-2016_1_20" lane="-2016_1" friendlyPos="1" startPos="50.0" endPos="70.0"/>
+    <busStop id="busStop_-2347_1_15" lane="-2347_1" friendlyPos="1" startPos="50.0" endPos="70.0"/>
+    <busStop id="busStop_-26_1_5" lane="-26_1" friendlyPos="1" startPos="50.0" endPos="70.0"/>
+    <busStop id="busStop_-3083_1_23" lane="-3083_1" friendlyPos="1" startPos="50.0" endPos="70.0"/>
+    <busStop id="busStop_-400_1_2" lane="-400_1" friendlyPos="1" startPos="50.0" endPos="70.0"/>
+    <busStop id="busStop_-402_1_9" lane="-402_1" friendlyPos="1" startPos="50.0" endPos="70.0"/>
+    <busStop id="busStop_-4675_1_17" lane="-4675_1" friendlyPos="1" startPos="50.0" endPos="70.0"/>
+    <busStop id="busStop_-4682_1_24" lane="-4682_1" friendlyPos="1" startPos="50.0" endPos="70.0"/>
+    <busStop id="busStop_-5517_1_0" lane="-5517_1" friendlyPos="1" startPos="50.0" endPos="70.0"/>
+    <busStop id="busStop_-7051_1_19" lane="-7051_1" friendlyPos="1" startPos="50.0" endPos="70.0"/>
+    <busStop id="busStop_-784_1_12" lane="-784_1" friendlyPos="1" startPos="50.0" endPos="70.0"/>
+    <busStop id="busStop_1016_1_11" lane="1016_1" friendlyPos="1" startPos="50.0" endPos="70.0"/>
+    <busStop id="busStop_2016_1_21" lane="2016_1" friendlyPos="1" startPos="50.0" endPos="70.0"/>
+    <busStop id="busStop_2347_1_14" lane="2347_1" friendlyPos="1" startPos="50.0" endPos="70.0"/>
+    <busStop id="busStop_26_1_4" lane="26_1" friendlyPos="1" startPos="50.0" endPos="70.0"/>
+    <busStop id="busStop_3083_1_22" lane="3083_1" friendlyPos="1" startPos="50.0" endPos="70.0"/>
+    <busStop id="busStop_400_1_3" lane="400_1" friendlyPos="1" startPos="50.0" endPos="70.0"/>
+    <busStop id="busStop_402_1_8" lane="402_1" friendlyPos="1" startPos="50.0" endPos="70.0"/>
+    <busStop id="busStop_4675_1_16" lane="4675_1" friendlyPos="1" startPos="50.0" endPos="70.0"/>
+    <busStop id="busStop_4682_1_25" lane="4682_1" friendlyPos="1" startPos="50.0" endPos="70.0"/>
+    <busStop id="busStop_5517_1_1" lane="5517_1" friendlyPos="1" startPos="50.0" endPos="70.0"/>
+    <busStop id="busStop_7051_1_18" lane="7051_1" friendlyPos="1" startPos="50.0" endPos="70.0"/>
+    <busStop id="busStop_784_1_13" lane="784_1" friendlyPos="1" startPos="50.0" endPos="70.0"/>
+</additional>

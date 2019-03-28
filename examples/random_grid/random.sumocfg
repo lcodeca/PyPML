@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="random.net.xml"/>
+        <route-files value="rou/buses.flows.xml,rou/commercial.rou.xml,rou/passenger.rou.xml,rou/ptw.rou.xml"/>
+        <additional-files value="busStops.add.xml,parkingArea.add.xml,basic.vType.xml"/>
+        <!-- <additional-files value="busStops.add.xml,parkingArea.add.xml,parkingAreaRerouters.add.xml,basic.vType.xml"/> -->
+    </input>
+
+    <output>
+        <output-prefix value="test."/>
+        <!-- <summary-output value="summary.xml"/> -->
+        <!-- <tripinfo-output value="tripinfo.xml"/> -->
+        <!-- <vehroute-output value="vehroute.xml"/> -->
+        <!-- <stop-output value="stop.out.xml"/> -->
+    </output>
+
+    <time>
+        <begin value="0.0"/>
+        <step-length value=".25"/>
+        <!-- <end value="3600.0"/> -->
+    </time>
+
+    <processing>
+        <ignore-route-errors value="true"/>
+        <lateral-resolution value="0.3"/>
+        <ignore-junction-blocker value="60"/>
+        <collision.action value="warn"/>
+        <time-to-teleport value="60"/>
+        <max-depart-delay value="900"/>
+        <time-to-impatience value="30"/>
+        <pedestrian.model value="striping"/>
+        <pedestrian.striping.stripe-width value="0.55"/>
+        <pedestrian.striping.jamtime value="30"/>
+        <!-- <default.action-step-length value="1"/> -->
+        <!-- <emergencydecel.warning-threshold value="1.1"/> -->
+        <default.emergencydecel value="decel"/>
+    </processing>
+
+    <routing>
+        <persontrip.transfer.car-walk value="parkingAreas,ptStops"/>
+        <device.rerouting.probability value="1"/>
+        <device.rerouting.period value="300"/>
+        <device.rerouting.pre-period value="300"/>
+        <!-- <device.rerouting.threads value="4"/> -->
+    </routing>
+
+    <report>
+        <verbose value="true"/>
+        <duration-log.statistics value="true"/>
+        <log value="sim.log"/>
+    </report>
+
+    <random_number>
+        <seed value="42"/>
+    </random_number>
+
+</configuration>

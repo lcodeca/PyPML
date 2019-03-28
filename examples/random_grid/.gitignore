@@ -1,0 +1,16 @@
+*.log
+
+buildings
+complete.taz.weight.csv
+complete.taz.xml
+duarouter.cfg
+gen.script.sh
+poly.add.xml
+random.activitygen.json
+routeFixer.py
+sorted.stop.xml
+taz.shape.add.xml
+*.stop.out.xml
+*.summary.xml
+*.tripinfo.xml
+*.vehroute.xml

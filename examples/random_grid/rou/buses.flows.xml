@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <route id="bus:1_eastbound" edges="-402 1016 2016 3083 -4682">
+        <stop busStop="busStop_-402_1_9" duration="30.00" until="42.75"/>
+        <stop busStop="busStop_1016_1_11" duration="30.00" until="114.50"/>
+        <stop busStop="busStop_2016_1_21" duration="30.00" until="171.50"/>
+        <stop busStop="busStop_3083_1_22" duration="30.00" until="233.25"/>
+        <stop busStop="busStop_-4682_1_24" duration="30.00" until="294.75"/>
+    </route>
+    <flow id="bus:1_eastbound" type="bus" route="bus:1_eastbound" begin="0.0" end="86400" period="300" line="Bus1-EastBound" >
+        <param key="name" value="Bus1-EastBound"/>
+    </flow>
+
+    <route id="bus:1_westbound" edges="4682 -3083 -2016 -1016 402">
+        <stop busStop="busStop_4682_1_25" duration="30.00" until="42.75"/>
+        <stop busStop="busStop_-3083_1_23" duration="30.00" until="103.00"/>
+        <stop busStop="busStop_-2016_1_20" duration="30.00" until="163.50"/>
+        <stop busStop="busStop_-1016_1_10" duration="30.00" until="216.75"/>
+        <stop busStop="busStop_402_1_8" duration="30.00" until="283.50"/>
+    </route>
+    <flow id="bus:1_westbound" type="bus" route="bus:1_westbound" begin="0.0" end="86400" period="300" line="Bus1-WestBound" >
+        <param key="name" value="Bus1-WestBound"/>
+    </flow>
+
+    <route id="bus:2_northbound" edges="-5517 -400 26 784 2347 4675 7051">
+        <stop busStop="busStop_-5517_1_0" duration="30.00" until="42.75"/>
+        <stop busStop="busStop_-400_1_2" duration="30.00" until="115.00"/>
+        <stop busStop="busStop_26_1_4" duration="30.00" until="181.00"/>
+        <stop busStop="busStop_784_1_13" duration="30.00" until="234.00"/>
+        <stop busStop="busStop_2347_1_14" duration="30.00" until="290.50"/>
+        <stop busStop="busStop_4675_1_16" duration="30.00" until="356.50"/>
+        <stop busStop="busStop_7051_1_18" duration="30.00" until="409.50"/>
+    </route>
+    <flow id="bus:2_northbound" type="bus" route="bus:2_northbound" begin="0.0" end="86400" period="300" line="Bus2-NorthBound" >
+        <param key="name" value="Bus2-NorthBound"/>
+    </flow>
+
+    <route id="bus:2_southbound" edges="-7051 -4675 -2347 -784 -26 400 5517">
+        <stop busStop="busStop_-7051_1_19" duration="30.00" until="42.75"/>
+        <stop busStop="busStop_-4675_1_17" duration="30.00" until="97.75"/>
+        <stop busStop="busStop_-2347_1_15" duration="30.00" until="169.00"/>
+        <stop busStop="busStop_-784_1_12" duration="30.00" until="226.25"/>
+        <stop busStop="busStop_-26_1_5" duration="30.00" until="283.25"/>
+        <stop busStop="busStop_400_1_3" duration="30.00" until="356.50"/>
+        <stop busStop="busStop_5517_1_1" duration="30.00" until="435.75"/>
+    </route>
+    <flow id="bus:2_southbound" type="bus" route="bus:2_southbound" begin="0.0" end="86400" period="300" line="Bus2-SouthBound" >
+        <param key="name" value="Bus2-SouthBound"/>
+    </flow>
+</routes>

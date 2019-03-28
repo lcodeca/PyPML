@@ -1,0 +1,3004 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+
+    <vehicle id="ptw_152_tr" type="ptw" depart="2.46">
+        <route edges="4274 -4275 -3538 -1872 -1267 -518 -379 -158 -43 42 372 784 1237 2346 2353 3087 3797 4652 -4652 -3797 -3087 -2353 -2346 -1237 -784 -372 -42 43 158 379 518 1267 1872 3530 4274"/>
+        <stop parkingArea="parkingArea_-4652_1_70" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_272_tr" type="ptw" depart="2.62">
+        <route edges="-4539 -3671 -2340 -1132 -752 -402 -382 386 648 1016 1487 2016 3558 -3081 3083 3794 4650 -4650 -3794 -3083 3081 -3558 -2016 -1487 -1016 -648 -386 382 402 752 1132 2340 3671 4539 -4539"/>
+        <stop parkingArea="parkingArea_4650_1_63" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_283_tr" type="ptw" depart="2.97">
+        <route edges="5398 6598 -6598 -5398 -4507 -3565 -1498 -1022 1010 1992 -1750 -1239 1237 2347 2384 3191 3903 4681 -4794 4808 -4808 4794 -4681 -3903 -3191 -2384 -2347 2346 -1740 1750 -1992 -1010 1022 1498 3565 4507 5398"/>
+        <stop parkingArea="parkingArea_-4808_1_47" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_219_tr" type="ptw" depart="5.75">
+        <route edges="-4942 -4260 -3530 -1872 -1267 -518 -379 -158 -43 42 372 788 1258 1762 -1762 -1258 -788 -372 -42 43 158 379 518 1267 1872 3530 4260 4942 -4942"/>
+        <stop parkingArea="parkingArea_-1762_1_52" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_192_tr" type="ptw" depart="7.28">
+        <route edges="3087 -3087 3081 -3558 -2738 2739 -2349 2353 3087"/>
+        <stop parkingArea="parkingArea_-2738_1_61" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_186_tr" type="ptw" depart="8.86">
+        <route edges="4817 6034 -4254 -3530 -1872 -1267 1259 -1873 1881 2625 -2625 -1881 1873 -1259 1267 1872 3518 4149 4817"/>
+        <stop parkingArea="parkingArea_2625_1_5" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_540_tr" type="ptw" depart="12.24">
+        <route edges="1130 -1133 -754 -402 -382 -268 -52 -24 26 372 784 1237 2347 2384 3191 -3191 -2384 -2347 -1237 -784 -372 -42 -15 3 19 51 402 752 1130"/>
+        <stop parkingArea="parkingArea_-3191_1_56" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_230_tr" type="ptw" depart="12.59">
+        <route edges="5760 -5760 -4652 -3797 -3087 3081 -3558 -2016 -1487 1489 2858 -2858 -1489 1487 2016 3558 -3081 3087 3797 4652 5760"/>
+        <stop parkingArea="parkingArea_2858_2_110" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_568_tr" type="ptw" depart="17.19">
+        <route edges="-2505 -1870 -1267 -518 -379 -158 -43 42 -26 24 52 268 386 648 1010 1992 -1750 -1239 -784 -372 -42 43 158 379 518 1267 1870 2505 -2505"/>
+        <stop parkingArea="parkingArea_648_1_88" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_464_tr" type="ptw" depart="17.27">
+        <route edges="-7051 -5791 -4675 -3903 -3191 -2384 -2347 -1237 -784 -372 -42 43 158 379 518 1267 1872 3518 -3518 -1872 -1267 -518 -379 -158 -43 42 372 784 1237 2347 2384 3191 3903 4675 5791 7051 -7051"/>
+        <stop parkingArea="parkingArea_3518_1_33" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_543_tr" type="ptw" depart="20.19">
+        <route edges="1487 -1487 -1016 1010 1992 -1750 -1239 -784 -372 -42 43 158 379 518 1267 1872 3530 4260 4948 -4948 -4260 -3530 -1872 -1267 -518 -379 -158 -43 42 372 784 1239 1750 -1992 -1010 1016 1487"/>
+        <stop parkingArea="parkingArea_-4948_1_30" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_148_tr" type="ptw" depart="20.62">
+        <route edges="-29 27 -23 21 52 268 386 648 1016 1489 2858 -2858 -1489 -1016 -648 -386 -268 -52 -21 23 -27 29 -29"/>
+        <stop parkingArea="parkingArea_2858_2_110" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_281_tr" type="ptw" depart="21.98">
+        <route edges="6862 -6759 -4539 -3671 -2340 -1132 -752 -402 -51 -19 -3 15 43 158 379 518 1267 1872 3538 4291 -6255 -5052 -4279 -3538 -1872 -1267 -518 -379 -158 -43 -15 3 19 51 402 752 1132 2340 3681 5650 6862"/>
+        <stop parkingArea="parkingArea_-4279_1_40" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_103_tr" type="ptw" depart="22.04">
+        <route edges="2635 -2635 -1883 1873 -1259 -518 -379 -158 -43 42 372 784 1239 1750 -1992 -1010 1022 1498 3565 4507 5398 6598 -6598 -5398 -4507 -3565 -1498 -1022 1010 1992 -1750 -1239 -784 -372 -42 43 158 379 518 1259 -1873 1883 2635"/>
+        <stop parkingArea="parkingArea_-5398_1_119" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_106_tr" type="ptw" depart="25.57">
+        <route edges="-7026 -5781 -4672 -3799 -3087 -2353 -2346 -1237 -784 -372 -42 43 158 379 518 1267 1872 3530 4260 -4260 -3530 -1872 -1267 -518 -379 -158 -43 42 372 784 1237 2346 2353 3087 3799 4672 5781 7026 -7026"/>
+        <stop parkingArea="parkingArea_-4260_1_31" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_418_tr" type="ptw" depart="26.33">
+        <route edges="4274 -4275 -3538 -1872 -1267 1259 -1873 1873 -1259 1267 1872 3530 4274"/>
+        <stop parkingArea="parkingArea_1873_1_13" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_357_tr" type="ptw" depart="26.67">
+        <route edges="4022 -3308 3302 -3195 3199 -4673 -3784 -3083 3081 -3558 -2016 1994 2748 3557 6586 -6728 -5510 -4529 -3565 -1498 -1022 1010 1992 -1750 -1239 1247 -1248 1258 1762 2386 4022"/>
+        <stop parkingArea="parkingArea_-6728_1_116" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_6_tr" type="ptw" depart="28.34">
+        <route edges="-4403 -3554 -2635 -1883 1873 -1259 -518 -379 -158 -43 42 372 784 1237 2346 2353 3087 3799 4672 5767 6919 -7022 -5781 -4672 -3799 -3087 -2353 -2346 -1237 -784 -372 -42 43 158 379 518 1259 -1873 1883 2635 3554 4403 5272 -5272 -4403"/>
+        <stop parkingArea="parkingArea_6919_1_67" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_492_tr" type="ptw" depart="29.71">
+        <route edges="-6598 -5398 -4507 -3565 -1498 -1022 1010 1992 -1750 -1239 -784 -372 -42 43 158 379 518 1267 1870 2503 -3518 -1872 -1267 -518 -379 -158 -43 42 372 784 1239 1750 -1992 -1010 1022 1498 3565 4507 5398 6598 -6598"/>
+        <stop parkingArea="parkingArea_2503_1_35" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_395_tr" type="ptw" depart="30.5">
+        <route edges="-2349 -2346 2347 2384 3191 3903 4675 5791 7047 -7046 -5787 -4675 -3903 -3191 -2384 -2347 2346 2349 -2349"/>
+        <stop parkingArea="parkingArea_-7046_1_43" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_513_tr" type="ptw" depart="31.0">
+        <route edges="5762 -5763 -4666 -3799 -3087 -2353 -2346 2347 2372 -3784 -3083 3087 3797 4652 5762"/>
+        <stop parkingArea="parkingArea_2372_1_59" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_574_tr" type="ptw" depart="31.33">
+        <route edges="-4922 -3517 -2505 -1870 -1267 -518 -379 -158 -43 42 372 784 1239 1750 -1992 -1010 1022 1498 -3559 -3555 -2748 -1994 2016 3558 -3080 -2349 -2346 -1237 -784 -372 -42 43 158 379 518 1267 1870 2505 3517 4922 -4922"/>
+        <stop parkingArea="parkingArea_-2748_2_112" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_436_tr" type="ptw" depart="31.45">
+        <route edges="-4291 -3538 -1872 -1267 -518 -379 -158 -43 42 372 784 1237 2347 2372 -3784 3794 4650 -4665 -3799 -3087 -2353 -2346 -1237 -784 -372 -42 43 158 379 518 1267 1872 3538 4291 -6255 6255 -4291"/>
+        <stop parkingArea="parkingArea_4650_1_63" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_91_tr" type="ptw" depart="32.21">
+        <route edges="-3559 -3555 3557 6586 -6728 -5510 -4529 -3565 -3559"/>
+        <stop parkingArea="parkingArea_-6728_1_116" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_564_tr" type="ptw" depart="32.3">
+        <route edges="3919 -3919 -3195 -2384 -2347 -1237 -784 -372 -42 43 158 379 518 1259 -1873 1883 2635 3554 4403 5272 -5272 -4403 -3554 -2635 -1883 1873 -1259 -518 -379 -158 -43 42 372 784 1237 2347 2384 3195 3919"/>
+        <stop parkingArea="parkingArea_3554_1_7" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_47_tr" type="ptw" depart="36.63">
+        <route edges="-6040 6034 -4254 -3530 -1872 -1267 -518 -379 -158 -43 42 372 784 1237 2347 2384 3191 -3191 -2384 -2347 -1237 -784 -372 -42 43 158 379 518 1267 1872 3530 4254 -6034 6040 -6040"/>
+        <stop parkingArea="parkingArea_-3191_1_56" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_62_tr" type="ptw" depart="36.68">
+        <route edges="-1994 2016 3558 -3081 -2353 -2346 -1237 -784 -372 372 784 1239 1750 -1992 -1010 1022 1490 -2740 -1994"/>
+        <stop parkingArea="parkingArea_-372_1_76" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_354_tr" type="ptw" depart="37.87">
+        <route edges="1130 -1133 -754 -402 -382 -268 -52 -24 26 372 788 1258 1762 2388 -2388 -1762 -1258 -788 -372 -42 -15 3 19 51 402 752 1130"/>
+        <stop parkingArea="parkingArea_-2388_0_53" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_111_tr" type="ptw" depart="37.97">
+        <route edges="-780 -402 -51 -19 -3 15 43 158 379 518 1267 1872 3530 4274 -4275 -3538 -1872 -1267 -518 -379 -158 -43 -15 3 19 51 412 782 -780"/>
+        <stop parkingArea="parkingArea_-4275_1_36" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_582_tr" type="ptw" depart="38.86">
+        <route edges="-7026 -5781 -4672 -3799 -3087 3081 -3558 -2016 1994 2748 3557 6590 -6727 6727 -6590 -3557 -2748 -1994 2016 3558 -3081 3087 3799 4672 5781 7026 -7026"/>
+        <stop parkingArea="parkingArea_-6590_1_113" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_92_tr" type="ptw" depart="39.82">
+        <route edges="3794 -3794 -3083 3081 -3558 -2016 1994 2748 3557 -3557 -2748 -1994 2016 3558 -3081 3083 3794"/>
+        <stop parkingArea="parkingArea_3557_0_114" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_201_tr" type="ptw" depart="40.41">
+        <route edges="2738 -2016 -1487 -1016 -648 -386 -268 -52 -21 23 -27 29 -43 42 372 784 1237 2346 2349 -2739 2738"/>
+        <stop parkingArea="parkingArea_23_0_81" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_193_tr" type="ptw" depart="40.84">
+        <route edges="2338 -1524 -1133 -754 -402 -382 386 648 1016 1487 2016 3558 -3081 3087 3799 4672 5767 6919 -7022 -5781 -4672 -3799 -3087 -2353 -1740 1750 -1992 -1010 -648 -386 382 402 752 1132 2338"/>
+        <stop parkingArea="parkingArea_-7022_1_68" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_137_tr" type="ptw" depart="42.5">
+        <route edges="-3905 3905 4682 -4673 -3784 -3083 3081 -3558 -2016 1994 2740 2858 -2858 -1489 1487 2016 3558 -3081 3083 3784 4673 -4682 -3905"/>
+        <stop parkingArea="parkingArea_2858_2_110" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_104_tr" type="ptw" depart="42.53">
+        <route edges="3905 -3905 -3191 -2384 -2347 -1237 -784 -372 -42 43 158 379 518 1259 -1873 1873 -1259 -518 -379 -158 -43 42 372 784 1237 2347 2384 3191 3905"/>
+        <stop parkingArea="parkingArea_-1873_1_12" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_426_tr" type="ptw" depart="43.57">
+        <route edges="4794 -4681 -3903 -3191 -2384 -2347 2346 2353 -2353 -2346 2347 2384 3191 3903 4681 -4794 4794"/>
+        <stop parkingArea="parkingArea_-2353_2_60" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_248_tr" type="ptw" depart="44.09">
+        <route edges="373 -373 -158 -43 42 372 784 1237 2346 2353 3087 -3087 -2353 -2346 -1237 -784 -372 -42 43 158 373"/>
+        <stop parkingArea="parkingArea_3087_2_62" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_466_tr" type="ptw" depart="45.45">
+        <route edges="4652 -4652 -3797 -3087 -2353 -1740 1750 -1992 -1010 -648 -386 382 402 752 1130 -1133 -754 -402 -382 386 648 1016 1487 2016 3558 -3081 3087 3797 4652"/>
+        <stop parkingArea="parkingArea_-754_1_18" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_335_tr" type="ptw" depart="46.43">
+        <route edges="-6729 -5515 -4533 -2964 -2231 2227 -2124 -1494 1490 -2740 2748 -2748 2740 -1490 1494 2124 -2227 2231 2964 4533 5515 6729 -6729"/>
+        <stop parkingArea="parkingArea_-2748_2_112" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_505_tr" type="ptw" depart="46.78">
+        <route edges="-4652 -3797 -3087 3081 -3558 -2016 1994 2740 -1489 1487 2016 3558 -3081 3087 3797 4652 -4652"/>
+        <stop parkingArea="parkingArea_-1489_2_111" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_443_tr" type="ptw" depart="46.86">
+        <route edges="-6040 6034 -4254 -3530 -1872 -1267 -518 -379 -158 -43 42 -26 24 52 268 400 1514 2231 2964 4533 5515 -5514 -4531 -2964 -2231 -1514 -400 -268 -52 -24 26 -42 43 158 379 518 1267 1872 3530 4254 -6034 6040 -6040"/>
+        <stop parkingArea="parkingArea_-5514_2_104" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_526_tr" type="ptw" depart="47.41">
+        <route edges="1010 -1010 1022 1494 2124 -2227 2235 -2235 2227 -2124 -1494 -1022 1010"/>
+        <stop parkingArea="parkingArea_-2235_2_100" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_41_tr" type="ptw" depart="48.57">
+        <route edges="-4672 -3799 -3087 -2353 -1740 1750 -1992 -1010 -648 -386 382 402 752 1132 2340 3671 4539 -4539 -3671 -2340 -1132 -752 -402 -382 386 648 1016 1487 2016 3558 -3081 3087 3799 4672 -4672"/>
+        <stop parkingArea="parkingArea_4539_1_8" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_456_tr" type="ptw" depart="50.06">
+        <route edges="4525 -4525 -3565 -1498 1494 2124 -2227 2235 2965 -2965 -2235 2227 -2124 -1494 1498 3565 4525"/>
+        <stop parkingArea="parkingArea_-2965_1_101" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_484_tr" type="ptw" depart="50.25">
+        <route edges="-4275 -3538 -1872 -1267 -518 -379 -158 -43 42 372 784 1239 1750 -1992 -1010 1022 1498 3565 4525 -6728 -5510 -4529 -3565 -1498 -1022 1010 1992 -1750 -1239 -784 -372 -42 43 158 379 518 1267 1872 3530 4274 -4275"/>
+        <stop parkingArea="parkingArea_-6728_1_116" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_453_tr" type="ptw" depart="50.35">
+        <route edges="1766 2397 -2397 -1766 -1258 -788 -372 -42 43 158 379 518 1267 1870 2505 3517 4922 6049 -6049 -4922 -3517 -2505 -1870 -1267 -518 -379 -158 -43 42 372 788 1258 1766"/>
+        <stop parkingArea="parkingArea_6049_1_23" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_56_tr" type="ptw" depart="50.56">
+        <route edges="51 -51 -19 -3 15 43 158 379 518 1267 1872 3530 4254 -6034 6036 -6152 -4948 -4260 -3530 -1872 -1267 -518 -379 -158 -43 -15 3 19 51"/>
+        <stop parkingArea="parkingArea_-6152_1_29" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_264_tr" type="ptw" depart="52.19">
+        <route edges="-5773 -4672 -3799 -3087 -2353 -2346 -1237 -784 -372 -42 43 158 379 520 894 1281 1881 2625 -2625 2609 -3411 -1263 -518 -379 -158 -43 42 372 784 1237 2346 2353 3087 3799 4672 5773 -5773"/>
+        <stop parkingArea="parkingArea_2625_1_5" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_294_tr" type="ptw" depart="54.58">
+        <route edges="-6731 -5514 -4642 -3072 -2345 2345 3072 4646 -6729 6731 -6731"/>
+        <stop parkingArea="parkingArea_2345_2_96" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_320_tr" type="ptw" depart="54.65">
+        <route edges="5904 -5799 -4675 -3903 -3191 -2384 -2347 2346 2349 -2354 2370 -2370 2354 -2349 -2346 2347 2384 3191 3903 4675 5799 -5904 5904"/>
+        <stop parkingArea="parkingArea_2370_2_92" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_43_tr" type="ptw" depart="54.76">
+        <route edges="-1762 -1258 -788 -372 -26 24 52 268 400 1514 2231 2964 4533 5515 -5514 -4531 -2964 -2231 -1514 -400 -268 -52 -24 26 372 788 1258 1762 -1762"/>
+        <stop parkingArea="parkingArea_-5514_2_104" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_34_tr" type="ptw" depart="55.37">
+        <route edges="-1133 -754 -402 -382 386 648 1022 1498 3565 4525 -6728 -5510 -4529 -3565 -1498 -1022 -648 -386 382 402 752 1130 -1133"/>
+        <stop parkingArea="parkingArea_-6728_1_116" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_488_tr" type="ptw" depart="55.56">
+        <route edges="-4646 -3072 -2345 -1634 -782 781 -400 -268 -52 -24 26 372 784 1237 2347 2384 3191 3903 4675 5791 7047 -7046 -5787 -4675 -3903 -3191 -2384 -2347 -1237 -784 -372 -26 24 52 268 400 1514 2231 2964 4533 5515 6729 -4646"/>
+        <stop parkingArea="parkingArea_7047_2_42" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_530_tr" type="ptw" depart="58.4">
+        <route edges="5754 -5754 -4665 -3799 -3087 -2353 -2346 -1237 -784 -372 -42 43 158 379 518 1267 1872 3530 4260 4948 6152 -6036 -4817 -4149 -3518 -1872 -1267 -518 -379 -158 -43 42 372 784 1237 2346 2353 3087 3799 4665 5754"/>
+        <stop parkingArea="parkingArea_-6036_1_28" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_542_tr" type="ptw" depart="58.95">
+        <route edges="4665 -4665 -3799 -3087 -2353 -2346 -1237 -784 -372 -42 43 158 379 518 1267 1872 3530 4254 -6034 6036 -6152 -4948 -4260 -3530 -1872 -1267 -518 -379 -158 -43 42 372 784 1237 2346 2353 3087 3799 4665"/>
+        <stop parkingArea="parkingArea_-6152_1_29" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_128_tr" type="ptw" depart="59.13">
+        <route edges="752 -752 -402 -51 -19 -3 15 43 158 379 518 1267 1870 2505 3517 4922 6049 -6049 -4922 -3517 -2505 -1870 -1267 -518 -379 -158 -43 -15 3 19 51 402 752"/>
+        <stop parkingArea="parkingArea_6049_1_23" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_387_tr" type="ptw" depart="59.65">
+        <route edges="11 -11 5 24 52 268 386 648 1016 -1016 -648 -386 382 -51 -19 -3 11"/>
+        <stop parkingArea="parkingArea_-1016_2_89" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_97_tr" type="ptw" depart="60.92">
+        <route edges="-3308 -2388 -1762 -1258 -788 -372 -26 24 52 268 386 648 1010 1992 -1750 -1239 1247 -1248 1258 1762 2386 4022 -3308"/>
+        <stop parkingArea="parkingArea_648_1_88" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_14_tr" type="ptw" depart="66.06">
+        <route edges="-4948 -4260 -3530 -1872 -1267 -518 -379 -158 -43 42 -26 24 52 268 386 648 1010 1992 -1750 -1239 -784 -372 -42 43 158 379 518 1267 1872 3530 4260 4948 -4948"/>
+        <stop parkingArea="parkingArea_648_1_88" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_246_tr" type="ptw" depart="66.26">
+        <route edges="4291 -6255 6255 -4291 -3538 -1872 -1267 -518 -379 -158 -43 42 372 784 1239 1750 -1992 -1010 1022 1490 -1489 -1016 1010 1992 -1750 -1239 -784 -372 -42 43 158 379 518 1267 1872 3538 4291"/>
+        <stop parkingArea="parkingArea_-1489_2_111" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_419_tr" type="ptw" depart="66.44">
+        <route edges="1498 -1498 -1022 1010 1992 -1750 -1239 1237 2347 2384 3191 3903 4675 5787 -5787 -4675 -3903 -3191 -2384 -2347 2346 -1740 1750 -1992 -1010 1022 1498"/>
+        <stop parkingArea="parkingArea_-5787_1_44" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_168_tr" type="ptw" depart="67.13">
+        <route edges="5762 -5763 -4666 -3799 -3087 3081 -3558 -2738 2739 -2349 2353 3087 3797 4652 5762"/>
+        <stop parkingArea="parkingArea_-2738_1_61" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_7_tr" type="ptw" depart="67.43">
+        <route edges="4650 -4650 -3794 3784 -2372 -1754 -1248 1248 1754 2372 -3784 3794 4650"/>
+        <stop parkingArea="parkingArea_-1248_2_57" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_355_tr" type="ptw" depart="68.05">
+        <route edges="4672 -4672 -3799 -3087 -2353 -2346 -1237 -784 -372 -42 43 158 379 518 1267 1870 2503 -3518 -1872 -1267 -518 -379 -158 -43 42 372 784 1237 2346 2353 3087 3799 4672"/>
+        <stop parkingArea="parkingArea_2503_1_35" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_29_tr" type="ptw" depart="68.52">
+        <route edges="-2016 -1487 -1016 -648 -386 -268 -52 -24 -5 3 19 51 -382 386 648 1016 1487 2016 -2016"/>
+        <stop parkingArea="parkingArea_-5_0_79" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_59_tr" type="ptw" depart="71.36">
+        <route edges="-5767 -4672 -3799 -3087 3081 -3558 -2016 -1487 -1016 1010 1992 -1750 1740 2353 3087 3799 4672 5767 -5767"/>
+        <stop parkingArea="parkingArea_-1016_2_89" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_73_tr" type="ptw" depart="71.92">
+        <route edges="3199 -4673 -3784 -3083 3081 -3558 -2016 -1487 -1016 -648 -386 382 402 752 1132 2340 3681 5650 -5650 -3681 -2340 -1132 -752 -402 -51 -19 -3 15 42 372 784 1237 2347 2384 3199"/>
+        <stop parkingArea="parkingArea_5650_1_10" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_25_tr" type="ptw" depart="74.46">
+        <route edges="906 -1873 1883 2635 -2635 -1883 1873 -906 906"/>
+        <stop parkingArea="parkingArea_-2635_1_6" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_130_tr" type="ptw" depart="74.76">
+        <route edges="-1130 -752 -402 -51 -19 23 -27 -11 3 19 51 402 752 1130 -1130"/>
+        <stop parkingArea="parkingArea_23_0_81" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_314_tr" type="ptw" depart="74.9">
+        <route edges="-3539 -3411 -1263 -518 -379 -158 -43 42 372 784 1237 2346 2353 -2353 -1740 -1239 -784 -372 -42 43 158 379 520 906 -3539"/>
+        <stop parkingArea="parkingArea_-2353_2_60" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_77_tr" type="ptw" depart="75.29">
+        <route edges="-19 19 51 -382 386 648 1016 1487 1994 2748 -2748 -1994 -1487 -1016 -648 -386 382 -51 -19"/>
+        <stop parkingArea="parkingArea_-2748_2_112" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_321_tr" type="ptw" depart="76.49">
+        <route edges="-3919 -3195 -2384 -2347 -1237 -784 -372 -42 -15 3 19 51 402 752 1132 2340 3681 5626 -5626 -3681 -2340 -1132 -752 -402 -51 -19 -3 15 42 372 784 1237 2347 2384 3195 3919 -3919"/>
+        <stop parkingArea="parkingArea_5626_1_11" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_319_tr" type="ptw" depart="76.67">
+        <route edges="-5763 -4666 -3799 -3087 -2353 -2346 -1237 -784 -372 -42 43 158 379 518 1267 1872 3518 -3518 -1872 -1267 -518 -379 -158 -43 42 372 784 1237 2346 2353 3087 3799 4666 5763 -5763"/>
+        <stop parkingArea="parkingArea_3518_1_33" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_70_tr" type="ptw" depart="78.19">
+        <route edges="6034 -4254 -3530 -1872 -1267 -518 -379 -158 -43 -15 3 19 51 402 752 1132 2340 3681 5626 -5626 -3681 -2340 -1132 -752 -402 -51 -19 -3 15 43 158 379 518 1267 1872 3530 4254 -6034 6034"/>
+        <stop parkingArea="parkingArea_5626_1_11" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_308_tr" type="ptw" depart="79.67">
+        <route edges="-2635 -1883 1873 -1259 -518 -379 -158 -43 42 372 784 1237 2346 2349 -2739 2738 -2016 1994 2748 3557 6586 -4525 -3565 -1498 -1022 1010 1992 -1750 -1239 -784 -372 -42 43 158 379 518 1259 -1873 1883 2635 -2635"/>
+        <stop parkingArea="parkingArea_3557_0_114" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_260_tr" type="ptw" depart="80.9">
+        <route edges="3799 -3799 -3087 -2353 -1740 -1239 -784 -372 -42 43 -43 42 372 784 1237 2346 2353 3087 3799"/>
+        <stop parkingArea="parkingArea_-43_1_75" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_479_tr" type="ptw" depart="81.28">
+        <route edges="1247 1754 2384 3191 3903 4675 5791 7047 -7046 -5787 -4675 -3903 -3191 -2384 -2347 -1237 1247"/>
+        <stop parkingArea="parkingArea_7047_2_42" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_344_tr" type="ptw" depart="81.61">
+        <route edges="372 784 1239 1750 -1992 -1010 1022 1498 -1498 -1022 1010 1992 -1750 -1239 -784 -372 372"/>
+        <stop parkingArea="parkingArea_1498_1_109" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_35_tr" type="ptw" depart="81.74">
+        <route edges="1994 -1994 -1487 -1016 -648 -386 382 402 752 1132 2340 3671 4539 -4539 -3671 -2340 -1132 -752 -402 -382 386 648 1016 1487 1994"/>
+        <stop parkingArea="parkingArea_4539_1_8" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_191_tr" type="ptw" depart="82.32">
+        <route edges="-6598 -5398 -4507 -3565 -1498 -1022 1010 1992 -1750 -1239 1239 1750 -1992 -1010 1022 1498 3565 4507 5398 6598 -6598"/>
+        <stop parkingArea="parkingArea_-1239_1_90" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_162_tr" type="ptw" depart="84.58">
+        <route edges="-1267 -518 -379 -158 -43 42 372 784 1237 2347 2372 -2372 -1754 -1248 -788 -372 -42 43 158 379 518 1267 -1267"/>
+        <stop parkingArea="parkingArea_2372_1_59" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_262_tr" type="ptw" depart="84.6">
+        <route edges="782 -782 781 1514 2227 -2124 -1494 1494 2124 -2227 -1514 -781 782"/>
+        <stop parkingArea="parkingArea_-2124_1_108" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_506_tr" type="ptw" depart="85.33">
+        <route edges="2505 -2505 -1870 -1267 -518 -379 -158 -43 -15 3 19 51 402 752 1132 2340 3681 5650 -5650 -3681 -2340 -1132 -752 -402 -51 -19 -3 15 43 158 379 518 1267 1870 2505"/>
+        <stop parkingArea="parkingArea_5650_1_10" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_441_tr" type="ptw" depart="85.55">
+        <route edges="2965 -2965 -2235 -1514 -400 -268 -52 -24 26 -42 43 158 379 520 894 1281 1881 2625 3543 -3543 -2625 2609 -3411 -1263 -518 -379 -158 -43 42 -26 24 52 268 400 1514 2235 2965"/>
+        <stop parkingArea="parkingArea_3543_1_4" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_285_tr" type="ptw" depart="85.79">
+        <route edges="-4940 -3517 -2505 -1870 -1267 -518 -379 -158 -43 -15 3 19 51 412 782 1634 2345 3072 4646 -4646 -3072 -2345 -1634 -780 -402 -51 -19 -3 15 43 158 379 518 1267 1870 2505 3517 4940 -4940"/>
+        <stop parkingArea="parkingArea_4646_2_98" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_536_tr" type="ptw" depart="86.02">
+        <route edges="-894 -520 -379 -158 -43 42 372 784 1239 1740 2353 3087 3799 4672 5767 6919 -7022 -5781 -4672 -3799 -3087 -2353 -2346 -1237 -784 -372 -42 43 158 379 520 894 1281 -1281 -894"/>
+        <stop parkingArea="parkingArea_6919_1_67" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_39_tr" type="ptw" depart="86.04">
+        <route edges="-3411 -1263 1259 -1259 1259 -3539 -3411"/>
+        <stop parkingArea="parkingArea_-1259_1_15" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_477_tr" type="ptw" depart="86.28">
+        <route edges="-3517 -2505 -1870 -1267 -518 -379 -158 -43 42 372 788 1258 1762 2386 4022 4045 4808 -4808 -4045 -3308 -2388 -1762 -1258 -788 -372 -42 43 158 379 518 1267 1870 2505 3517 -3517"/>
+        <stop parkingArea="parkingArea_-4808_1_47" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_236_tr" type="ptw" depart="88.17">
+        <route edges="3681 -3681 -2340 -1132 -752 -402 -51 -19 -3 15 43 158 379 518 1259 -906 -520 -379 -158 -43 -15 3 19 51 402 752 1132 2340 3681"/>
+        <stop parkingArea="parkingArea_-906_1_14" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_160_tr" type="ptw" depart="89.51">
+        <route edges="-3195 3195 -3302 -2388 2388 3302 -3195"/>
+        <stop parkingArea="parkingArea_-2388_0_53" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_220_tr" type="ptw" depart="89.86">
+        <route edges="-3087 -2353 -1740 1750 -1992 -1010 -648 -386 382 -51 -19 -3 15 42 372 784 1237 2346 2353 3087 -3087"/>
+        <stop parkingArea="parkingArea_-19_1_82" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_501_tr" type="ptw" depart="91.0">
+        <route edges="-3087 -2353 -1740 -1239 1239 1740 2353 3087 -3087"/>
+        <stop parkingArea="parkingArea_-1239_1_90" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_508_tr" type="ptw" depart="91.01">
+        <route edges="-3191 -2384 2372 -2372 2384 3191 -3191"/>
+        <stop parkingArea="parkingArea_2372_1_59" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_63_tr" type="ptw" depart="91.14">
+        <route edges="2964 -2964 -2231 -1514 -400 -268 -52 -24 26 372 788 1258 1762 -1762 -1258 -788 -372 -26 24 52 268 400 1514 2231 2964"/>
+        <stop parkingArea="parkingArea_-1762_1_52" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_204_tr" type="ptw" depart="91.19">
+        <route edges="-2396 -1762 -1258 1248 -1247 1239 1750 -1992 -1010 -648 -386 -268 -52 -24 26 372 788 1258 1766 2397 -2396"/>
+        <stop parkingArea="parkingArea_-386_1_87" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_333_tr" type="ptw" depart="91.23">
+        <route edges="-1883 1873 -1259 -518 -379 -158 -43 42 372 784 1239 -1239 -784 -372 -42 43 158 379 518 1259 -1873 1883 2635 -2635 -1883"/>
+        <stop parkingArea="parkingArea_-1239_1_90" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_532_tr" type="ptw" depart="91.27">
+        <route edges="-4529 -3565 -1498 -1022 1010 1992 -1750 -1239 -784 -372 -42 43 -43 42 372 784 1239 1750 -1992 -1010 1022 1498 3565 4529 -4529"/>
+        <stop parkingArea="parkingArea_-43_1_75" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_599_tr" type="ptw" depart="91.58">
+        <route edges="3081 -3080 -2349 -2346 2347 2372 -3784 -3083 3081"/>
+        <stop parkingArea="parkingArea_2372_1_59" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_61_tr" type="ptw" depart="92.82">
+        <route edges="-4539 -3671 -2340 -1132 -752 -402 -51 -19 -3 15 43 158 379 518 1259 -1259 -518 -379 -158 -43 -15 3 19 51 402 752 1132 2340 3671 4539 -4539"/>
+        <stop parkingArea="parkingArea_-1259_1_15" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_188_tr" type="ptw" depart="93.14">
+        <route edges="-4687 -3919 -3195 -2384 -2347 -1237 -784 -372 -42 43 158 379 518 1267 1872 3518 -3518 -1872 -1267 -518 -379 -158 -43 42 372 784 1237 2347 2384 3195 3919 4687 -4687"/>
+        <stop parkingArea="parkingArea_3518_1_33" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_65_tr" type="ptw" depart="94.9">
+        <route edges="-648 -386 386 648 1022 1498 3565 4525 -6728 -5510 -4529 -3565 -1498 -1022 -648"/>
+        <stop parkingArea="parkingArea_-6728_1_116" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_412_tr" type="ptw" depart="96.54">
+        <route edges="4642 -4531 -2964 -2231 -1514 -400 -268 -52 -24 -5 11 41 -41 -11 3 19 51 412 782 1634 2345 3072 4642"/>
+        <stop parkingArea="parkingArea_41_1_77" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_317_tr" type="ptw" depart="97.26">
+        <route edges="-3199 -2384 -2347 -1237 -784 -372 -42 -15 3 19 51 402 752 1132 2338 -1524 -1133 -754 -402 -382 386 648 1016 1487 2016 3558 -3081 3083 3784 4673 -3199"/>
+        <stop parkingArea="parkingArea_2338_1_17" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_507_tr" type="ptw" depart="97.84">
+        <route edges="372 -372 -42 43 158 379 518 1267 1872 3538 4291 -6255 -5052 -4279 -3538 -1872 -1267 -518 -379 -158 -43 42 372"/>
+        <stop parkingArea="parkingArea_-4279_1_40" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_404_tr" type="ptw" depart="98.08">
+        <route edges="-4151 -2503 -1870 -1267 -518 -379 -158 -43 -15 3 19 51 402 752 1132 2340 3681 5626 -5626 -3681 -2340 -1132 -752 -402 -51 -19 -3 15 43 158 379 518 1267 1872 3530 4254 -4151"/>
+        <stop parkingArea="parkingArea_5626_1_11" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_206_tr" type="ptw" depart="99.37">
+        <route edges="-1750 1750 -1992 -1010 -648 -386 382 402 780 1634 2345 -2345 -1634 -780 -402 -382 386 648 1010 1992 -1750"/>
+        <stop parkingArea="parkingArea_2345_2_96" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_263_tr" type="ptw" depart="99.46">
+        <route edges="5650 -5650 -3681 -2340 -1132 -752 780 1634 2341 2965 -2965 -2341 -1634 -780 752 1132 2340 3681 5650"/>
+        <stop parkingArea="parkingArea_-2965_1_101" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_563_tr" type="ptw" depart="99.75">
+        <route edges="3072 -3072 -2345 -1634 -780 -402 -51 -19 -3 15 43 158 379 518 1267 1872 3518 4149 4811 -4920 -3517 -2505 -1870 -1267 -518 -379 -158 -43 -15 3 19 51 412 782 1634 2345 3072"/>
+        <stop parkingArea="parkingArea_-4920_1_24" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_48_tr" type="ptw" depart="100.11">
+        <route edges="-4948 -4260 -3530 -1872 -1267 -518 -379 -158 -43 42 372 784 1239 1750 -1992 -1010 1022 1498 -3559 -3555 -2748 -1994 2016 3558 -3080 -2349 -2346 -1237 -784 -372 -42 43 158 379 518 1267 1872 3530 4260 4948 -4948"/>
+        <stop parkingArea="parkingArea_-2748_2_112" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_133_tr" type="ptw" depart="100.6">
+        <route edges="3544 -3543 3543 -3544 3544"/>
+        <stop parkingArea="parkingArea_3543_1_4" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_205_tr" type="ptw" depart="101.25">
+        <route edges="3681 -3681 -2340 -1132 -752 -402 -382 386 648 1016 1487 2016 3558 -3081 3087 -3087 -2353 -1740 1750 -1992 -1010 -648 -386 382 402 752 1132 2340 3681"/>
+        <stop parkingArea="parkingArea_3087_2_62" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_5_tr" type="ptw" depart="103.33">
+        <route edges="3794 -3795 -3087 -2353 -1740 -1239 -784 -372 372 784 1237 2347 2372 -3784 3794"/>
+        <stop parkingArea="parkingArea_-372_1_76" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_161_tr" type="ptw" depart="103.92">
+        <route edges="-3554 -2635 -1883 1873 -1259 -518 -379 -158 -43 42 372 784 1239 1750 -1992 -1010 1022 1498 -1498 -1022 1010 1992 -1750 -1239 -784 -372 -42 43 158 379 518 1259 -1873 1883 2635 3554 4403 5272 -5272 -4403 -3554"/>
+        <stop parkingArea="parkingArea_1498_1_109" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_252_tr" type="ptw" depart="105.24">
+        <route edges="5052 6255 -4291 -3538 -1872 -1267 -518 -379 -158 -43 42 372 784 1239 1750 -1992 -1010 1022 1498 3565 4525 -6728 -5510 -4529 -3565 -1498 -1022 1010 1992 -1750 -1239 -784 -372 -42 43 158 379 518 1267 1872 3538 4279 5052"/>
+        <stop parkingArea="parkingArea_-6728_1_116" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_374_tr" type="ptw" depart="106.65">
+        <route edges="1248 -1247 -784 -372 -42 43 158 379 518 1267 1872 3538 4291 -6255 6255 -4291 -3538 -1872 -1267 -518 -379 -158 -43 42 372 788 1248"/>
+        <stop parkingArea="parkingArea_-6255_1_38" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_428_tr" type="ptw" depart="107.11">
+        <route edges="5754 -5754 -4665 -3799 -3087 -2353 -2346 -1237 -784 -372 -42 43 158 379 520 894 1281 1881 2625 3541 4297 -4297 -3541 -2625 2609 -3411 -1263 -518 -379 -158 -43 42 372 784 1237 2346 2353 3087 3799 4665 5754"/>
+        <stop parkingArea="parkingArea_4297_1_3" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_392_tr" type="ptw" depart="107.58">
+        <route edges="-1247 -784 -372 -42 43 158 379 518 1267 1872 3530 4260 4948 -4948 -4260 -3530 -1872 -1267 -518 -379 -158 -43 42 372 784 1247 -1247"/>
+        <stop parkingArea="parkingArea_-4948_1_30" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_590_tr" type="ptw" depart="108.27">
+        <route edges="-2345 -1634 -780 -402 -51 -19 -3 15 43 158 379 518 1267 1872 3530 4260 4948 6152 -6036 -4817 -4149 -3518 -1872 -1267 -518 -379 -158 -43 -15 3 19 51 412 782 1634 2345 -2345"/>
+        <stop parkingArea="parkingArea_-6036_1_28" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_504_tr" type="ptw" depart="110.04">
+        <route edges="4027 -3919 -3195 -2384 -2347 -1237 -784 -372 -42 43 158 379 518 1267 1872 3538 4291 -6255 -5052 -4279 -3538 -1872 -1267 -518 -379 -158 -43 42 372 788 1258 1762 2386 4022 4027"/>
+        <stop parkingArea="parkingArea_-4279_1_40" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_304_tr" type="ptw" depart="110.38">
+        <route edges="-6728 -5510 -4529 -3565 -1498 -1022 -648 -386 382 402 752 1132 2340 3681 5650 -5650 -3681 -2340 -1132 -752 -402 -382 386 648 1022 1498 3565 4525 -6728"/>
+        <stop parkingArea="parkingArea_5650_1_10" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_20_tr" type="ptw" depart="110.8">
+        <route edges="-3087 -2353 -1740 1750 -1992 -1010 -648 -386 400 1514 2231 2964 -2964 -2231 -1514 -400 386 648 1016 1487 2016 3558 -3081 3087 -3087"/>
+        <stop parkingArea="parkingArea_-2964_2_102" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_127_tr" type="ptw" depart="111.66">
+        <route edges="-2370 -1750 -1239 1247 -1248 1248 -1247 1239 1750 2370 -2370"/>
+        <stop parkingArea="parkingArea_-1248_2_57" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_295_tr" type="ptw" depart="112.0">
+        <route edges="-6041 -4151 -2503 -1870 -1267 -518 -379 -158 -43 -15 3 19 51 402 -402 -51 -19 -3 15 43 158 379 518 1267 1872 3518 4151 6041 -6041"/>
+        <stop parkingArea="parkingArea_402_1_85" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_203_tr" type="ptw" depart="112.27">
+        <route edges="1881 2609 -3411 -1263 -518 -379 -158 -43 42 372 784 1239 1750 -1992 -1010 1022 1490 2858 3559 -1498 -1022 1010 1992 -1750 -1239 -784 -372 -42 43 158 379 520 894 1281 1881"/>
+        <stop parkingArea="parkingArea_2858_2_110" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_312_tr" type="ptw" depart="112.4">
+        <route edges="1992 -1750 -1239 -784 -372 -26 -5 15 42 372 784 1239 1750 -1992 1992"/>
+        <stop parkingArea="parkingArea_-5_0_79" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_134_tr" type="ptw" depart="112.45">
+        <route edges="1239 1750 -1992 -1010 1022 1498 -1498 -1022 1010 1992 -1750 -1239 1239"/>
+        <stop parkingArea="parkingArea_1498_1_109" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_176_tr" type="ptw" depart="113.18">
+        <route edges="-4026 -2386 -1762 -1258 1248 -1247 1239 1750 -1992 -1010 1016 -1016 1010 1992 -1750 -1239 1247 -1248 1258 1766 2397 4809 -4026"/>
+        <stop parkingArea="parkingArea_-1016_2_89" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_259_tr" type="ptw" depart="114.61">
+        <route edges="-3072 3072 4646 -6729 -5514 -4642 -3072"/>
+        <stop parkingArea="parkingArea_-5514_2_104" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_324_tr" type="ptw" depart="115.49">
+        <route edges="-1132 -752 -402 -51 -19 -3 15 43 158 379 518 1267 -1267 -518 -379 -158 -43 -15 3 19 51 402 752 1132 -1132"/>
+        <stop parkingArea="parkingArea_-1267_1_16" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_437_tr" type="ptw" depart="116.9">
+        <route edges="-5762 -4652 -3797 -3087 -2353 -2346 -1237 -784 -372 -42 43 158 379 518 1267 1872 3518 4149 4811 -4920 -3517 -2505 -1870 -1267 -518 -379 -158 -43 42 372 784 1237 2346 2353 3087 3799 4666 5763 -5762"/>
+        <stop parkingArea="parkingArea_-4920_1_24" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_26_tr" type="ptw" depart="118.81">
+        <route edges="3411 -3411 -1263 -518 -379 -158 -43 42 372 784 1237 2346 2353 3087 -3087 -2353 -2346 -1237 -784 -372 -42 43 158 379 518 1263 3411"/>
+        <stop parkingArea="parkingArea_3087_2_62" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_386_tr" type="ptw" depart="119.11">
+        <route edges="4279 5052 6255 -4291 -3538 -1872 -1267 -518 -379 379 518 1267 1872 3538 4279"/>
+        <stop parkingArea="parkingArea_379_0_74" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_169_tr" type="ptw" depart="121.61">
+        <route edges="-3559 -3555 -2748 -1994 2016 3558 -3081 3083 3784 4673 -3199 3195 3919 4687 -4794 4808 5931 7264 -7161 -5903 -4809 -2397 -1766 -1258 1248 -1247 1239 1750 -1992 -1010 1022 1498 -3559"/>
+        <stop parkingArea="parkingArea_-5903_2_49" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_379_tr" type="ptw" depart="121.66">
+        <route edges="5517 -5517 -4533 -2964 -2231 -1514 -400 382 402 752 1130 -1130 -752 -402 -382 400 1514 2231 2964 4533 5517"/>
+        <stop parkingArea="parkingArea_-1130_1_20" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_514_tr" type="ptw" depart="121.98">
+        <route edges="-4811 -4149 -3518 -1872 -1267 -518 -379 -158 -43 42 372 784 1237 2347 2384 3191 3903 4681 -4794 -4045 -3308 -2388 -1762 -1258 -788 -372 -42 43 158 379 518 1267 1870 2505 3517 4920 -4811"/>
+        <stop parkingArea="parkingArea_-4794_2_45" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_454_tr" type="ptw" depart="122.19">
+        <route edges="-1247 1239 1750 -1992 -1010 -648 -386 382 402 752 1130 -1133 -754 -402 -382 386 648 1010 1992 -1750 -1239 1247 -1247"/>
+        <stop parkingArea="parkingArea_-754_1_18" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_298_tr" type="ptw" depart="122.36">
+        <route edges="-2965 -2235 -1514 -400 -268 -52 -24 26 -42 43 158 379 520 894 1281 1881 2625 -2625 2609 -3411 -1263 -518 -379 -158 -43 42 -26 24 52 268 400 1514 2231 2962 -2965"/>
+        <stop parkingArea="parkingArea_2625_1_5" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_293_tr" type="ptw" depart="124.01">
+        <route edges="268 400 1514 2231 2964 4533 5515 6729 -6729 -5515 -4533 -2964 -2231 -1514 -400 -268 268"/>
+        <stop parkingArea="parkingArea_-6729_1_99" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_331_tr" type="ptw" depart="126.24">
+        <route edges="-19 -3 15 42 372 788 1258 1762 2386 4022 4045 4808 -4808 -4045 -3308 -2388 -1762 -1258 -788 -372 -42 -15 3 19 -19"/>
+        <stop parkingArea="parkingArea_-4808_1_47" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_400_tr" type="ptw" depart="127.93">
+        <route edges="-5903 -4809 -2397 -1766 -1258 1248 -1247 1239 1750 -1992 -1010 1022 1490 -1489 -1016 1010 1992 -1750 -1239 1247 -1248 1258 1766 2397 4809 5903 7161 -7264 7264 -7161 -5903"/>
+        <stop parkingArea="parkingArea_-1489_2_111" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_282_tr" type="ptw" depart="128.77">
+        <route edges="7022 -6919 -5767 -4672 -3799 -3087 -2353 -2346 -1237 -784 -372 372 784 1237 2346 2353 3087 3799 4672 5781 7022"/>
+        <stop parkingArea="parkingArea_-372_1_76" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_159_tr" type="ptw" depart="129.03">
+        <route edges="-5650 -3681 -2340 -1132 -752 -402 -51 -19 -3 15 43 158 379 518 1267 1872 3518 -3518 -1872 -1267 -518 -379 -158 -43 -15 3 19 51 402 752 1132 2340 3681 5650 -5650"/>
+        <stop parkingArea="parkingArea_3518_1_33" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_216_tr" type="ptw" depart="129.33">
+        <route edges="1247 -1247 -784 -372 -42 43 158 379 518 1267 1872 3530 4260 4948 -4948 -4260 -3530 -1872 -1267 -518 -379 -158 -43 42 372 784 1247"/>
+        <stop parkingArea="parkingArea_-4948_1_30" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_496_tr" type="ptw" depart="129.5">
+        <route edges="1762 -1762 -1258 -788 -372 -26 24 52 268 400 1514 2235 -2341 -1634 -782 781 -400 -268 -52 -24 26 372 788 1258 1762"/>
+        <stop parkingArea="parkingArea_-1634_1_95" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_339_tr" type="ptw" depart="129.66">
+        <route edges="-4793 -4045 -3308 -2388 -1762 -1258 -788 -372 -42 -15 3 19 51 402 752 1132 2338 -1524 -1133 -754 -402 -382 -268 -52 -24 26 372 788 1258 1762 2386 4022 4045 4793 -4793"/>
+        <stop parkingArea="parkingArea_2338_1_17" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_515_tr" type="ptw" depart="130.5">
+        <route edges="-3083 -2353 -1740 -1239 1247 1754 2372 -3784 -3083"/>
+        <stop parkingArea="parkingArea_-1239_1_90" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_284_tr" type="ptw" depart="130.82">
+        <route edges="-6483 -3544 -2635 -1883 1873 -1259 -518 -379 -158 -43 42 372 784 1237 2346 2353 3087 3799 4672 5767 6919 -7022 -5781 -4672 -3799 -3087 -2353 -2346 -1237 -784 -372 -42 43 158 379 518 1259 -1873 1883 2635 3544 6483 -6483"/>
+        <stop parkingArea="parkingArea_6919_1_67" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_533_tr" type="ptw" depart="132.11">
+        <route edges="2740 -1490 1494 2124 -2227 2235 -2341 2345 -2345 2341 -2235 2227 -2124 -1494 1490 -2740 2740"/>
+        <stop parkingArea="parkingArea_2345_2_96" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_442_tr" type="ptw" depart="132.26">
+        <route edges="-6914 -5762 -4652 -3797 -3087 -2353 -2346 2347 2372 -3784 -3083 3087 3799 4666 5763 6914 -6914"/>
+        <stop parkingArea="parkingArea_2372_1_59" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_334_tr" type="ptw" depart="132.44">
+        <route edges="-2609 2609 -3411 -1263 -518 -379 -158 -43 42 372 784 1239 1750 -1992 -1010 1022 1490 2858 3559 -1498 -1022 1010 1992 -1750 -1239 -784 -372 -42 43 158 379 518 1263 3411 -2609"/>
+        <stop parkingArea="parkingArea_2858_2_110" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_446_tr" type="ptw" depart="132.59">
+        <route edges="4664 -4664 -3797 -3087 -2353 -1740 1750 -1992 -1010 -648 -386 382 402 752 1132 2340 -2340 -1132 -752 -402 -382 386 648 1016 1487 2016 3558 -3081 3087 3797 4664"/>
+        <stop parkingArea="parkingArea_-2340_1_9" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_433_tr" type="ptw" depart="133.04">
+        <route edges="-6900 -5754 -4650 -3794 -3083 3081 -3558 -2016 -1487 -1016 -648 -386 382 402 752 1132 2340 -2340 -1132 -752 -402 -382 386 648 1016 1487 2016 3558 -3081 3083 3794 4650 5754 6900 -6900"/>
+        <stop parkingArea="parkingArea_-2340_1_9" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_24_tr" type="ptw" depart="133.05">
+        <route edges="-3087 -2353 -1740 -1239 -784 -372 -42 43 158 379 518 1267 1872 3518 -2503 -1870 -1267 -518 -379 -158 -43 42 372 784 1237 2346 2353 3087 -3087"/>
+        <stop parkingArea="parkingArea_-2503_2_34" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_164_tr" type="ptw" depart="133.07">
+        <route edges="1870 -1870 -1267 -518 -379 -158 -43 -15 3 19 51 402 752 1130 -1133 -754 -402 -51 -19 -3 15 43 158 379 518 1267 1870"/>
+        <stop parkingArea="parkingArea_1130_1_19" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_343_tr" type="ptw" depart="133.32">
+        <route edges="-5773 -4672 -3799 -3087 -2353 -2346 -1237 -784 -372 -42 43 158 379 518 1259 -1873 1883 2635 -2635 -1883 1873 -1259 -518 -379 -158 -43 42 372 784 1237 2346 2353 3087 3799 4672 5773 -5773"/>
+        <stop parkingArea="parkingArea_-2635_1_6" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_226_tr" type="ptw" depart="134.33">
+        <route edges="4794 -4681 -3903 -3191 -2384 -2347 -1237 -784 -372 372 788 1258 1762 2386 4022 4045 4794"/>
+        <stop parkingArea="parkingArea_-372_1_76" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_289_tr" type="ptw" depart="136.69">
+        <route edges="-1524 -1133 -754 -402 -51 -19 -3 15 43 158 379 518 1267 1872 3538 4291 -6255 6255 -4291 -3538 -1872 -1267 -518 -379 -158 -43 -15 3 19 51 402 752 1132 2338 -1524"/>
+        <stop parkingArea="parkingArea_4291_2_37" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_520_tr" type="ptw" depart="137.34">
+        <route edges="-788 788 1248 1754 2372 -3784 3794 4650 -4650 -3794 3784 -2372 -1754 -1248 -788"/>
+        <stop parkingArea="parkingArea_4650_1_63" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_68_tr" type="ptw" depart="137.96">
+        <route edges="-6049 -4922 -3517 -2505 -1870 -1267 -518 -379 -158 -43 -15 3 19 51 412 782 1634 2345 3072 4646 -4646 -3072 -2345 -1634 -780 -402 -51 -19 -3 15 43 158 379 518 1267 1870 2505 3517 4922 6049 -6049"/>
+        <stop parkingArea="parkingArea_4646_2_98" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_21_tr" type="ptw" depart="138.82">
+        <route edges="-5787 -4675 -3903 -3191 -2384 -2347 -1237 -784 -372 -26 24 52 268 400 1514 2231 2964 4533 5515 -5514 -4531 -2964 -2231 -1514 -400 -268 -52 -24 26 372 784 1237 2347 2384 3191 3903 4675 5787 -5787"/>
+        <stop parkingArea="parkingArea_-5514_2_104" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_348_tr" type="ptw" depart="139.02">
+        <route edges="1883 2635 -2635 -1883 1873 -1259 -518 -379 -158 -43 -15 3 19 51 402 752 1132 2340 3681 5626 -5626 -3681 -2340 -1132 -752 -402 -51 -19 -3 15 43 158 379 518 1259 -1873 1883"/>
+        <stop parkingArea="parkingArea_5626_1_11" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_54_tr" type="ptw" depart="139.93">
+        <route edges="4525 -6586 -3557 -2748 -1994 2016 3558 -3081 -2353 -1740 1750 -1992 -1010 1022 1498 3565 4525"/>
+        <stop parkingArea="parkingArea_-2353_2_60" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_552_tr" type="ptw" depart="140.43">
+        <route edges="4666 -4666 -3799 -3087 -2353 -2346 -1237 -784 -372 -42 43 158 379 518 1267 1872 3530 4260 4948 6152 -6036 -4817 -4149 -3518 -1872 -1267 -518 -379 -158 -43 42 372 784 1237 2346 2353 3087 3799 4666"/>
+        <stop parkingArea="parkingArea_-6036_1_28" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_550_tr" type="ptw" depart="141.87">
+        <route edges="7046 -7047 -5791 -4675 -3903 -3191 -2384 -2347 -1237 -784 -372 -42 -15 3 19 51 402 752 1132 2340 3681 5626 -5626 -3681 -2340 -1132 -752 -402 -51 -19 -3 15 42 372 784 1237 2347 2384 3191 3903 4675 5787 7046"/>
+        <stop parkingArea="parkingArea_5626_1_11" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_44_tr" type="ptw" depart="142.37">
+        <route edges="4274 -4275 -3538 -1872 -1267 -518 -379 -158 -43 42 372 784 1239 1750 -1992 -1010 1022 1498 3565 4525 -6728 -5510 -4529 -3565 -1498 -1022 1010 1992 -1750 -1239 -784 -372 -42 43 158 379 518 1267 1872 3530 4274"/>
+        <stop parkingArea="parkingArea_-6728_1_116" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_183_tr" type="ptw" depart="143.47">
+        <route edges="-6904 -5760 -4652 -3797 -3087 -2353 -2346 -1237 -784 -372 -26 -5 15 42 372 784 1237 2346 2353 3087 3797 4652 5760 6904 -6904"/>
+        <stop parkingArea="parkingArea_-5_0_79" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_311_tr" type="ptw" depart="143.69">
+        <route edges="1494 2124 -2227 -1514 -400 -268 -52 -24 26 372 784 1237 2347 2384 3191 3903 -3903 -3191 -2384 -2347 2346 2349 -2739 -1991 -1010 1022 1494"/>
+        <stop parkingArea="parkingArea_-3903_1_55" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_310_tr" type="ptw" depart="143.72">
+        <route edges="4260 -4260 -3530 -1872 -1267 -518 -379 -158 -43 42 372 788 1258 1762 2386 4022 4045 4808 -4808 -4045 -3308 -2388 -1762 -1258 -788 -372 -42 43 158 379 518 1267 1872 3530 4260"/>
+        <stop parkingArea="parkingArea_-4808_1_47" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_210_tr" type="ptw" depart="143.94">
+        <route edges="49 268 386 648 1022 1494 2124 -2227 -1514 -400 -268 -49 49"/>
+        <stop parkingArea="parkingArea_-2227_1_107" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_519_tr" type="ptw" depart="144.72">
+        <route edges="-4646 -3072 -2345 -1634 -782 781 -400 -268 -52 -24 26 372 788 1258 1762 -1762 -1258 -788 -372 -26 24 52 268 400 1514 2231 2964 4533 5515 6729 -4646"/>
+        <stop parkingArea="parkingArea_-1762_1_52" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_113_tr" type="ptw" depart="144.84">
+        <route edges="3087 -3087 -2353 -1740 1750 -1992 -1010 1022 1494 2124 -2227 -1514 -400 386 648 1016 1487 2016 3558 -3081 3087"/>
+        <stop parkingArea="parkingArea_-2227_1_107" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_497_tr" type="ptw" depart="145.03">
+        <route edges="2965 -2965 -2235 -1514 -400 -268 -52 -24 26 -42 43 158 379 518 1259 -1873 1883 2635 3554 4403 5272 -5272 -4403 -3554 -2635 -1883 1873 -1259 -518 -379 -158 -43 42 -26 24 52 268 400 1514 2235 2965"/>
+        <stop parkingArea="parkingArea_3554_1_7" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_341_tr" type="ptw" depart="145.18">
+        <route edges="788 -788 -372 -26 24 52 268 400 1514 2235 -2235 -1514 -400 -268 -52 -24 26 372 788"/>
+        <stop parkingArea="parkingArea_-2235_2_100" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_448_tr" type="ptw" depart="145.68">
+        <route edges="-6731 -5515 -4533 -2964 -2231 -1514 -400 -268 -52 -24 26 372 784 1237 2347 2384 3191 -3191 -2384 -2347 -1237 -784 -372 -26 24 52 268 400 1514 2231 2964 4533 5515 6731 -6731"/>
+        <stop parkingArea="parkingArea_-3191_1_56" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_125_tr" type="ptw" depart="146.06">
+        <route edges="-3544 -2635 -1883 1873 -1259 -518 -379 -158 -43 42 372 788 1258 1762 2386 4022 4045 4808 -4808 -4045 -3308 -2388 -1762 -1258 -788 -372 -42 43 158 379 518 1259 -1873 1883 2635 3544 -3544"/>
+        <stop parkingArea="parkingArea_-4808_1_47" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_173_tr" type="ptw" depart="147.46">
+        <route edges="7046 -7047 -5791 -4675 -3903 -3191 -2384 -2347 2346 2349 -2739 2738 -2738 2739 -2349 -2346 2347 2384 3191 3903 4675 5787 7046"/>
+        <stop parkingArea="parkingArea_-2738_1_61" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_545_tr" type="ptw" depart="147.55">
+        <route edges="5903 7161 -7264 -5931 -4808 4794 -4681 -3903 -3191 -2384 -2347 2346 2349 -2739 -1991 -1010 1022 1498 -1498 -1022 1010 1992 -1750 -1239 1247 -1248 1258 1766 2397 4809 5903"/>
+        <stop parkingArea="parkingArea_1498_1_109" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_151_tr" type="ptw" depart="147.87">
+        <route edges="1881 2609 -3411 -1263 -518 -379 -158 -43 -15 3 19 51 412 782 1634 2345 3072 4646 -6729 -5515 -4533 -2964 -2231 -1514 -400 -268 -52 -24 26 -42 43 158 379 520 894 1281 1881"/>
+        <stop parkingArea="parkingArea_-6729_1_99" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_569_tr" type="ptw" depart="148.95">
+        <route edges="-2635 -1883 1873 -1259 -518 -379 -158 -43 42 372 784 1237 2346 2353 3087 3797 4664 -4664 -3797 -3087 -2353 -2346 -1237 -784 -372 -42 43 158 379 518 1259 -1873 1883 2635 -2635"/>
+        <stop parkingArea="parkingArea_4664_1_71" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_368_tr" type="ptw" depart="149.16">
+        <route edges="-4539 -3671 -2340 -1132 -752 -402 -382 386 648 1010 1992 -1750 -1239 1247 1754 2372 -3784 -3083 3081 -3558 -2016 -1487 -1016 -648 -386 382 402 752 1132 2340 3671 4539 -4539"/>
+        <stop parkingArea="parkingArea_2372_1_59" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_463_tr" type="ptw" depart="150.29">
+        <route edges="3517 -3517 -2505 -1870 -1267 -518 -379 -158 -43 -15 3 19 51 402 752 1132 2340 3681 5650 -5650 -3681 -2340 -1132 -752 -402 -51 -19 -3 15 43 158 379 518 1267 1870 2505 3517"/>
+        <stop parkingArea="parkingArea_5650_1_10" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_554_tr" type="ptw" depart="150.38">
+        <route edges="-5506 -4529 -3565 -1498 -1022 -648 -386 382 402 752 1130 -1133 -754 -402 -382 386 648 1022 1498 3565 4529 5506 -5506"/>
+        <stop parkingArea="parkingArea_1130_1_19" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_461_tr" type="ptw" depart="151.01">
+        <route edges="-1881 1873 -1259 -518 -379 -158 -43 -15 3 19 51 402 752 1132 2338 -1524 -1133 -754 -402 -51 -19 -3 15 43 158 379 518 1263 3411 -2609 -1881"/>
+        <stop parkingArea="parkingArea_2338_1_17" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_101_tr" type="ptw" depart="151.03">
+        <route edges="2353 3081 -3558 -2016 1994 2740 -1490 1494 2124 -2227 2235 2965 -2965 -2235 2227 -2124 -1494 -1022 1010 1992 -1750 1740 2353"/>
+        <stop parkingArea="parkingArea_-2965_1_101" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_88_tr" type="ptw" depart="151.89">
+        <route edges="23 -27 29 -43 42 372 784 1237 2347 2372 -2372 -1754 -1248 -788 -372 -42 -15 3 23"/>
+        <stop parkingArea="parkingArea_2372_1_59" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_31_tr" type="ptw" depart="152.07">
+        <route edges="2341 -2235 -1514 -400 -268 -52 -24 26 372 788 1258 1762 2388 -2388 -1762 -1258 -788 -372 -26 24 52 268 400 1514 2235 -2341 2341"/>
+        <stop parkingArea="parkingArea_-2388_0_53" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_280_tr" type="ptw" depart="153.71">
+        <route edges="19 51 412 782 1634 2345 3072 4646 -6729 -5515 -4533 -2964 -2231 -1514 -400 -268 -52 -21 19"/>
+        <stop parkingArea="parkingArea_-6729_1_99" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_529_tr" type="ptw" depart="153.87">
+        <route edges="-4533 -2964 -2231 2235 -2235 2231 2964 4533 -4533"/>
+        <stop parkingArea="parkingArea_-2235_2_100" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_439_tr" type="ptw" depart="155.56">
+        <route edges="-7046 -5787 -4675 -3903 -3191 -2384 -2347 2346 -1740 1750 -1992 -1010 -648 -386 -268 -52 -24 26 372 784 1237 2347 2384 3191 3903 4675 5791 7047 -7046"/>
+        <stop parkingArea="parkingArea_-386_1_87" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_55_tr" type="ptw" depart="157.87">
+        <route edges="2345 3068 -2965 -2341 2345"/>
+        <stop parkingArea="parkingArea_-2965_1_101" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_145_tr" type="ptw" depart="158.27">
+        <route edges="2340 -2340 -1132 -752 780 1634 2341 -2235 -1514 -400 382 402 752 1132 2340"/>
+        <stop parkingArea="parkingArea_-2235_2_100" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_223_tr" type="ptw" depart="158.39">
+        <route edges="-3797 -3087 -2353 -1740 1750 -1992 -1010 -648 -386 382 402 780 1634 2345 -2345 -1634 -780 -402 -382 386 648 1016 1487 2016 3558 -3081 3087 3797 -3797"/>
+        <stop parkingArea="parkingArea_2345_2_96" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_427_tr" type="ptw" depart="158.79">
+        <route edges="-5156 -4297 -3541 -2625 2625 3541 4297 5156 -5156"/>
+        <stop parkingArea="parkingArea_2625_1_5" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_527_tr" type="ptw" depart="158.97">
+        <route edges="4642 -4531 -2964 -2231 -1514 -400 -268 -52 -24 26 372 788 1258 1762 2388 -2388 -1762 -1258 -788 -372 -26 24 52 268 400 1514 2231 2964 4531 -4642 4642"/>
+        <stop parkingArea="parkingArea_-2388_0_53" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_578_tr" type="ptw" depart="160.28">
+        <route edges="2738 -2016 1994 2740 -1490 1494 2124 -2227 2235 2965 -2965 -2235 2227 -2124 -1494 -1022 1010 1991 2738"/>
+        <stop parkingArea="parkingArea_-2965_1_101" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_303_tr" type="ptw" depart="162.61">
+        <route edges="-3557 -2748 -1994 2016 3558 -3081 3087 3799 4672 5767 6919 -7022 -5781 -4672 -3799 -3087 3081 -3558 -2016 1994 2748 3557 -3557"/>
+        <stop parkingArea="parkingArea_6919_1_67" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_83_tr" type="ptw" depart="162.84">
+        <route edges="-2964 -2231 -1514 -400 -268 -52 -24 26 -42 43 158 379 518 1259 -1873 1873 -1259 -518 -379 -158 -43 42 -26 24 52 268 400 1514 2231 2964 -2964"/>
+        <stop parkingArea="parkingArea_-1873_1_12" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_470_tr" type="ptw" depart="162.94">
+        <route edges="-6590 -3557 -2748 -1994 2016 3558 -3081 3087 3799 4672 5767 6919 -7022 -5781 -4672 -3799 -3087 3081 -3558 -2016 1994 2748 3557 6590 -6727 6727 -6590"/>
+        <stop parkingArea="parkingArea_6919_1_67" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_468_tr" type="ptw" depart="163.52">
+        <route edges="-4948 -4260 -3530 -1872 -1267 -518 -379 -158 -43 -15 3 19 51 412 782 1634 -1634 -780 -402 -51 -19 -3 15 43 158 379 518 1267 1872 3530 4260 4948 -4948"/>
+        <stop parkingArea="parkingArea_-1634_1_95" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_93_tr" type="ptw" depart="163.91">
+        <route edges="-1239 1239 1750 -1992 -1010 -648 -386 382 402 -402 -382 386 648 1010 1992 -1750 -1239"/>
+        <stop parkingArea="parkingArea_402_1_85" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_557_tr" type="ptw" depart="164.48">
+        <route edges="-3559 -3555 -2748 -1994 2016 3558 -3081 3087 3797 4664 -4664 -3797 -3087 3081 -3558 -2016 1994 2748 3555 3559 -3559"/>
+        <stop parkingArea="parkingArea_4664_1_71" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_87_tr" type="ptw" depart="164.74">
+        <route edges="-4151 -2503 -1870 -1267 -518 -379 -158 -29 41 -373 379 518 1267 1872 3530 4254 -4151"/>
+        <stop parkingArea="parkingArea_41_1_77" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_150_tr" type="ptw" depart="164.97">
+        <route edges="-1992 1992 -1750 -1239 -784 -372 -42 43 158 379 518 1267 1870 2503 -3518 -1872 -1267 -518 -379 -158 -43 42 372 784 1239 1750 -1992"/>
+        <stop parkingArea="parkingArea_2503_1_35" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_8_tr" type="ptw" depart="165.09">
+        <route edges="2347 2384 3191 3903 4681 -4794 4808 -4808 4794 -4681 -3903 -3191 -2384 -2347 2347"/>
+        <stop parkingArea="parkingArea_-4808_1_47" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_570_tr" type="ptw" depart="165.13">
+        <route edges="4151 -4254 -3530 -1872 -1267 -518 -379 -158 -43 -15 3 19 51 -382 386 648 1010 1992 -1750 -1239 -784 -372 -42 43 158 379 518 1267 1872 3518 4151"/>
+        <stop parkingArea="parkingArea_648_1_88" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_11_tr" type="ptw" depart="165.61">
+        <route edges="-3559 -2858 -1490 1494 2124 -2227 2231 2964 -2964 -2231 2227 -2124 -1494 1498 -3559"/>
+        <stop parkingArea="parkingArea_-2964_2_102" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_382_tr" type="ptw" depart="166.09">
+        <route edges="5762 -5763 -4666 -3799 -3087 -2353 -1740 1750 -1992 -1010 1022 1494 2124 -2227 2235 -2341 -1634 -780 -402 -382 386 648 1016 1487 2016 3558 -3081 3087 3797 4652 5762"/>
+        <stop parkingArea="parkingArea_-1634_1_95" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_371_tr" type="ptw" depart="166.73">
+        <route edges="-5272 -4403 -3554 -2635 -1883 1873 -1259 -518 -379 -158 -43 -15 3 19 -19 -3 15 43 158 379 518 1259 -1873 1883 2635 3554 4403 5272 -5272"/>
+        <stop parkingArea="parkingArea_-19_1_82" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_277_tr" type="ptw" depart="166.85">
+        <route edges="-2340 -1132 -752 -402 -382 386 648 1016 1487 2016 3558 -3081 3087 3799 4666 5763 -5763 -4666 -3799 -3087 -2353 -1740 1750 -1992 -1010 -648 -386 382 402 752 1132 2340 -2340"/>
+        <stop parkingArea="parkingArea_5763_2_72" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_360_tr" type="ptw" depart="167.18">
+        <route edges="-1991 1992 -1750 -1239 -784 -372 -26 -5 15 42 372 784 1237 2346 2349 -2739 -1991"/>
+        <stop parkingArea="parkingArea_-5_0_79" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_394_tr" type="ptw" depart="168.19">
+        <route edges="1259 -1873 1873 -1259 1259"/>
+        <stop parkingArea="parkingArea_-1873_1_12" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_592_tr" type="ptw" depart="168.4">
+        <route edges="-3565 -1498 -1022 1010 1992 -1750 1740 2353 3087 3799 4665 5754 -5754 -4665 -3799 -3087 -2353 -1740 1750 -1992 -1010 1022 1498 3565 -3565"/>
+        <stop parkingArea="parkingArea_5754_1_64" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_116_tr" type="ptw" depart="168.42">
+        <route edges="-4681 -3903 -3191 -2384 -2347 -1237 -784 -372 -42 43 158 379 -379 -158 -43 42 372 784 1237 2347 2384 3191 3903 4681 -4681"/>
+        <stop parkingArea="parkingArea_379_0_74" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_495_tr" type="ptw" depart="168.43">
+        <route edges="4672 -4672 -3799 -3087 -2353 -1740 1750 -1992 -1010 -648 -386 382 402 752 1132 2340 -2340 -1132 -752 -402 -382 386 648 1016 1487 2016 3558 -3081 3087 3799 4672"/>
+        <stop parkingArea="parkingArea_-2340_1_9" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_567_tr" type="ptw" depart="168.65">
+        <route edges="-41 -11 3 19 51 -382 -268 -52 -24 -5 11 41 -41"/>
+        <stop parkingArea="parkingArea_-382_1_86" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_401_tr" type="ptw" depart="168.92">
+        <route edges="-4817 4817 6040 -6040 -4817"/>
+        <stop parkingArea="parkingArea_6040_1_27" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_195_tr" type="ptw" depart="169.11">
+        <route edges="41 -373 379 518 1267 1872 3530 4260 4948 6152 -6036 -4817 -4149 -3518 -1872 -1267 -518 -379 -158 -29 41"/>
+        <stop parkingArea="parkingArea_-6036_1_28" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_215_tr" type="ptw" depart="170.59">
+        <route edges="-648 -386 386 648 1022 1498 -1498 -1022 -648"/>
+        <stop parkingArea="parkingArea_1498_1_109" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_207_tr" type="ptw" depart="171.01">
+        <route edges="5620 -4539 -3671 -2340 -1132 -752 -402 -51 -19 -3 15 43 158 379 518 1259 -1873 1883 2635 -2635 -1883 1873 -1259 -518 -379 -158 -43 -15 3 19 51 402 752 1132 2340 3681 5620"/>
+        <stop parkingArea="parkingArea_-2635_1_6" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_74_tr" type="ptw" depart="171.63">
+        <route edges="3919 -3919 -3195 -2384 -2347 2346 -1740 -1239 1237 2347 2384 3195 3919"/>
+        <stop parkingArea="parkingArea_-1239_1_90" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_309_tr" type="ptw" depart="172.7">
+        <route edges="-4539 -3671 -2340 -1132 -752 -402 -382 386 648 1016 1489 -1489 -1016 -648 -386 382 402 752 1132 2340 3671 4539 -4539"/>
+        <stop parkingArea="parkingArea_-1489_2_111" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_452_tr" type="ptw" depart="173.22">
+        <route edges="2354 -2349 -2346 2347 2384 3191 3903 -3903 -3191 -2384 -2347 2346 2349 -2354 2354"/>
+        <stop parkingArea="parkingArea_-3903_1_55" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_154_tr" type="ptw" depart="173.63">
+        <route edges="-3539 -3411 -1263 -518 -379 -158 -43 42 372 784 1239 1750 -1992 -1010 1022 1490 2858 3559 -1498 -1022 1010 1992 -1750 -1239 -784 -372 -42 43 158 379 518 1259 -3539"/>
+        <stop parkingArea="parkingArea_2858_2_110" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_459_tr" type="ptw" depart="174.46">
+        <route edges="-3539 -3411 -1263 -518 -379 -158 -43 -15 3 19 51 402 780 -782 -412 -51 -19 -3 15 43 158 379 518 1259 -3539"/>
+        <stop parkingArea="parkingArea_780_1_94" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_498_tr" type="ptw" depart="175.09">
+        <route edges="4642 -4531 -2964 -2231 -1514 -400 -268 -52 -24 26 372 784 1237 2347 2372 -3784 -3083 3081 -3558 -2016 -1487 -1016 -648 -386 400 1514 2231 2964 4531 -4642 4642"/>
+        <stop parkingArea="parkingArea_2372_1_59" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_447_tr" type="ptw" depart="175.51">
+        <route edges="-4666 -3799 -3087 -2353 -2346 -1237 -784 -372 372 784 1237 2346 2353 3087 3799 4666 -4666"/>
+        <stop parkingArea="parkingArea_-372_1_76" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_181_tr" type="ptw" depart="177.33">
+        <route edges="52 268 382 402 752 1132 2340 3671 4539 -4539 -3671 -2340 -1132 -752 -402 -382 -268 -52 52"/>
+        <stop parkingArea="parkingArea_4539_1_8" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_239_tr" type="ptw" depart="177.49">
+        <route edges="-2384 -1754 -1248 1258 1762 -1762 1762 2388 3302 -3195 -2384"/>
+        <stop parkingArea="parkingArea_-1762_1_52" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_329_tr" type="ptw" depart="177.75">
+        <route edges="3308 -4022 -2386 -1762 -1258 -788 -372 -26 24 52 268 400 1514 2231 2962 -2965 -2235 -1514 -400 -268 -52 -24 26 372 788 1258 1762 2388 3308"/>
+        <stop parkingArea="parkingArea_-2965_1_101" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_114_tr" type="ptw" depart="178.96">
+        <route edges="372 788 1258 1766 2397 4809 5903 7161 -7264 7264 -7161 -5903 -4809 -2397 -1766 -1258 -788 -372 372"/>
+        <stop parkingArea="parkingArea_-7264_1_48" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_361_tr" type="ptw" depart="179.76">
+        <route edges="-754 -402 -51 -19 -3 15 43 158 379 518 1267 1872 3518 -3518 -1872 -1267 -518 -379 -158 -43 -15 3 19 51 402 752 1130 -1133 -754"/>
+        <stop parkingArea="parkingArea_3518_1_33" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_586_tr" type="ptw" depart="180.92">
+        <route edges="-2231 -1514 -400 386 648 1016 1487 2016 3558 -3081 3083 3794 4650 5754 -5754 -4650 -3794 -3083 3081 -3558 -2016 -1487 -1016 -648 -386 400 1514 2231 -2231"/>
+        <stop parkingArea="parkingArea_5754_1_64" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_365_tr" type="ptw" depart="181.11">
+        <route edges="7047 -7046 -5787 -4675 -3903 -3191 -2384 -2347 2346 2349 -2354 2370 -2370 2354 -2349 -2346 2347 2384 3191 3903 4675 5791 7047"/>
+        <stop parkingArea="parkingArea_2370_2_92" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_380_tr" type="ptw" depart="181.86">
+        <route edges="3557 -3557 -2748 -1994 2016 3558 -3081 3087 3797 4652 -4652 -3797 -3087 3081 -3558 -2016 1994 2748 3557"/>
+        <stop parkingArea="parkingArea_-4652_1_70" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_538_tr" type="ptw" depart="181.9">
+        <route edges="-3541 -2625 2609 -3411 -1263 -518 -379 -158 -43 42 372 788 1258 1766 2397 -2396 -1762 -1258 -788 -372 -42 43 158 379 520 894 1281 1881 2625 3541 4297 -4297 -3541"/>
+        <stop parkingArea="parkingArea_-2396_2_51" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_405_tr" type="ptw" depart="182.37">
+        <route edges="3565 -3565 -1498 -1022 1010 1992 2370 -2370 -1992 -1010 1022 1498 3565"/>
+        <stop parkingArea="parkingArea_2370_2_92" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_313_tr" type="ptw" depart="182.39">
+        <route edges="788 -788 -372 -42 -15 3 19 51 402 -402 -382 -268 -52 -24 26 372 788"/>
+        <stop parkingArea="parkingArea_402_1_85" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_362_tr" type="ptw" depart="183.05">
+        <route edges="-2354 -1750 -1239 -784 -372 -42 43 158 379 518 1267 1872 3538 4291 -6255 -5052 -4279 -3538 -1872 -1267 -518 -379 -158 -43 42 372 784 1237 2346 2349 -2354"/>
+        <stop parkingArea="parkingArea_-5052_1_39" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_67_tr" type="ptw" depart="184.44">
+        <route edges="-5510 -4529 -3565 -1498 -1022 -648 -386 -268 -52 -21 23 -27 -11 5 24 52 268 386 648 1022 1498 3565 4529 5510 -5510"/>
+        <stop parkingArea="parkingArea_23_0_81" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_534_tr" type="ptw" depart="184.92">
+        <route edges="-3068 -2345 -1634 -780 -402 -382 386 648 1010 1992 -1750 -1239 -784 -372 -26 24 52 268 400 1514 2231 2962 -3068"/>
+        <stop parkingArea="parkingArea_-1239_1_90" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_555_tr" type="ptw" depart="185.27">
+        <route edges="-1010 -648 -386 -268 -52 -24 -5 15 42 372 784 1239 1750 -1992 -1010"/>
+        <stop parkingArea="parkingArea_-5_0_79" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_390_tr" type="ptw" depart="185.28">
+        <route edges="-5620 -3681 -2340 -1132 -752 -402 -51 -19 -3 11 41 -41 -11 3 19 51 402 752 1132 2340 3671 4539 -5620"/>
+        <stop parkingArea="parkingArea_41_1_77" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_199_tr" type="ptw" depart="185.8">
+        <route edges="-2354 -1750 -1239 -784 -372 -42 43 158 379 518 1259 -1873 1873 -1259 -518 -379 -158 -43 42 372 784 1237 2346 2349 -2354"/>
+        <stop parkingArea="parkingArea_-1873_1_12" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_98_tr" type="ptw" depart="185.84">
+        <route edges="-1750 -1239 1237 2347 2384 3191 3903 4675 5787 -5787 -4675 -3903 -3191 -2384 -2347 2346 2349 -2354 -1750"/>
+        <stop parkingArea="parkingArea_-5787_1_44" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_457_tr" type="ptw" depart="186.2">
+        <route edges="3411 -3411 -1263 -518 -379 -158 -43 42 -26 24 52 268 386 648 1010 1992 -1750 -1239 -784 -372 -42 43 158 379 518 1263 3411"/>
+        <stop parkingArea="parkingArea_648_1_88" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_46_tr" type="ptw" depart="186.25">
+        <route edges="4672 -4672 -3799 -3087 -2353 -2346 2347 2384 3195 -3302 -2388 -1762 -1258 1248 1754 2372 -3784 -3083 3087 3799 4672"/>
+        <stop parkingArea="parkingArea_-1762_1_52" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_118_tr" type="ptw" depart="187.99">
+        <route edges="-894 -520 -379 -158 -43 42 372 784 1239 1750 -1750 -1239 -784 -372 -42 43 158 379 520 894 1281 -1281 -894"/>
+        <stop parkingArea="parkingArea_1750_0_91" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_389_tr" type="ptw" depart="189.07">
+        <route edges="3411 -3411 -1263 -518 -379 -158 -43 42 372 784 1237 2347 2384 3191 3903 4675 5791 7047 -7046 -5787 -4675 -3903 -3191 -2384 -2347 -1237 -784 -372 -42 43 158 379 518 1263 3411"/>
+        <stop parkingArea="parkingArea_7047_2_42" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_336_tr" type="ptw" depart="189.24">
+        <route edges="5517 -5517 -4533 -2964 -2231 -1514 -400 -268 -52 -24 26 372 784 1237 2347 2384 3191 -3191 -2384 -2347 -1237 -784 -372 -26 24 52 268 400 1514 2231 2964 4533 5517"/>
+        <stop parkingArea="parkingArea_-3191_1_56" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_332_tr" type="ptw" depart="189.31">
+        <route edges="-4291 -3538 -1872 -1267 -518 -379 -158 -43 42 -26 24 52 268 400 1514 2231 2964 -2964 -2231 -1514 -400 -268 -52 -24 26 -42 43 158 379 518 1267 1872 3538 4291 -6255 6255 -4291"/>
+        <stop parkingArea="parkingArea_-2964_2_102" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_399_tr" type="ptw" depart="190.66">
+        <route edges="2965 -2965 -2235 -1514 -400 -268 -52 -21 23 -27 -11 5 24 52 268 400 1514 2235 2965"/>
+        <stop parkingArea="parkingArea_23_0_81" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_451_tr" type="ptw" depart="191.14">
+        <route edges="-2625 2609 -3411 -1263 -518 -379 -158 -43 42 372 784 1237 2346 2349 -2739 2738 -2016 1994 2748 3557 6586 -4525 -3565 -1498 -1022 1010 1992 -1750 -1239 -784 -372 -42 43 158 379 520 894 1281 1881 2625 -2625"/>
+        <stop parkingArea="parkingArea_3557_0_114" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_486_tr" type="ptw" depart="191.74">
+        <route edges="4297 -4297 -3541 -2625 2609 -3411 -1263 -518 -379 -158 -43 -15 3 19 51 402 752 1132 2340 3681 5650 -5650 -3681 -2340 -1132 -752 -402 -51 -19 -3 15 43 158 379 520 894 1281 1881 2625 3541 4297"/>
+        <stop parkingArea="parkingArea_5650_1_10" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_350_tr" type="ptw" depart="193.56">
+        <route edges="4664 -4666 4672 5767 6919 -7022 -5781 -4672 4666 -4664 4664"/>
+        <stop parkingArea="parkingArea_6919_1_67" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_462_tr" type="ptw" depart="194.95">
+        <route edges="-5762 -4652 -3797 -3087 -2353 -2346 2347 2384 3191 3903 4681 -4794 4794 -4681 -3903 -3191 -2384 -2347 2346 2353 3087 3799 4666 5763 -5762"/>
+        <stop parkingArea="parkingArea_-4794_2_45" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_84_tr" type="ptw" depart="196.79">
+        <route edges="-6590 -3557 -2748 -1994 2016 3558 -3081 3083 3794 4650 -4650 -3794 -3083 3081 -3558 -2016 1994 2748 3557 6590 -6727 6727 -6590"/>
+        <stop parkingArea="parkingArea_4650_1_63" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_109_tr" type="ptw" depart="197.23">
+        <route edges="-6894 -5754 -4650 -3794 3784 4673 -3199 3195 -3302 -2388 -1762 -1258 1248 1754 2372 -3784 -3083 3087 3799 4672 5767 6915 -6894"/>
+        <stop parkingArea="parkingArea_-1762_1_52" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_266_tr" type="ptw" depart="197.64">
+        <route edges="-1494 1490 -2740 -1994 2016 3558 -3081 3083 3794 4650 -4650 -3794 -3083 3081 -3558 -2016 1994 2740 -1490 1494 2124 -2227 2227 -2124 -1494"/>
+        <stop parkingArea="parkingArea_4650_1_63" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_388_tr" type="ptw" depart="197.99">
+        <route edges="4687 -4681 -3903 -3191 -2384 -2347 -1237 -784 -372 -42 43 -43 42 372 784 1237 2347 2384 3195 3919 4687"/>
+        <stop parkingArea="parkingArea_-43_1_75" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_139_tr" type="ptw" depart="199.01">
+        <route edges="-3191 -2384 -2347 2346 2349 -2354 2370 -2370 2354 -2349 -2346 2347 2384 3191 -3191"/>
+        <stop parkingArea="parkingArea_2370_2_92" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_149_tr" type="ptw" depart="199.98">
+        <route edges="1239 1740 -2346 2347 2384 3191 3903 4681 -4794 4808 -4808 4794 -4681 -3903 -3191 -2384 -2347 -1237 1239"/>
+        <stop parkingArea="parkingArea_-4808_1_47" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_381_tr" type="ptw" depart="200.0">
+        <route edges="-4682 4682 -4673 -3784 -3083 -2353 -1740 1750 2354 3080 -3081 3083 3784 4673 -4682"/>
+        <stop parkingArea="parkingArea_1750_0_91" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_268_tr" type="ptw" depart="200.7">
+        <route edges="4817 6034 -4254 -3530 -1872 -1267 -518 -379 -158 -43 42 372 784 1239 1750 -1992 -1010 1022 1498 -1498 -1022 1010 1992 -1750 -1239 -784 -372 -42 43 158 379 518 1267 1872 3518 4149 4817"/>
+        <stop parkingArea="parkingArea_1498_1_109" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_212_tr" type="ptw" depart="200.91">
+        <route edges="-6729 -5515 -4533 -2964 -2231 -1514 -400 -268 -52 -24 26 -42 43 158 379 518 1259 -906 -520 -379 -158 -43 -15 3 19 51 412 782 1634 2345 3072 4646 -6729"/>
+        <stop parkingArea="parkingArea_-906_1_14" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_146_tr" type="ptw" depart="201.52">
+        <route edges="-2235 -1514 -400 386 648 -648 -386 400 1514 2235 -2235"/>
+        <stop parkingArea="parkingArea_-386_1_87" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_28_tr" type="ptw" depart="201.74">
+        <route edges="-6710 -5506 -4529 -3565 -1498 -1022 -648 -386 382 402 752 1132 2340 3681 5650 -5650 -3681 -2340 -1132 -752 -402 -382 386 648 1022 1498 3565 4529 5506 6710 -6710"/>
+        <stop parkingArea="parkingArea_5650_1_10" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_559_tr" type="ptw" depart="202.23">
+        <route edges="-4672 -3799 -3087 -2353 -2346 2347 2372 -3784 -3083 3087 3799 4672 -4672"/>
+        <stop parkingArea="parkingArea_2372_1_59" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_494_tr" type="ptw" depart="202.98">
+        <route edges="-5506 -4529 -3565 -1498 -1022 1010 1992 -1750 -1239 -784 -372 -42 43 158 379 520 894 1281 1881 2625 3541 4297 -4297 -3541 -2625 2609 -3411 -1263 -518 -379 -158 -43 42 372 784 1239 1750 -1992 -1010 1022 1498 3565 4529 5506 -5506"/>
+        <stop parkingArea="parkingArea_4297_1_3" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_267_tr" type="ptw" depart="203.33">
+        <route edges="2341 -2235 -1514 -400 -268 -52 -24 26 -42 43 158 379 518 1267 1872 3530 4260 4948 -4948 -4260 -3530 -1872 -1267 -518 -379 -158 -43 -15 3 19 51 412 782 1634 2341"/>
+        <stop parkingArea="parkingArea_-4948_1_30" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_75_tr" type="ptw" depart="203.64">
+        <route edges="-382 -268 -52 -24 26 -42 43 158 379 518 1267 1872 3518 -2503 -1870 -1267 -518 -379 -158 -43 -15 3 19 51 -382"/>
+        <stop parkingArea="parkingArea_-2503_2_34" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_172_tr" type="ptw" depart="204.38">
+        <route edges="-3559 -3555 3557 6590 -6727 6728 -4525 -3565 -3559"/>
+        <stop parkingArea="parkingArea_6728_2_115" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_202_tr" type="ptw" depart="204.57">
+        <route edges="373 -41 -11 5 -5 11 41 -373 373"/>
+        <stop parkingArea="parkingArea_-5_0_79" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_423_tr" type="ptw" depart="204.83">
+        <route edges="-3068 -2345 -1634 -780 -402 -51 -19 -3 15 43 158 379 518 1267 1872 3530 4274 -4275 -3538 -1872 -1267 -518 -379 -158 -43 42 -26 24 52 268 400 1514 2231 2962 -3068"/>
+        <stop parkingArea="parkingArea_-4275_1_36" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_50_tr" type="ptw" depart="204.89">
+        <route edges="-5931 -4808 4794 -4687 -3919 -3302 3308 4045 4808 5931 -5931"/>
+        <stop parkingArea="parkingArea_-3302_1_54" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_119_tr" type="ptw" depart="205.19">
+        <route edges="4809 -4809 -2397 -1766 -1258 -788 -372 -26 24 52 268 400 1514 2231 2964 -2964 -2231 -1514 -400 -268 -52 -24 26 372 788 1258 1766 2397 4809"/>
+        <stop parkingArea="parkingArea_-2964_2_102" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_510_tr" type="ptw" depart="205.22">
+        <route edges="3308 -4022 -2386 -1762 -1258 -788 -372 -42 43 158 379 520 894 1281 1873 -1259 -518 -379 -158 -43 42 372 788 1258 1762 2388 3308"/>
+        <stop parkingArea="parkingArea_1873_1_13" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_315_tr" type="ptw" depart="205.48">
+        <route edges="-42 -15 3 19 51 402 752 1132 2340 3671 4539 -4539 -3671 -2340 -1132 -752 -402 -382 -268 -52 -24 26 -42"/>
+        <stop parkingArea="parkingArea_4539_1_8" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_232_tr" type="ptw" depart="205.87">
+        <route edges="-7057 -5904 5910 -5911 5931 7264 -7161 -5903 -4026 4022 4045 4793 5904 7057 -7057"/>
+        <stop parkingArea="parkingArea_-5903_2_49" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_580_tr" type="ptw" depart="206.59">
+        <route edges="-2748 -1994 -1487 -1016 -648 -386 382 402 -402 -382 386 648 1016 1487 1994 2748 -2748"/>
+        <stop parkingArea="parkingArea_402_1_85" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_397_tr" type="ptw" depart="206.83">
+        <route edges="-2345 -1634 -782 781 -400 -268 -52 -24 26 372 788 1258 1762 -1762 -1258 -788 -372 -26 24 52 268 400 1514 2231 2962 -3068 -2345"/>
+        <stop parkingArea="parkingArea_-1762_1_52" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_94_tr" type="ptw" depart="207.75">
+        <route edges="52 268 382 402 -402 -382 -268 -52 52"/>
+        <stop parkingArea="parkingArea_402_1_85" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_345_tr" type="ptw" depart="207.84">
+        <route edges="2635 3554"/>
+        <stop parkingArea="parkingArea_3554_1_7" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_36_tr" type="ptw" depart="208.45">
+        <route edges="-5514 -4531 -2964 -2231 -1514 -400 -268 -52 -24 26 372 -372 -26 24 52 268 400 1514 2231 2964 4533 5515 -5514"/>
+        <stop parkingArea="parkingArea_-372_1_76" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_383_tr" type="ptw" depart="208.45">
+        <route edges="-4027 -4022 -2386 -1762 -1258 -788 -372 -42 43 158 379 518 1259 -1873 1883 2635 -2635 -1883 1873 -1259 -518 -379 -158 -43 42 372 788 1258 1762 2386 4022 4027 -4027"/>
+        <stop parkingArea="parkingArea_-2635_1_6" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_147_tr" type="ptw" depart="211.22">
+        <route edges="2345 -2345 2341 -2235 2227 -2124 -1494 1498 3565 4507 5398 6598 -6598 -5398 -4507 -3565 -1498 1494 2124 -2227 2235 -2341 2345"/>
+        <stop parkingArea="parkingArea_6598_1_120" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_297_tr" type="ptw" depart="211.33">
+        <route edges="-4672 -3799 -3087 -2353 -2346 -1237 -784 -372 -42 43 158 379 518 1259 -1259 -518 -379 -158 -43 42 372 784 1239 1740 2353 3087 3799 4672 -4672"/>
+        <stop parkingArea="parkingArea_-1259_1_15" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_287_tr" type="ptw" depart="211.37">
+        <route edges="-5156 -4297 -3541 -2625 2609 -3411 -1263 -518 -379 -158 -29 27 -23 23 -27 29 158 379 520 894 1281 1881 2625 3541 4297 5156 -5156"/>
+        <stop parkingArea="parkingArea_-23_2_80" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_218_tr" type="ptw" depart="212.87">
+        <route edges="-2235 2235 -2341 -1634 -780 754 1133 -1130 -752 780 1634 2341 -2235"/>
+        <stop parkingArea="parkingArea_-1130_1_20" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_194_tr" type="ptw" depart="213.24">
+        <route edges="3302 -3195 -2384 -2347 -1237 -784 -372 -42 43 158 379 518 1267 1872 3518 -3518 -1872 -1267 -518 -379 -158 -43 42 372 788 1258 1762 2388 3302"/>
+        <stop parkingArea="parkingArea_3518_1_33" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_372_tr" type="ptw" depart="213.49">
+        <route edges="-1766 -1258 -788 -372 -42 -15 3 19 51 -382 -268 -52 -24 26 372 788 1258 1766 2397 -2397 -1766"/>
+        <stop parkingArea="parkingArea_-382_1_86" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_100_tr" type="ptw" depart="214.25">
+        <route edges="4793 -4793 -4045 -3308 -2388 -1762 -1258 -788 -372 -42 -15 3 19 51 402 752 1132 2340 3671 4539 -4539 -3671 -2340 -1132 -752 -402 -382 -268 -52 -24 26 372 788 1258 1762 2386 4022 4045 4793"/>
+        <stop parkingArea="parkingArea_4539_1_8" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_327_tr" type="ptw" depart="214.54">
+        <route edges="-1487 -1016 1010 1992 -1750 -1239 -784 -372 -42 43 158 379 520 894 1281 1881 2625 3541 4297 5156 6377 -6377 -5156 -4297 -3541 -2625 2609 -3411 -1263 -518 -379 -158 -43 42 372 784 1239 1750 -1992 -1010 1016 1487 -1487"/>
+        <stop parkingArea="parkingArea_-6377_1_0" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_243_tr" type="ptw" depart="214.96">
+        <route edges="-3544 -2635 -1883 1873 -1259 -518 -379 -158 -43 42 372 788 1258 1762 2388 -2388 -1762 -1258 -788 -372 -42 43 158 379 518 1259 -1873 1883 2635 3544 -3544"/>
+        <stop parkingArea="parkingArea_-2388_0_53" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_33_tr" type="ptw" depart="215.35">
+        <route edges="-1498 -1022 -648 -386 382 -51 -19 23 -27 -11 5 24 52 268 386 648 1022 1498 -1498"/>
+        <stop parkingArea="parkingArea_-11_1_78" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_411_tr" type="ptw" depart="216.05">
+        <route edges="-782 -412 -51 -19 -3 15 43 158 379 518 1267 1872 3518 4149 4817 6034 -4254 -3530 -1872 -1267 -518 -379 -158 -43 -15 3 19 51 412 782 -782"/>
+        <stop parkingArea="parkingArea_4817_1_26" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_509_tr" type="ptw" depart="216.22">
+        <route edges="4794 -4794 4808 -4808 4794"/>
+        <stop parkingArea="parkingArea_-4808_1_47" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_337_tr" type="ptw" depart="216.25">
+        <route edges="-4525 -3565 -1498 -1022 1010 1992 -1750 -1239 -784 -372 -42 43 158 379 -379 -158 -43 42 372 784 1239 1750 -1992 -1010 1022 1498 3565 4525 -4525"/>
+        <stop parkingArea="parkingArea_379_0_74" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_503_tr" type="ptw" depart="216.44">
+        <route edges="-4922 -3517 -2505 -1870 -1267 -518 -379 -158 -43 -15 3 19 51 412 782 1634 2345 3072 4646 -4646 -3072 -2345 -1634 -780 -402 -51 -19 -3 15 43 158 379 518 1267 1870 2505 3517 4922 -4922"/>
+        <stop parkingArea="parkingArea_4646_2_98" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_182_tr" type="ptw" depart="216.84">
+        <route edges="-1130 -752 -402 -51 -19 19 51 402 752 1130 -1130"/>
+        <stop parkingArea="parkingArea_-19_1_82" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_122_tr" type="ptw" depart="217.24">
+        <route edges="-2962 -2231 -1514 -400 -268 -52 -24 26 -42 43 158 379 518 1259 -1873 1883 2635 3554 4403 5272 -5272 -4403 -3554 -2635 -1883 1873 -1259 -518 -379 -158 -43 42 -26 24 52 268 400 1514 2231 2962 -2962"/>
+        <stop parkingArea="parkingArea_3554_1_7" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_177_tr" type="ptw" depart="217.3">
+        <route edges="-6919 -5767 -4672 -3799 -3087 -2353 -2346 -1237 -784 -372 -42 43 158 379 518 1259 -1873 1883 2635 -2635 -1883 1873 -1259 -518 -379 -158 -43 42 372 784 1237 2346 2353 3087 3799 4672 5781 7022 -6919"/>
+        <stop parkingArea="parkingArea_-2635_1_6" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_108_tr" type="ptw" depart="217.38">
+        <route edges="-21 -3 15 42 372 788 1258 1762 2386 4022 4045 4808 -4808 -4045 -3308 -2388 -1762 -1258 -788 -372 -26 24 -21"/>
+        <stop parkingArea="parkingArea_-4808_1_47" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_179_tr" type="ptw" depart="217.38">
+        <route edges="-4922 -3517 -2505 -1870 -1267 -518 -379 379 518 1267 1870 2505 3517 4922 -4922"/>
+        <stop parkingArea="parkingArea_379_0_74" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_551_tr" type="ptw" depart="218.91">
+        <route edges="-4529 -3565 -1498 -1022 1010 1992 -1750 -1239 1237 2347 2384 3195 -3302 -2388 -1762 -1258 1248 -1247 1239 1750 -1992 -1010 1022 1498 3565 4529 -4529"/>
+        <stop parkingArea="parkingArea_-2388_0_53" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_299_tr" type="ptw" depart="219.15">
+        <route edges="-51 -19 -3 15 42 372 784 1239 1740 2353 -2353 -1740 1750 -1992 -1010 -648 -386 382 -51"/>
+        <stop parkingArea="parkingArea_-2353_2_60" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_279_tr" type="ptw" depart="219.21">
+        <route edges="2503 -3518 3538 4291 -6255 6255 -4291 -3538 3518 -2503 2503"/>
+        <stop parkingArea="parkingArea_4291_2_37" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_358_tr" type="ptw" depart="219.37">
+        <route edges="4149 -4149 -3518 -1872 -1267 -518 -379 -158 -43 42 -26 -5 11 41 -373 379 518 1267 1872 3518 4149"/>
+        <stop parkingArea="parkingArea_-5_0_79" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_584_tr" type="ptw" depart="219.73">
+        <route edges="-5903 -4809 -2397 -1766 -1258 -788 -372 -42 -15 3 19 51 402 -402 -382 -268 -52 -24 26 372 788 1258 1766 2397 4809 5903 7161 -7264 7264 -7161 -5903"/>
+        <stop parkingArea="parkingArea_402_1_85" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_72_tr" type="ptw" depart="219.96">
+        <route edges="-5799 -4675 -3903 -3191 -2384 -2347 -1237 -784 -372 -42 43 158 379 520 894 1281 1873 -1259 -518 -379 -158 -43 42 372 784 1237 2347 2384 3191 3903 4675 5799 -5799"/>
+        <stop parkingArea="parkingArea_1873_1_13" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_396_tr" type="ptw" depart="220.28">
+        <route edges="1750 -1750 -1239 -784 -372 -42 43 158 379 518 1267 -1267 -518 -379 -158 -43 42 372 784 1239 1750"/>
+        <stop parkingArea="parkingArea_-1267_1_16" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_417_tr" type="ptw" depart="221.8">
+        <route edges="-4642 -3072 -2345 -1634 -780 -402 -51 -19 -3 15 43 158 379 518 1267 1872 3518 -3518 -1872 -1267 -518 -379 -158 -43 42 -26 24 52 268 400 1514 2231 2964 4531 -4642"/>
+        <stop parkingArea="parkingArea_3518_1_33" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_301_tr" type="ptw" depart="222.86">
+        <route edges="-2388 -1762 -1258 -788 -372 -26 24 52 268 400 1514 2235 -2341 -1634 -782 781 -400 -268 -52 -24 26 372 788 1258 1762 2388 -2388"/>
+        <stop parkingArea="parkingArea_-1634_1_95" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_166_tr" type="ptw" depart="223.19">
+        <route edges="7046 -7047 -5791 -4675 -3903 -3191 -2384 -2347 -1237 -784 -372 -42 43 -43 42 372 784 1237 2347 2384 3191 3903 4675 5787 7046"/>
+        <stop parkingArea="parkingArea_-43_1_75" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_32_tr" type="ptw" depart="223.31">
+        <route edges="4793 -4793 -4045 -3308 3302 -3195 3199 -4673 -3784 -3083 3081 -3558 -2016 1994 2748 3557 6590 -6727 6728 -6586 -3557 -2748 -1994 2016 3558 -3081 3083 3784 4673 -3199 3195 -3302 3308 4045 4793"/>
+        <stop parkingArea="parkingArea_6728_2_115" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_369_tr" type="ptw" depart="223.77">
+        <route edges="-6902 -5760 -4652 -3797 -3087 -2353 -2346 -1237 -784 -372 -42 -15 3 23 -27 29 -43 42 372 784 1239 1740 2353 3087 3797 4652 5760 6902 -6902"/>
+        <stop parkingArea="parkingArea_23_0_81" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_269_tr" type="ptw" depart="223.79">
+        <route edges="-2347 -1237 -784 -372 -42 43 158 379 520 894 1281 1881 2625 3541 4297 -4297 -3541 -2625 2609 -3411 -1263 -518 -379 -158 -43 42 372 784 1237 2347 -2347"/>
+        <stop parkingArea="parkingArea_4297_1_3" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_572_tr" type="ptw" depart="223.83">
+        <route edges="-1994 2016 3558 -3081 -2353 -2346 -1237 -784 -372 -42 43 158 379 518 1267 1872 3538 4291 -6255 -5052 -4279 -3538 -1872 -1267 -518 -379 -158 -43 42 372 784 1239 1750 -1992 -1010 1022 1490 -2740 -1994"/>
+        <stop parkingArea="parkingArea_-5052_1_39" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_229_tr" type="ptw" depart="224.76">
+        <route edges="-784 784 1237 2346 2353 3087 3799 4665 5754 -5754 -4665 -3799 -3087 -2353 -2346 -1237 -784"/>
+        <stop parkingArea="parkingArea_5754_1_64" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_402_tr" type="ptw" depart="225.63">
+        <route edges="-4045 -4022 -2386 -1762 -1258 -788 -372 -42 -15 3 19 -19 -3 15 42 372 788 1258 1762 2386 4022 4045 -4045"/>
+        <stop parkingArea="parkingArea_-19_1_82" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_415_tr" type="ptw" depart="225.68">
+        <route edges="-1762 -1258 -788 -372 -26 24 52 268 400 1514 2235 -2235 -1514 -400 -268 -52 -24 26 372 788 1258 1762 -1762"/>
+        <stop parkingArea="parkingArea_-2235_2_100" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_85_tr" type="ptw" depart="226.19">
+        <route edges="-3797 3795 4650 -4650 -3795 3797 -3797"/>
+        <stop parkingArea="parkingArea_4650_1_63" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_434_tr" type="ptw" depart="226.52">
+        <route edges="-4811 -4149 -3518 -1872 -1267 -518 -379 -158 -43 42 372 788 1258 1762 -1762 -1258 -788 -372 -42 43 158 379 518 1267 1870 2505 3517 4920 -4811"/>
+        <stop parkingArea="parkingArea_-1762_1_52" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_124_tr" type="ptw" depart="228.03">
+        <route edges="-2341 -1634 -780 -402 -51 -19 -3 15 43 158 379 518 1259 -906 -520 -379 -158 -43 42 -26 24 52 268 400 1514 2235 -2341"/>
+        <stop parkingArea="parkingArea_-906_1_14" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_42_tr" type="ptw" depart="228.42">
+        <route edges="2739 -2349 -2346 -1237 -784 -372 -42 43 158 379 518 1267 1872 3518 4149 4811 -4920 -3517 -2505 -1870 -1267 -518 -379 -158 -43 42 372 784 1237 2346 2349 -2739 2739"/>
+        <stop parkingArea="parkingArea_-4920_1_24" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_410_tr" type="ptw" depart="229.09">
+        <route edges="-2231 -1514 -400 -268 -52 -24 26 -42 43 158 379 518 1267 1872 3530 4254 -6034 6036 -6152 -4948 -4260 -3530 -1872 -1267 -518 -379 -158 -43 42 -26 24 52 268 400 1514 2231 -2231"/>
+        <stop parkingArea="parkingArea_-6152_1_29" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_22_tr" type="ptw" depart="229.33">
+        <route edges="-6733 -5517 -4533 -2964 -2231 -1514 -400 386 648 1010 1992 2370 -2370 -1992 -1010 -648 -386 400 1514 2231 2964 4533 5517 6733 -6733"/>
+        <stop parkingArea="parkingArea_2370_2_92" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_82_tr" type="ptw" depart="229.62">
+        <route edges="2231 -2231 -1514 -400 -268 -52 -24 26 372 -372 -26 24 52 268 400 1514 2231"/>
+        <stop parkingArea="parkingArea_-372_1_76" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_45_tr" type="ptw" depart="230.3">
+        <route edges="7264 -7161 -5903 -4026 4022 4027 4687 -4681 -3903 -3191 3191 3903 4681 -4794 4808 5931 7264"/>
+        <stop parkingArea="parkingArea_-3191_1_56" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_583_tr" type="ptw" depart="230.47">
+        <route edges="1873 -1259 -518 -379 -158 -43 42 372 784 1237 2347 2384 3191 -3191 -2384 -2347 -1237 -784 -372 -42 43 158 379 520 894 1281 1873"/>
+        <stop parkingArea="parkingArea_-3191_1_56" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_66_tr" type="ptw" depart="231.93">
+        <route edges="-518 -379 -158 -43 42 372 784 1237 2347 2372 -3784 3794 4650 -4665 -3799 -3087 -2353 -2346 -1237 -784 -372 -42 43 158 379 518 -518"/>
+        <stop parkingArea="parkingArea_4650_1_63" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_318_tr" type="ptw" depart="232.4">
+        <route edges="-1883 1873 -1259 -518 -379 -158 -43 42 372 784 1237 2347 2384 3191 3903 4675 5787 -5787 -4675 -3903 -3191 -2384 -2347 -1237 -784 -372 -42 43 158 379 518 1259 -1873 1883 2635 -2635 -1883"/>
+        <stop parkingArea="parkingArea_-5787_1_44" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_306_tr" type="ptw" depart="232.46">
+        <route edges="2739 3080 -3558 -2016 1994 2740 2858 3559 -1498 -1022 1010 1991 2739"/>
+        <stop parkingArea="parkingArea_2858_2_110" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_444_tr" type="ptw" depart="233.32">
+        <route edges="-2962 -2231 -1514 -400 386 648 1016 1487 2016 3558 -3081 3087 -3087 -2353 -1740 1750 -1992 -1010 -648 -386 400 1514 2231 2962 -2962"/>
+        <stop parkingArea="parkingArea_3087_2_62" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_58_tr" type="ptw" depart="233.94">
+        <route edges="23 -27 29 -43 42 372 784 1237 2347 2384 3195 -3302 -2388 -1762 -1258 -788 -372 -42 -15 3 23"/>
+        <stop parkingArea="parkingArea_-3302_1_54" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_524_tr" type="ptw" depart="234.88">
+        <route edges="382 -51 -19 -3 15 43 158 379 518 1267 1872 3530 4260 -4260 -3530 -1872 -1267 -518 -379 -158 -43 42 -26 24 52 268 382"/>
+        <stop parkingArea="parkingArea_-4260_1_31" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_414_tr" type="ptw" depart="235.67">
+        <route edges="-3083 -2353 -1740 -1239 1247 1754 2372 -3784 -3083"/>
+        <stop parkingArea="parkingArea_-1239_1_90" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_245_tr" type="ptw" depart="236.7">
+        <route edges="-2235 -1514 -400 -268 -52 -24 26 -42 43 158 379 520 894 1281 1881 2625 3541 4297 5162 -5162 -4297 -3541 -2625 2609 -3411 -1263 -518 -379 -158 -43 42 -26 24 52 268 400 1514 2235 -2235"/>
+        <stop parkingArea="parkingArea_5162_1_2" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_502_tr" type="ptw" depart="236.74">
+        <route edges="-49 49 268 386 648 1016 1489 2858 -2858 -1489 -1016 -648 -386 -268 -49"/>
+        <stop parkingArea="parkingArea_2858_2_110" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_525_tr" type="ptw" depart="237.62">
+        <route edges="-1750 -1239 1237 2347 2384 3191 3903 4681 -4794 4794 -4681 -3903 -3191 -2384 -2347 2346 2349 -2354 -1750"/>
+        <stop parkingArea="parkingArea_-4794_2_45" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_376_tr" type="ptw" depart="237.73">
+        <route edges="-4672 -3799 -3087 -2353 -1740 1750 -1992 -1010 -648 -386 382 402 752 1132 2340 -2340 -1132 -752 -402 -382 386 648 1016 1487 2016 3558 -3081 3087 3799 4672 -4672"/>
+        <stop parkingArea="parkingArea_-2340_1_9" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_407_tr" type="ptw" depart="238.13">
+        <route edges="5506 -5506 -4529 -3565 -1498 -1022 1010 1992 -1750 -1239 1239 1750 -1992 -1010 1022 1498 3565 4529 5506"/>
+        <stop parkingArea="parkingArea_-1239_1_90" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_323_tr" type="ptw" depart="238.67">
+        <route edges="3302 -3195 3191 3903 4675 5791 7047 -7046 -5787 5799 -5904 -4793 -4045 -3308 3302"/>
+        <stop parkingArea="parkingArea_7047_2_42" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_363_tr" type="ptw" depart="240.15">
+        <route edges="-6739 -5517 -4533 -2964 -2231 -1514 -400 386 648 1016 1487 2016 3558 -3081 3083 3794 4650 -4650 -3794 -3083 3081 -3558 -2016 -1487 -1016 -648 -386 400 1514 2231 2964 4533 5517 6739 -6739"/>
+        <stop parkingArea="parkingArea_4650_1_63" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_393_tr" type="ptw" depart="240.59">
+        <route edges="-3199 -2384 -2347 -1237 -784 -372 -42 43 158 379 520 894 1281 1881 2625 3541 4297 5162 -5162 -4297 -3541 -2625 2609 -3411 -1263 -518 -379 -158 -43 42 372 784 1237 2347 2384 3199 -3199"/>
+        <stop parkingArea="parkingArea_5162_1_2" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_129_tr" type="ptw" depart="241.05">
+        <route edges="23 -27 29 158 379 -379 -158 -43 -15 3 23"/>
+        <stop parkingArea="parkingArea_379_0_74" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_144_tr" type="ptw" depart="241.47">
+        <route edges="-2231 -1514 -400 382 402 752 -752 -402 -382 400 1514 2231 -2231"/>
+        <stop parkingArea="parkingArea_-752_1_84" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_117_tr" type="ptw" depart="242.54">
+        <route edges="-1524 -1133 -754 -402 -51 -19 -3 15 43 158 379 518 1267 1872 3518 -3518 -1872 -1267 -518 -379 -158 -43 -15 3 19 51 402 752 1132 2338 -1524"/>
+        <stop parkingArea="parkingArea_3518_1_33" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_364_tr" type="ptw" depart="242.63">
+        <route edges="-4948 -4260 -3530 -1872 -1267 -518 -379 -158 -43 -15 3 19 51 402 752 1132 2340 3681 5626 -5626 -3681 -2340 -1132 -752 -402 -51 -19 -3 15 43 158 379 518 1267 1872 3530 4260 4948 -4948"/>
+        <stop parkingArea="parkingArea_5626_1_11" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_349_tr" type="ptw" depart="243.43">
+        <route edges="-782 -412 -51 -19 -3 15 43 158 379 518 1267 1872 3518 -3518 -1872 -1267 -518 -379 -158 -43 -15 3 19 51 412 782 -782"/>
+        <stop parkingArea="parkingArea_3518_1_33" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_4_tr" type="ptw" depart="243.58">
+        <route edges="3558 -3558 -2016 1994 2748 3557 6586 -4525 4507 5398 6598 -6598 -5398 -4507 4525 -6586 -3557 -2748 -1994 2016 3558"/>
+        <stop parkingArea="parkingArea_6598_1_120" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_431_tr" type="ptw" depart="244.54">
+        <route edges="1750 2354 -2349 -2346 2347 2384 3191 3903 4681 -4794 4808 5931 7264 -7161 -5903 -4809 -2397 -1766 -1258 1248 -1247 1239 1750"/>
+        <stop parkingArea="parkingArea_-5903_2_49" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_158_tr" type="ptw" depart="244.55">
+        <route edges="1263 3411 -3411 -1263 -518 -379 -158 -43 42 -26 24 52 268 400 1514 2231 2964 4533 5515 -5514 -4531 -2964 -2231 -1514 -400 -268 -52 -24 26 -42 43 158 379 518 1263"/>
+        <stop parkingArea="parkingArea_-5514_2_104" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_342_tr" type="ptw" depart="245.22">
+        <route edges="372 784 1239 1750 -1992 -1010 1022 1498 3565 4529 5506 -5506 -4529 -3565 -1498 -1022 1010 1992 -1750 -1239 -784 -372 372"/>
+        <stop parkingArea="parkingArea_-5506_1_118" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_460_tr" type="ptw" depart="246.88">
+        <route edges="-1132 -752 -402 -382 386 648 1016 1487 2016 3558 -3081 3087 3799 4672 -4672 -3799 -3087 -2353 -1740 1750 -1992 -1010 -648 -386 382 402 752 1132 -1132"/>
+        <stop parkingArea="parkingArea_-4672_2_65" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_571_tr" type="ptw" depart="247.57">
+        <route edges="11 29 -43 42 372 784 1237 2347 2372 -2372 -1754 -1248 -788 -372 -26 -5 11"/>
+        <stop parkingArea="parkingArea_2372_1_59" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_577_tr" type="ptw" depart="247.97">
+        <route edges="1992 -1992 -1010 -648 -386 382 402 780 -780 -402 -382 386 648 1010 1992"/>
+        <stop parkingArea="parkingArea_780_1_94" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_353_tr" type="ptw" depart="248.26">
+        <route edges="7047 -7046 -5787 -4675 -3903 -3191 -2384 -2347 -1237 -784 -372 -42 43 -29 -11 5 26 372 784 1237 2347 2384 3191 3903 4675 5791 7047"/>
+        <stop parkingArea="parkingArea_-11_1_78" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_86_tr" type="ptw" depart="249.02">
+        <route edges="4533 -4533 -2964 -2231 -1514 -400 -268 -52 -24 26 372 788 1258 1762 2386 4022 4045 4808 -4808 -4045 -3308 -2388 -1762 -1258 -788 -372 -26 24 52 268 400 1514 2231 2964 4533"/>
+        <stop parkingArea="parkingArea_-4808_1_47" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_458_tr" type="ptw" depart="249.4">
+        <route edges="-1016 1010 1992 -1750 -1239 -784 -372 -42 43 158 379 518 1259 -1873 1883 2635 3554 4403 5272 -5272 -4403 -3554 -2635 -1883 1873 -1259 -518 -379 -158 -43 42 372 784 1239 1750 -1992 -1010 1016 -1016"/>
+        <stop parkingArea="parkingArea_3554_1_7" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_589_tr" type="ptw" depart="249.95">
+        <route edges="-2738 2739 -2349 -2346 -1237 -784 -372 -42 43 158 379 518 1267 1872 3530 4274 -4275 -3538 -1872 -1267 -518 -379 -158 -43 42 372 784 1237 2346 2349 -2739 2738 -2738"/>
+        <stop parkingArea="parkingArea_-4275_1_36" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_546_tr" type="ptw" depart="250.91">
+        <route edges="29 158 379 -379 -158 -29 29"/>
+        <stop parkingArea="parkingArea_379_0_74" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_253_tr" type="ptw" depart="252.26">
+        <route edges="-1490 -1022 1010 1992 -1750 1740 2353 3087 -3087 3081 -3558 -2016 1994 2740 -1490"/>
+        <stop parkingArea="parkingArea_3087_2_62" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_121_tr" type="ptw" depart="252.77">
+        <route edges="2609 -3411 -1263 -518 -379 -158 -43 42 372 784 1237 2346 2353 3087 3799 4672 -4672 -3799 -3087 -2353 -2346 -1237 -784 -372 -42 43 158 379 518 1263 3411 -2609 2609"/>
+        <stop parkingArea="parkingArea_-4672_2_65" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_142_tr" type="ptw" depart="252.87">
+        <route edges="-1247 1239 1740 2353 3087 3797 4664 -4664 -3797 -3087 -2353 -1740 -1239 1247 -1247"/>
+        <stop parkingArea="parkingArea_4664_1_71" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_553_tr" type="ptw" depart="253.3">
+        <route edges="-3554 -2635 -1883 1873 -1259 -518 -379 -158 -43 -15 3 19 -19 -3 15 43 158 379 518 1259 -1873 1883 2635 3554 4403 5272 -5272 -4403 -3554"/>
+        <stop parkingArea="parkingArea_-19_1_82" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_135_tr" type="ptw" depart="253.58">
+        <route edges="1524 -2338 -1132 -752 -402 -51 -19 -3 15 43 158 379 520 894 1281 1881 2625 3541 4297 5162 -5162 -4297 -3541 -2625 2609 -3411 -1263 -518 -379 -158 -43 -15 3 19 51 402 754 1133 1524"/>
+        <stop parkingArea="parkingArea_5162_1_2" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_440_tr" type="ptw" depart="254.06">
+        <route edges="-6733 -5517 -4533 -2964 -2231 -1514 -400 -268 268 400 1514 2231 2964 4533 5517 6733 -6733"/>
+        <stop parkingArea="parkingArea_268_0_83" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_378_tr" type="ptw" depart="254.74">
+        <route edges="-1498 -1022 -648 -386 382 402 752 1130 -1133 -754 -402 -382 386 648 1022 1498 -1498"/>
+        <stop parkingArea="parkingArea_1130_1_19" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_467_tr" type="ptw" depart="255.33">
+        <route edges="-7051 -5791 -4675 -3903 -3191 -2384 -2347 -1237 -784 -372 -42 43 158 379 518 1267 1870 2505 3517 4922 6049 -6049 -4922 -3517 -2505 -1870 -1267 -518 -379 -158 -43 42 372 784 1237 2347 2384 3191 3903 4675 5791 7051 -7051"/>
+        <stop parkingArea="parkingArea_6049_1_23" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_588_tr" type="ptw" depart="255.61">
+        <route edges="-7028 -5781 -4672 -3799 -3087 3081 -3558 -2016 1994 2748 3557 6590 -6727 6727 -6590 -3557 -2748 -1994 2016 3558 -3081 3087 3799 4672 5781 7028 -7028"/>
+        <stop parkingArea="parkingArea_-6590_1_113" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_587_tr" type="ptw" depart="256.3">
+        <route edges="-5791 -4675 -3903 -3191 -2384 -2347 -1237 -784 -372 -26 24 52 268 400 1514 2235 -2341 -1634 -782 781 -400 -268 -52 -24 26 372 784 1237 2347 2384 3191 3903 4675 5791 -5791"/>
+        <stop parkingArea="parkingArea_-1634_1_95" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_69_tr" type="ptw" depart="256.36">
+        <route edges="-4811 -4149 -3518 -1872 -1267 -518 -379 379 518 1267 1870 2505 3517 4920 -4811"/>
+        <stop parkingArea="parkingArea_379_0_74" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_565_tr" type="ptw" depart="256.95">
+        <route edges="-2370 -1992 -1010 -648 -386 400 1514 2231 2964 -2964 -2231 -1514 -400 386 648 1010 1992 2370 -2370"/>
+        <stop parkingArea="parkingArea_-2964_2_102" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_286_tr" type="ptw" depart="259.1">
+        <route edges="-1267 -518 -379 -158 -43 42 372 784 1239 1750 2370 -2370 -1750 -1239 -784 -372 -42 43 158 379 518 1267 -1267"/>
+        <stop parkingArea="parkingArea_2370_2_92" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_595_tr" type="ptw" depart="259.55">
+        <route edges="6728 -4525 -3565 -1498 -1022 -648 -386 -268 -52 -21 23 -27 -11 5 24 52 268 386 648 1022 1498 3565 4525 -6728 6728"/>
+        <stop parkingArea="parkingArea_23_0_81" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_556_tr" type="ptw" depart="259.64">
+        <route edges="-6726 -5506 -4529 -3565 -1498 -1022 1010 1992 -1750 -1239 1247 -1248 1258 1766 2397 4809 5903 7161 -7264 -5931 -4808 4794 -4681 -3903 -3191 -2384 -2347 2346 2349 -2739 -1991 -1010 1022 1498 3565 4529 5506 6726 -6726"/>
+        <stop parkingArea="parkingArea_-7264_1_48" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_105_tr" type="ptw" depart="260.53">
+        <route edges="3555 3559 -1498 -1022 1010 1992 -1750 -1239 1239 1750 -1992 -1010 1022 1498 -3559 -3555 3555"/>
+        <stop parkingArea="parkingArea_-1239_1_90" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_537_tr" type="ptw" depart="260.84">
+        <route edges="5754 -5754 -4665 -3799 -3087 -2353 -2346 -1237 -784 -372 -26 -5 15 42 372 784 1237 2346 2353 3087 3799 4665 5754"/>
+        <stop parkingArea="parkingArea_-5_0_79" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_594_tr" type="ptw" depart="260.99">
+        <route edges="-2372 2372 -3784 3794 4650 -4650 -3794 3784 -2372"/>
+        <stop parkingArea="parkingArea_4650_1_63" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_237_tr" type="ptw" depart="261.2">
+        <route edges="2396 -2397 -1766 -1258 -788 -372 -42 43 158 379 518 1267 1872 3518 -2503 -1870 -1267 -518 -379 -158 -43 42 372 788 1258 1762 2396"/>
+        <stop parkingArea="parkingArea_-2503_2_34" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_325_tr" type="ptw" depart="261.86">
+        <route edges="781 -400 -268 -52 -24 26 372 784 1237 2347 2384 3191 3903 4675 5791 7047 -7046 -5787 -4675 -3903 -3191 -2384 -2347 -1237 -784 -372 -42 -15 3 19 51 412 781"/>
+        <stop parkingArea="parkingArea_7047_2_42" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_278_tr" type="ptw" depart="262.74">
+        <route edges="4794 -4681 -3903 -3191 -2384 -2347 -1237 -784 -372 -42 43 158 379 520 894 1281 1881 2625 3541 4297 5162 -5162 -4297 -3541 -2625 2609 -3411 -1263 -518 -379 -158 -43 42 372 788 1258 1762 2386 4022 4045 4794"/>
+        <stop parkingArea="parkingArea_5162_1_2" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_13_tr" type="ptw" depart="262.75">
+        <route edges="-3515 -2505 -1870 -1267 -518 -379 -158 -43 42 372 784 1239 1750 -1750 -1239 -784 -372 -42 43 158 379 518 1267 1870 2505 3515 -3515"/>
+        <stop parkingArea="parkingArea_1750_0_91" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_377_tr" type="ptw" depart="265.63">
+        <route edges="2965 -2965 -2235 2227 -2124 -1494 -1022 1010 1992 -1750 -1239 1247 1754 2372 -3784 -3083 3081 -3558 -2016 1994 2740 -1490 1494 2124 -2227 2235 2965"/>
+        <stop parkingArea="parkingArea_2372_1_59" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_95_tr" type="ptw" depart="265.75">
+        <route edges="-2503 2503 -3518 3538 4291 -6255 6255 -4291 -3538 3518 -2503"/>
+        <stop parkingArea="parkingArea_4291_2_37" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_340_tr" type="ptw" depart="266.1">
+        <route edges="-4817 4817 6036 -6152 -4948 -4260 4254 -6034 -4817"/>
+        <stop parkingArea="parkingArea_-4260_1_31" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_347_tr" type="ptw" depart="266.68">
+        <route edges="4275 -4274 -3530 -1872 -1267 -518 -379 -158 -43 42 -26 24 52 268 400 1514 2231 2962 -2965 -2235 -1514 -400 -268 -52 -24 26 -42 43 158 379 518 1267 1872 3538 4275"/>
+        <stop parkingArea="parkingArea_-2965_1_101" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_273_tr" type="ptw" depart="267.57">
+        <route edges="-3195 3191 3903 4675 5799 -5904 -4793 -4045 -3308 3302 -3195"/>
+        <stop parkingArea="parkingArea_-5904_2_46" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_521_tr" type="ptw" depart="267.96">
+        <route edges="3083 -3083 3081 -3558 -2016 1994 2740 -1489 1487 2016 3558 -3081 3083"/>
+        <stop parkingArea="parkingArea_-1489_2_111" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_115_tr" type="ptw" depart="268.0">
+        <route edges="-43 42 -26 24 52 268 -268 -52 -21 23 -27 29 -43"/>
+        <stop parkingArea="parkingArea_268_0_83" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_499_tr" type="ptw" depart="268.44">
+        <route edges="2858 -2858 -1490 1498 -1498 1490 2858"/>
+        <stop parkingArea="parkingArea_1498_1_109" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_76_tr" type="ptw" depart="268.46">
+        <route edges="-3557 -2748 2740 -1490 1494 2124 -2227 2231 2964 4533 5515 6729 -6729 -5515 -4533 -2964 -2231 2227 -2124 -1494 1490 -2740 2748 3557 -3557"/>
+        <stop parkingArea="parkingArea_-6729_1_99" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_429_tr" type="ptw" depart="268.51">
+        <route edges="402 -402 -382 -268 -52 -24 26 372 788 1258 1762 2388 -2388 -1762 -1258 -788 -372 -42 -15 3 19 51 402"/>
+        <stop parkingArea="parkingArea_-2388_0_53" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_517_tr" type="ptw" depart="269.35">
+        <route edges="5650 -5650 -3681 -2340 -1132 -752 -402 -51 -19 -3 15 43 158 379 518 1267 -1267 -518 -379 -158 -43 -15 3 19 51 402 752 1132 2340 3681 5650"/>
+        <stop parkingArea="parkingArea_-1267_1_16" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_566_tr" type="ptw" depart="269.49">
+        <route edges="-6915 -5767 -4672 -3799 -3087 3087 3799 4665 5754 6894 -6915"/>
+        <stop parkingArea="parkingArea_3087_2_62" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_493_tr" type="ptw" depart="270.57">
+        <route edges="1766 2397 -2397 -1766 -1258 1248 1754 2372 -2372 -1754 -1248 1258 1766"/>
+        <stop parkingArea="parkingArea_2372_1_59" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_79_tr" type="ptw" depart="270.6">
+        <route edges="3558 -3081 3083 3784 -2372 -1754 -1248 1248 1754 2372 -3784 -3083 3081 -3558 3558"/>
+        <stop parkingArea="parkingArea_-1248_2_57" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_19_tr" type="ptw" depart="270.68">
+        <route edges="-1870 -1267 -518 -379 -158 -43 42 372 784 1239 1750 -1992 -1010 1022 1498 -1498 -1022 1010 1992 -1750 -1239 -784 -372 -42 43 158 379 518 1267 1870 -1870"/>
+        <stop parkingArea="parkingArea_1498_1_109" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_472_tr" type="ptw" depart="270.95">
+        <route edges="1498 -3559 -3555 -2748 -1994 2016 3558 -3081 3083 3794 4650 -4665 -3799 -3087 -2353 -1740 1750 -1992 -1010 1022 1498"/>
+        <stop parkingArea="parkingArea_4650_1_63" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_305_tr" type="ptw" depart="271.42">
+        <route edges="-42 42 372 784 1237 2346 2353 3087 3799 4665 5754 -5754 -4665 -3799 -3087 -2353 -2346 -1237 -784 -372 -42"/>
+        <stop parkingArea="parkingArea_5754_1_64" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_491_tr" type="ptw" depart="271.73">
+        <route edges="-4666 -3799 -3087 -2353 -2346 2347 2372 -3784 -3083 3087 3799 4666 -4666"/>
+        <stop parkingArea="parkingArea_2372_1_59" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_196_tr" type="ptw" depart="272.2">
+        <route edges="-15 11 41 -41 -11 15 -15"/>
+        <stop parkingArea="parkingArea_41_1_77" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_270_tr" type="ptw" depart="272.32">
+        <route edges="894 1281 1873 -1259 -518 -379 -158 -43 42 372 784 1239 1750 -1992 -1010 1022 1490 2858 3559 -1498 -1022 1010 1992 -1750 -1239 -784 -372 -42 43 158 379 520 894"/>
+        <stop parkingArea="parkingArea_2858_2_110" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_3_tr" type="ptw" depart="272.58">
+        <route edges="5 26 372 784 1237 2346 2353 3087 3797 4652 -4652 -3797 -3087 -2353 -2346 -1237 -784 -372 -42 -15 5"/>
+        <stop parkingArea="parkingArea_-4652_1_70" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_522_tr" type="ptw" depart="274.26">
+        <route edges="-268 -52 -24 26 372 784 1237 2346 2353 3087 3797 4652 -4652 -3797 -3087 -2353 -1740 1750 -1992 -1010 -648 -386 -268"/>
+        <stop parkingArea="parkingArea_-4652_1_70" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_409_tr" type="ptw" depart="275.15">
+        <route edges="-4652 -3797 -3087 -2353 -2346 -1237 -784 -372 -42 43 158 379 518 1259 -1873 1883 2635 3554 4403 5272 -5272 -4403 -3554 -2635 -1883 1873 -1259 -518 -379 -158 -43 42 372 784 1237 2346 2353 3087 3797 4652 -4652"/>
+        <stop parkingArea="parkingArea_3554_1_7" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_579_tr" type="ptw" depart="275.21">
+        <route edges="3068 -2962 -2231 -1514 -400 382 402 780 1634 2345 3068"/>
+        <stop parkingArea="parkingArea_402_1_85" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_138_tr" type="ptw" depart="275.77">
+        <route edges="-4794 -4045 -3308 -2388 -1762 -1258 -788 -372 -42 43 158 379 520 894 1281 1881 2625 -2625 2609 -3411 -1263 -518 -379 -158 -43 42 372 784 1237 2347 2384 3191 3903 4681 -4794"/>
+        <stop parkingArea="parkingArea_2625_1_5" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_370_tr" type="ptw" depart="275.78">
+        <route edges="6759 -6862 -5650 5650 6862 -6759 6759"/>
+        <stop parkingArea="parkingArea_5650_1_10" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_81_tr" type="ptw" depart="276.49">
+        <route edges="-19 -3 15 42 372 784 1237 2347 2372 -2372 -1754 -1248 -788 -372 -42 -15 3 19 -19"/>
+        <stop parkingArea="parkingArea_2372_1_59" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_107_tr" type="ptw" depart="276.6">
+        <route edges="1872 -1872 -1267 -518 -379 -158 -43 42 372 784 1239 1750 -1992 -1010 1022 1494 2124 -2227 -1514 -400 -268 -52 -24 26 -42 43 158 379 518 1267 1872"/>
+        <stop parkingArea="parkingArea_-2227_1_107" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_132_tr" type="ptw" depart="277.07">
+        <route edges="3068 -2962 -2231 -1514 -400 386 648 1016 1487 2016 3558 -3081 3087 3799 4672 5767 6919 -7022 -5781 -4672 -3799 -3087 -2353 -1740 1750 -1992 -1010 -648 -386 400 1514 2231 2962 -3068 3068"/>
+        <stop parkingArea="parkingArea_6919_1_67" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_366_tr" type="ptw" depart="277.49">
+        <route edges="4672 -4672 -3799 -3087 -2353 -2346 2347 2372 -3784 -3083 3087 3799 4672"/>
+        <stop parkingArea="parkingArea_2372_1_59" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_261_tr" type="ptw" depart="278.13">
+        <route edges="3681 -3681 -2340 -1132 -752 -402 -51 -19 -3 15 43 158 379 518 1259 -1259 -518 -379 -158 -43 -15 3 19 51 402 752 1132 2340 3681"/>
+        <stop parkingArea="parkingArea_-1259_1_15" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_528_tr" type="ptw" depart="278.6">
+        <route edges="2503 -3518 -1872 -1267 -518 -379 -158 -43 42 372 788 1258 1766 2397 4809 5903 7161 -7264 7264 -7161 -5903 -4809 -2397 -1766 -1258 -788 -372 -42 43 158 379 518 1267 1870 2503"/>
+        <stop parkingArea="parkingArea_-5903_2_49" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_367_tr" type="ptw" depart="279.4">
+        <route edges="-3558 -2738 -1991 1992 -1750 -1239 1239 1750 2354 3080 -3558"/>
+        <stop parkingArea="parkingArea_-1239_1_90" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_474_tr" type="ptw" depart="279.69">
+        <route edges="-2372 -1754 -1248 -788 -372 -42 43 158 379 518 1267 1870 2505 3517 4922 6049 -6049 -4922 -3517 -2505 -1870 -1267 -518 -379 -158 -43 42 372 784 1237 2347 2372 -2372"/>
+        <stop parkingArea="parkingArea_6049_1_23" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_290_tr" type="ptw" depart="281.21">
+        <route edges="-19 -3 15 43 158 379 518 1259 -1873 1873 -1259 -518 -379 -158 -43 -15 3 19 -19"/>
+        <stop parkingArea="parkingArea_-1873_1_12" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_51_tr" type="ptw" depart="282.06">
+        <route edges="-7161 -5903 -4026 -2386 -1762 1762 2386 4026 5903 7161 -7264 7264 -7161"/>
+        <stop parkingArea="parkingArea_-1762_1_52" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_189_tr" type="ptw" depart="283.03">
+        <route edges="4279 5052 6255 -4291 -3538 3518 -3518 3538 4279"/>
+        <stop parkingArea="parkingArea_3518_1_33" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_593_tr" type="ptw" depart="285.23">
+        <route edges="268 386 648 1016 1487 2016 3558 -3081 3087 3797 4652 -4652 -3797 -3087 -2353 -2346 -1237 -784 -372 -26 24 52 268"/>
+        <stop parkingArea="parkingArea_-4652_1_70" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_249_tr" type="ptw" depart="285.44">
+        <route edges="-1022 1010 1992 -1750 -1239 -784 -372 -42 43 158 379 518 1267 1870 2505 3517 4922 6049 -6049 -4922 -3517 -2505 -1870 -1267 -518 -379 -158 -43 42 372 784 1239 1750 -1992 -1010 1022 -1022"/>
+        <stop parkingArea="parkingArea_6049_1_23" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_224_tr" type="ptw" depart="286.44">
+        <route edges="2625 -2625 -1881 1873 -1873 1881 2625"/>
+        <stop parkingArea="parkingArea_1873_1_13" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_27_tr" type="ptw" depart="287.79">
+        <route edges="51 -51 -19 -3 15 42 372 788 1258 1762 2386 4022 4045 4808 -4808 -4045 -3308 -2388 -1762 -1258 -788 -372 -42 -15 3 19 51"/>
+        <stop parkingArea="parkingArea_-4808_1_47" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_171_tr" type="ptw" depart="287.98">
+        <route edges="-1248 1248 -1247 1239 1750 -1992 -1010 1022 1490 -1489 -1016 1010 1992 -1750 -1239 1247 -1248"/>
+        <stop parkingArea="parkingArea_-1489_2_111" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_57_tr" type="ptw" depart="288.3">
+        <route edges="-3195 -2384 -2347 -1237 -784 -372 -42 43 158 379 518 1267 1872 3530 4260 -4260 -3530 -1872 -1267 -518 -379 -158 -43 42 372 784 1237 2347 2384 3195 -3195"/>
+        <stop parkingArea="parkingArea_-4260_1_31" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_167_tr" type="ptw" depart="289.26">
+        <route edges="5515 -5515 -4533 -2964 -2231 -1514 -400 -268 -52 -24 26 -42 43 158 379 518 1267 1870 2503 -3518 -1872 -1267 -518 -379 -158 -43 42 -26 24 52 268 400 1514 2231 2964 4533 5515"/>
+        <stop parkingArea="parkingArea_2503_1_35" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_413_tr" type="ptw" depart="289.77">
+        <route edges="2965 -2965 -2235 -1514 -400 -268 -52 -24 26 372 788 1258 1766 2397 -2396 -1762 -1258 -788 -372 -26 24 52 268 400 1514 2235 2965"/>
+        <stop parkingArea="parkingArea_-2396_2_51" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_338_tr" type="ptw" depart="289.78">
+        <route edges="-5911 -4808 -4045 -3308 -2388 -1762 -1258 -788 -372 -26 24 52 268 400 1514 2235 -2341 -1634 -782 781 -400 -268 -52 -24 26 372 788 1258 1762 2386 4022 4045 4793 5910 -5911"/>
+        <stop parkingArea="parkingArea_-1634_1_95" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_170_tr" type="ptw" depart="290.94">
+        <route edges="3 19 51 -382 386 648 1022 1498 3565 4525 -6728 -5510 -4529 -3565 -1498 -1022 -648 -386 382 -51 -19 -3 3"/>
+        <stop parkingArea="parkingArea_-6728_1_116" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_244_tr" type="ptw" depart="291.69">
+        <route edges="-6710 -5506 -4529 -3565 -1498 -1022 1010 1992 -1750 -1239 -784 -372 -42 43 158 379 518 1259 -1259 -518 -379 -158 -43 42 372 784 1239 1750 -1992 -1010 1022 1498 3565 4529 5506 6710 -6710"/>
+        <stop parkingArea="parkingArea_-1259_1_15" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_23_tr" type="ptw" depart="291.98">
+        <route edges="-1992 -1010 -648 -386 -268 -52 -21 23 -27 29 -43 42 372 784 1239 1750 -1992"/>
+        <stop parkingArea="parkingArea_23_0_81" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_214_tr" type="ptw" depart="292.16">
+        <route edges="1740 -1740 1750 -1992 -1010 -648 -386 382 402 752 1132 2340 3681 5650 -5650 -3681 -2340 -1132 -752 -402 -382 386 648 1010 1992 -1750 1740"/>
+        <stop parkingArea="parkingArea_5650_1_10" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_481_tr" type="ptw" depart="292.29">
+        <route edges="-6904 -5760 -4652 -3797 -3087 -2353 -2346 2347 2384 3191 3903 4681 -4794 4808 -4808 4794 -4681 -3903 -3191 -2384 -2347 2346 2353 3087 3797 4652 5760 6904 -6904"/>
+        <stop parkingArea="parkingArea_-4808_1_47" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_2_tr" type="ptw" depart="292.84">
+        <route edges="4922 -4922 -3517 -2505 2503 -2503 2505 3517 4922"/>
+        <stop parkingArea="parkingArea_2503_1_35" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_112_tr" type="ptw" depart="293.17">
+        <route edges="3557 6586 -4525 -3565 -1498 -1022 1010 1992 -1750 -1239 -784 -372 -42 43 158 379 518 1267 1872 3518 4149 4817 6034 -4254 -3530 -1872 -1267 -518 -379 -158 -43 42 372 784 1237 2346 2349 -2739 2738 -2016 1994 2748 3557"/>
+        <stop parkingArea="parkingArea_4817_1_26" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_18_tr" type="ptw" depart="293.21">
+        <route edges="3539 -906 -520 -379 -158 -43 42 372 -372 -42 43 158 379 518 1263 3411 3539"/>
+        <stop parkingArea="parkingArea_-372_1_76" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_598_tr" type="ptw" depart="293.95">
+        <route edges="-3543 -2625 2609 -3411 -1263 -518 -379 -158 -43 -15 3 19 51 402 780 -782 -412 -51 -19 -3 15 43 158 379 518 1259 -1873 1883 2635 3544 -3543"/>
+        <stop parkingArea="parkingArea_780_1_94" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_512_tr" type="ptw" depart="296.92">
+        <route edges="-2388 -1762 1762 2388 -2388"/>
+        <stop parkingArea="parkingArea_-1762_1_52" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_209_tr" type="ptw" depart="297.02">
+        <route edges="372 -372 -42 43 158 379 518 1267 1872 3530 4254 -4254 -3530 -1872 -1267 -518 -379 -158 -43 42 372"/>
+        <stop parkingArea="parkingArea_-4254_1_32" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_155_tr" type="ptw" depart="298.26">
+        <route edges="-1991 -1010 -648 -386 400 1514 2231 2964 4533 5517 6733 -6733 -5517 -4533 -2964 -2231 -1514 -400 386 648 1010 1991 -1991"/>
+        <stop parkingArea="parkingArea_-6733_1_106" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_235_tr" type="ptw" depart="298.51">
+        <route edges="-3515 -2505 -1870 -1267 -518 -379 -158 -43 42 -26 24 52 268 400 1514 2231 2964 4533 5517 6733 -6733 -5517 -4533 -2964 -2231 -1514 -400 -268 -52 -24 26 -42 43 158 379 518 1267 1870 2505 3515 -3515"/>
+        <stop parkingArea="parkingArea_-6733_1_106" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_53_tr" type="ptw" depart="298.73">
+        <route edges="-5799 -4675 -3903 3903 4675 5799 -5799"/>
+        <stop parkingArea="parkingArea_-3903_1_55" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_64_tr" type="ptw" depart="298.94">
+        <route edges="-4149 -3518 -1872 -1267 -518 -379 -158 -43 -15 3 19 51 402 752 1132 2340 -2340 -1132 -752 -402 -51 -19 -3 15 43 158 379 518 1267 1872 3518 4149 -4149"/>
+        <stop parkingArea="parkingArea_-2340_1_9" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_52_tr" type="ptw" depart="299.29">
+        <route edges="4681 -4681 -3903 -3191 -2384 -2347 -1237 -784 -372 -26 24 52 268 386 648 1010 1992 -1750 -1239 1237 2347 2384 3191 3903 4681"/>
+        <stop parkingArea="parkingArea_648_1_88" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_258_tr" type="ptw" depart="299.91">
+        <route edges="4808 -4808 -4045 -3308 -2388 -1762 -1258 -788 -372 -42 43 158 379 520 894 1281 1881 2625 3541 4297 5162 -5162 -4297 -3541 -2625 2609 -3411 -1263 -518 -379 -158 -43 42 372 788 1258 1762 2386 4022 4045 4808"/>
+        <stop parkingArea="parkingArea_5162_1_2" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_416_tr" type="ptw" depart="300.47">
+        <route edges="400 1514 2231 2964 4533 5517 -5517 -4533 -2964 -2231 -1514 -400 400"/>
+        <stop parkingArea="parkingArea_5517_2_105" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_175_tr" type="ptw" depart="303.11">
+        <route edges="-1490 1494 2124 -2227 2231 2964 4531 -4531 -2964 -2231 2227 -2124 -1494 1490 -1490"/>
+        <stop parkingArea="parkingArea_-4531_2_103" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_560_tr" type="ptw" depart="303.88">
+        <route edges="-3671 -2340 -1132 -752 -402 -382 386 648 1010 1992 2370 -2370 -1992 -1010 -648 -386 382 402 752 1132 2340 3671 4539 -4539 -3671"/>
+        <stop parkingArea="parkingArea_2370_2_92" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_165_tr" type="ptw" depart="303.95">
+        <route edges="3555 3559 -1498 -1022 1010 1992 -1750 -1239 1247 -1248 1248 1754 2372 -3784 -3083 3081 -3558 -2016 1994 2748 3555"/>
+        <stop parkingArea="parkingArea_-1248_2_57" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_184_tr" type="ptw" depart="307.37">
+        <route edges="1490 -1490 1494 2124 -2227 2231 2964 4533 5515 6729 -6729 -5515 -4533 -2964 -2231 2227 -2124 -1494 1490"/>
+        <stop parkingArea="parkingArea_-6729_1_99" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_511_tr" type="ptw" depart="308.51">
+        <route edges="-51 51 402 752 1130 -1133 -754 -402 -51"/>
+        <stop parkingArea="parkingArea_-754_1_18" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_156_tr" type="ptw" depart="309.49">
+        <route edges="-3555 3557 6586 -4525 4507 5398 6598 -6598 -5398 -4507 -3565 -3559 -3555"/>
+        <stop parkingArea="parkingArea_6598_1_120" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_197_tr" type="ptw" depart="309.54">
+        <route edges="-4531 -2964 -2231 -1514 -400 -268 -52 -24 26 372 784 1237 2347 2384 3191 -3191 -2384 -2347 -1237 -784 -372 -26 24 52 268 400 1514 2231 2964 4531 -4531"/>
+        <stop parkingArea="parkingArea_-3191_1_56" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_302_tr" type="ptw" depart="309.88">
+        <route edges="1881 2609 -3411 -1263 -518 -379 -158 -43 42 -26 24 52 268 386 648 1010 1992 -1750 -1239 -784 -372 -42 43 158 379 520 894 1281 1881"/>
+        <stop parkingArea="parkingArea_648_1_88" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_483_tr" type="ptw" depart="311.37">
+        <route edges="3072 -3072 -2345 -1634 -780 754 1133 -1133 -754 780 1634 2345 3072"/>
+        <stop parkingArea="parkingArea_-754_1_18" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_228_tr" type="ptw" depart="311.44">
+        <route edges="-6880 -5650 -3681 -2340 -1132 -752 -402 -382 386 648 1010 1992 2370 -2370 -1992 -1010 -648 -386 382 402 752 1132 2340 3681 5650 6880 -6880"/>
+        <stop parkingArea="parkingArea_2370_2_92" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_591_tr" type="ptw" depart="311.53">
+        <route edges="-5650 -3681 -2340 -1132 -752 -402 -382 386 648 1022 1498 3565 4525 -6728 -5510 -4529 -3565 -1498 -1022 -648 -386 382 402 752 1132 2340 3681 5650 -5650"/>
+        <stop parkingArea="parkingArea_-6728_1_116" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_422_tr" type="ptw" depart="312.54">
+        <route edges="6729 -4646 -3072 -2345 -1634 -780 -402 -51 -19 -3 15 43 158 379 518 1259 -1259 -518 -379 -158 -43 42 -26 24 52 268 400 1514 2231 2964 4533 5515 6729"/>
+        <stop parkingArea="parkingArea_-1259_1_15" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_180_tr" type="ptw" depart="313.09">
+        <route edges="5911 -5910 5904 -5799 -4675 -3903 -3191 3191 3903 4681 -4794 4808 5911"/>
+        <stop parkingArea="parkingArea_-3191_1_56" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_141_tr" type="ptw" depart="318.45">
+        <route edges="-6377 -5156 -4297 -3541 -2625 2609 -3411 -1263 -518 -379 -158 -43 42 372 784 1239 1750 -1992 -1010 1022 1498 3565 4507 5398 6598 -6598 -5398 -4507 -3565 -1498 -1022 1010 1992 -1750 -1239 -784 -372 -42 43 158 379 520 894 1281 1881 2625 3541 4297 5156 6377 -6377"/>
+        <stop parkingArea="parkingArea_6598_1_120" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_15_tr" type="ptw" depart="319.92">
+        <route edges="-49 49 268 386 648 1010 1992 -1750 -1239 -784 -372 -26 24 52 -49"/>
+        <stop parkingArea="parkingArea_-1239_1_90" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_403_tr" type="ptw" depart="322.34">
+        <route edges="-5620 -3681 -2340 -1132 -752 -402 -382 386 648 1022 1498 3565 4529 5506 -5506 -4529 -3565 -1498 -1022 -648 -386 382 402 752 1132 2340 3671 4539 -5620"/>
+        <stop parkingArea="parkingArea_-5506_1_118" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_231_tr" type="ptw" depart="323.26">
+        <route edges="1883 2635 -2635 -1883 1873 -1259 -518 -379 -158 -43 -15 3 19 51 402 752 1132 2340 3681 5626 -5626 -3681 -2340 -1132 -752 -402 -51 -19 -3 15 43 158 379 518 1259 -1873 1883"/>
+        <stop parkingArea="parkingArea_5626_1_11" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_576_tr" type="ptw" depart="323.89">
+        <route edges="3080 -3558 -2016 1994 2740 -1490 1494 2124 -2227 2227 -2124 -1494 -1022 1010 1992 2354 3080"/>
+        <stop parkingArea="parkingArea_-2124_1_108" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_233_tr" type="ptw" depart="325.96">
+        <route edges="42 372 784 1237 2347 2384 3191 -3191 -2384 -2347 -1237 -784 -372 -42 42"/>
+        <stop parkingArea="parkingArea_-3191_1_56" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_292_tr" type="ptw" depart="326.71">
+        <route edges="-7264 -5931 -4808 4794 -4681 -3903 -3191 3195 -3302 -2388 2396 4809 5903 7161 -7264"/>
+        <stop parkingArea="parkingArea_-3191_1_56" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_408_tr" type="ptw" depart="328.97">
+        <route edges="-6049 -4922 -3517 -2505 -1870 -1267 -518 -379 -158 -43 42 372 784 1237 2347 2384 3191 3903 4675 5787 -5787 -4675 -3903 -3191 -2384 -2347 -1237 -784 -372 -42 43 158 379 518 1267 1870 2505 3517 4922 6049 -6049"/>
+        <stop parkingArea="parkingArea_-5787_1_44" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_140_tr" type="ptw" depart="330.93">
+        <route edges="2124 -2227 -1514 -400 386 648 1010 1991 2738 -2738 -1991 -1010 1022 1494 2124"/>
+        <stop parkingArea="parkingArea_-2738_1_61" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_291_tr" type="ptw" depart="331.34">
+        <route edges="-894 -520 -379 -158 -43 -15 3 19 51 402 752 1132 2340 3671 4539 -4539 -3671 -2340 -1132 -752 -402 -51 -19 -3 15 43 158 379 520 894 1281 -1281 -894"/>
+        <stop parkingArea="parkingArea_4539_1_8" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_330_tr" type="ptw" depart="331.91">
+        <route edges="-4403 -3554 -2635 -1883 1873 -1259 1267 1872 3530 4260 4948 -4948 -4260 -3530 -1872 -1267 1259 -1873 1883 2635 3554 4403 5272 -5272 -4403"/>
+        <stop parkingArea="parkingArea_-4948_1_30" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_247_tr" type="ptw" depart="334.56">
+        <route edges="-3199 -2384 -2347 -1237 -784 -372 -42 43 158 379 -379 -158 -43 42 372 784 1237 2347 2384 3199 -3199"/>
+        <stop parkingArea="parkingArea_379_0_74" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_562_tr" type="ptw" depart="335.56">
+        <route edges="5 26 372 -372 -42 -15 5"/>
+        <stop parkingArea="parkingArea_-372_1_76" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_482_tr" type="ptw" depart="336.45">
+        <route edges="3795 -3795 -3087 -2353 -1740 1750 -1750 1740 2353 3087 3795"/>
+        <stop parkingArea="parkingArea_1750_0_91" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_356_tr" type="ptw" depart="336.56">
+        <route edges="1247 -1248 1248 -1247 1247"/>
+        <stop parkingArea="parkingArea_1248_1_58" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_328_tr" type="ptw" depart="337.05">
+        <route edges="-1258 1248 1754 2372 -3784 -3083 3087 3799 4666 5763 -5762 -4652 -3797 3795 -3794 3784 -2372 -1754 -1248 1258 -1258"/>
+        <stop parkingArea="parkingArea_-5762_2_73" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_254_tr" type="ptw" depart="337.24">
+        <route edges="-2124 -1494 1490 -2740 -1994 2016 3558 -3081 3087 3799 4672 5767 6919 -7022 -5781 -4672 -3799 -3087 -2353 -1740 1750 -1992 -1010 1022 1494 2124 -2227 2227 -2124"/>
+        <stop parkingArea="parkingArea_6919_1_67" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_322_tr" type="ptw" depart="337.88">
+        <route edges="11 -11 5 24 52 268 386 648 1022 1498 -1498 -1022 -648 -386 -268 -52 -24 -5 11"/>
+        <stop parkingArea="parkingArea_1498_1_109" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_38_tr" type="ptw" depart="337.94">
+        <route edges="4809 -4809 -2397 -1766 -1258 1248 -1247 1239 1750 -1992 -1010 1022 1498 3565 4525 -6728 -5510 -4529 -3565 -1498 -1022 1010 1992 -1750 -1239 1247 -1248 1258 1766 2397 4809"/>
+        <stop parkingArea="parkingArea_-6728_1_116" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_581_tr" type="ptw" depart="339.23">
+        <route edges="-780 -402 -382 386 648 1016 1487 2016 3558 -3081 3083 3794 4650 5754 -5754 -4650 -3794 -3083 3081 -3558 -2016 -1487 -1016 -648 -386 382 402 780 -780"/>
+        <stop parkingArea="parkingArea_5754_1_64" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_78_tr" type="ptw" depart="339.85">
+        <route edges="-3191 -2384 -2347 2346 2349 -2739 2738 -2016 1994 2748 3557 6590 -6727 6727 -6590 -3557 -2748 -1994 2016 3558 -3081 3083 3784 4673 -4682 -3905 -3191"/>
+        <stop parkingArea="parkingArea_-6590_1_113" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_120_tr" type="ptw" depart="341.49">
+        <route edges="4642 -4531 -2964 -2231 2227 -2124 -1494 1490 2858 -2858 -1490 1494 2124 -2227 2231 2964 4531 -4642 4642"/>
+        <stop parkingArea="parkingArea_2858_2_110" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_351_tr" type="ptw" depart="341.5">
+        <route edges="2965 -2965 -2235 2227 -2124 -1494 1490 2858 -2858 -1490 1494 2124 -2227 2235 2965"/>
+        <stop parkingArea="parkingArea_2858_2_110" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_288_tr" type="ptw" depart="341.8">
+        <route edges="3518 4149 4811 -4920 4920 -4811 -4149 -3518 3518"/>
+        <stop parkingArea="parkingArea_-4920_1_24" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_489_tr" type="ptw" depart="343.6">
+        <route edges="-4794 -4045 -3308 -2388 2396 -2396 2388 3302 3919 4687 -4794"/>
+        <stop parkingArea="parkingArea_-2396_2_51" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_217_tr" type="ptw" depart="345.45">
+        <route edges="5910 -5911 -4808 4794 -4687 -3919 -3195 3199 -4673 -3784 -3083 3081 -3558 -2016 1994 2740 2858 3559 -1498 -1022 1010 1992 -1750 -1239 1237 2347 2384 3191 3903 4675 5799 -5904 5910"/>
+        <stop parkingArea="parkingArea_2858_2_110" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_359_tr" type="ptw" depart="346.7">
+        <route edges="-2503 -1870 -1267 -518 -379 -158 -43 42 372 784 1239 1750 -1992 -1010 -648 -386 382 -51 -19 -3 15 43 158 379 518 1267 1872 3518 -2503"/>
+        <stop parkingArea="parkingArea_-386_1_87" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_208_tr" type="ptw" depart="347.04">
+        <route edges="-1872 -1267 1259 -1873 1873 -1259 1267 1872 -1872"/>
+        <stop parkingArea="parkingArea_1873_1_13" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_276_tr" type="ptw" depart="348.45">
+        <route edges="-6914 -5762 -4652 -3797 3795 -3794 3784 4673 -3199 3195 -3302 -2388 2396 -2396 2388 3302 -3195 3199 -4673 -3784 3794 4650 -4665 4666 5763 6914 -6914"/>
+        <stop parkingArea="parkingArea_-2396_2_51" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_251_tr" type="ptw" depart="349.24">
+        <route edges="1873 -1259 -518 -379 -158 -43 42 372 784 1237 2347 2372 -2372 -1754 -1248 -788 -372 -42 43 158 379 520 894 1281 1873"/>
+        <stop parkingArea="parkingArea_2372_1_59" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_274_tr" type="ptw" depart="349.3">
+        <route edges="-3544 -2635 -1883 1873 -1259 -518 -379 -158 -43 42 372 784 1237 2347 2372 -2372 -1754 -1248 -788 -372 -42 43 158 379 518 1259 -1873 1883 2635 3544 -3544"/>
+        <stop parkingArea="parkingArea_2372_1_59" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_153_tr" type="ptw" depart="350.44">
+        <route edges="-3905 3905 4682 -4673 -3784 -3083 3081 -3558 -2016 1994 2748 -2748 -1994 2016 3558 -3081 3083 3784 4673 -4682 -3905"/>
+        <stop parkingArea="parkingArea_-2748_2_112" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_518_tr" type="ptw" depart="352.46">
+        <route edges="1132 -1132 -752 -402 -51 -19 -3 15 43 158 379 518 1259 -1259 -518 -379 -158 -43 -15 3 19 51 402 752 1132"/>
+        <stop parkingArea="parkingArea_-1259_1_15" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_465_tr" type="ptw" depart="352.67">
+        <route edges="3195 3919 4687 -4794 4808 -4808 4794 -4681 -3903 -3191 3195"/>
+        <stop parkingArea="parkingArea_-4808_1_47" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_326_tr" type="ptw" depart="354.86">
+        <route edges="-2740 2740 -1489 -1016 -648 -386 386 648 1016 1489 -2740"/>
+        <stop parkingArea="parkingArea_-386_1_87" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_346_tr" type="ptw" depart="356.55">
+        <route edges="3411 -3411 -1263 -518 -379 -158 -43 -15 3 19 51 402 752 1132 2340 3671 4539 -4539 -3671 -2340 -1132 -752 -402 -51 -19 -3 15 43 158 379 518 1263 3411"/>
+        <stop parkingArea="parkingArea_4539_1_8" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_300_tr" type="ptw" depart="359.05">
+        <route edges="520 906 -1259 1267 1872 3518 4149 4811 -4920 -3517 -2505 -1870 -1267 -518 520"/>
+        <stop parkingArea="parkingArea_-4920_1_24" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_1_tr" type="ptw" depart="360.27">
+        <route edges="2397 -2396 2388 3302 -3195 -2384 -2347 2346 2353 3087 3799 4672 5781 -5781 -4672 -3799 -3087 -2353 -1740 -1239 1247 -1248 1258 1766 2397"/>
+        <stop parkingArea="parkingArea_-5781_2_69" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_471_tr" type="ptw" depart="361.45">
+        <route edges="-3080 3080 -3558 -2016 1994 2748 3557 6590 -6727 -5510 -4529 -3565 -1498 -1022 1010 1992 2354 3080 -3080"/>
+        <stop parkingArea="parkingArea_-5510_1_117" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_99_tr" type="ptw" depart="361.77">
+        <route edges="5754 -5754 -4650 -3794 -3083 3081 -3558 -2016 1994 2748 3557 -3557 -2748 -1994 2016 3558 -3081 3083 3794 4650 5754"/>
+        <stop parkingArea="parkingArea_3557_0_114" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_242_tr" type="ptw" depart="363.0">
+        <route edges="1247 1754 2372 -3784 3794 4650 -4665 -3799 -3087 -2353 -1740 -1239 1247"/>
+        <stop parkingArea="parkingArea_4650_1_63" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_375_tr" type="ptw" depart="366.77">
+        <route edges="-2338 -1132 -752 -402 -51 -19 -3 15 43 158 379 520 894 1281 1881 2625 3543 -3543 -2625 2609 -3411 -1263 -518 -379 -158 -43 -15 3 19 51 402 754 1133 1524 -2338"/>
+        <stop parkingArea="parkingArea_3543_1_4" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_157_tr" type="ptw" depart="366.97">
+        <route edges="7022 -6919 -5767 -4672 -3799 -3087 -2353 -1740 1750 -1992 -1010 1022 1498 3565 4507 5398 6598 -6598 -5398 -4507 4525 -6586 -3557 -2748 -1994 2016 3558 -3081 3087 3799 4672 5781 7022"/>
+        <stop parkingArea="parkingArea_6598_1_120" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_213_tr" type="ptw" depart="367.84">
+        <route edges="-6727 -5510 -4529 -3565 -1498 1494 2124 -2227 2235 -2235 2227 -2124 -1494 1490 -2740 2748 3557 6590 -6727"/>
+        <stop parkingArea="parkingArea_-2235_2_100" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_10_tr" type="ptw" depart="369.49">
+        <route edges="3541 4297 -4297 -3541 -2625 2609 -3411 -1263 -518 -379 -158 -43 42 372 784 1237 2346 2353 3087 3799 4672 -4672 -3799 -3087 -2353 -2346 -1237 -784 -372 -42 43 158 379 520 894 1281 1881 2625 3541"/>
+        <stop parkingArea="parkingArea_-4672_2_65" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_143_tr" type="ptw" depart="370.0">
+        <route edges="382 402 780 1634 2345 3072 4646 -6729 -5515 -4533 -2964 -2231 -1514 -400 382"/>
+        <stop parkingArea="parkingArea_-6729_1_99" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_398_tr" type="ptw" depart="371.46">
+        <route edges="-2347 2346 2353 3087 3799 4666 5763 -5762 -4652 -3797 -3087 -2353 -2346 2347 -2347"/>
+        <stop parkingArea="parkingArea_-5762_2_73" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_250_tr" type="ptw" depart="373.12">
+        <route edges="-11 3 19 51 402 752 1132 2340 3681 5626 -5626 -3681 -2340 -1132 -752 -402 -51 -19 23 -27 -11"/>
+        <stop parkingArea="parkingArea_5626_1_11" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_450_tr" type="ptw" depart="373.34">
+        <route edges="3068 -2962 -2231 -1514 -400 -268 -52 -24 26 372 784 1237 2347 2384 3191 3903 4675 5791 7047 -7046 -5787 -4675 -3903 -3191 -2384 -2347 -1237 -784 -372 -26 24 52 268 400 1514 2231 2962 -3068 3068"/>
+        <stop parkingArea="parkingArea_7047_2_42" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_549_tr" type="ptw" depart="373.36">
+        <route edges="-7272 -5931 -4808 4794 -4681 -3903 -3191 -2384 -2347 2346 2353 3087 -3087 -2353 -2346 2347 2384 3191 3903 4681 -4794 4808 5931 7272 -7272"/>
+        <stop parkingArea="parkingArea_3087_2_62" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_9_tr" type="ptw" depart="376.42">
+        <route edges="781 -781 782 1634 2345 3072 -3072 -2345 -1634 -782 781"/>
+        <stop parkingArea="parkingArea_-3072_2_97" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_123_tr" type="ptw" depart="376.48">
+        <route edges="-4666 4666 -4664 4664 -4666"/>
+        <stop parkingArea="parkingArea_4664_1_71" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_490_tr" type="ptw" depart="376.65">
+        <route edges="-2740 2740 -1489 -1016 1022 1490 -2740"/>
+        <stop parkingArea="parkingArea_-1016_2_89" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_271_tr" type="ptw" depart="377.06">
+        <route edges="-1489 -1016 -648 -386 382 402 752 1132 2340 3681 5626 -5626 -3681 -2340 -1132 -752 -402 -382 386 648 1016 1489 -1489"/>
+        <stop parkingArea="parkingArea_5626_1_11" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_352_tr" type="ptw" depart="377.36">
+        <route edges="24 -24 26 372 784 1237 2347 2372 -3784 3794 4650 -4665 -3799 -3087 -2353 -2346 -1237 -784 -372 -26 24"/>
+        <stop parkingArea="parkingArea_4650_1_63" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_544_tr" type="ptw" depart="377.59">
+        <route edges="3784 -3784 -3083 3081 -3558 -2016 -1487 -1016 -648 -386 382 402 780 1634 2345 -2345 -1634 -780 -402 -382 386 648 1016 1487 2016 3558 -3081 3083 3784"/>
+        <stop parkingArea="parkingArea_2345_2_96" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_240_tr" type="ptw" depart="377.67">
+        <route edges="-7028 -5781 -4672 -3799 -3087 -2353 -2346 2347 2384 3191 3903 4681 -4794 4808 -4808 4794 -4681 -3903 -3191 -2384 -2347 2346 2353 3087 3799 4672 5781 7028 -7028"/>
+        <stop parkingArea="parkingArea_-4808_1_47" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_185_tr" type="ptw" depart="380.89">
+        <route edges="-6731 -5514 -4642 -3072 -2345 2345 3072 4646 -6729 6731 -6731"/>
+        <stop parkingArea="parkingArea_2345_2_96" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_432_tr" type="ptw" depart="381.04">
+        <route edges="-372 372 784 1239 1750 -1992 -1010 1022 1494 2124 -2227 -1514 -400 -268 -52 -24 26 372 -372"/>
+        <stop parkingArea="parkingArea_-2227_1_107" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_438_tr" type="ptw" depart="381.6">
+        <route edges="-5162 -4297 -3541 3541 4297 5162 -5162"/>
+        <stop parkingArea="parkingArea_4297_1_3" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_421_tr" type="ptw" depart="383.2">
+        <route edges="382 -382 386 648 1022 1498 3565 4529 5510 6727 -6590 -3557 -2748 -1994 -1487 -1016 -648 -386 382"/>
+        <stop parkingArea="parkingArea_-6590_1_113" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_523_tr" type="ptw" depart="384.8">
+        <route edges="-3518 -1872 -1267 -518 -379 -158 -43 42 372 784 1237 2346 2353 3087 3799 4672 -4672 -3799 -3087 -2353 -2346 -1237 -784 -372 -42 43 158 379 518 1267 1872 3518 -3518"/>
+        <stop parkingArea="parkingArea_-4672_2_65" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_480_tr" type="ptw" depart="384.95">
+        <route edges="4793 -4793 4808 -4808 4793"/>
+        <stop parkingArea="parkingArea_-4808_1_47" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_221_tr" type="ptw" depart="386.09">
+        <route edges="-3544 -2635 -1883 1873 -1259 1267 1872 3518 4149 4811 -4920 -3517 -2505 -1870 -1267 1259 -1873 1883 2635 3544 -3544"/>
+        <stop parkingArea="parkingArea_4811_1_25" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_516_tr" type="ptw" depart="386.93">
+        <route edges="4533 5515 -5514 -4531 4533"/>
+        <stop parkingArea="parkingArea_-4531_2_103" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_539_tr" type="ptw" depart="389.49">
+        <route edges="-5 11 41 -373 379 518 1267 1870 2503 -3518 -1872 -1267 -518 -379 -158 -43 42 -26 -5"/>
+        <stop parkingArea="parkingArea_2503_1_35" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_190_tr" type="ptw" depart="390.32">
+        <route edges="-3087 -2353 -1740 -1239 1247 -1248 1248 1754 2372 -3784 -3083 3087 -3087"/>
+        <stop parkingArea="parkingArea_1248_1_58" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_80_tr" type="ptw" depart="390.97">
+        <route edges="-5515 -4533 -2964 -2231 -1514 -400 -268 -52 -24 26 372 784 1237 2347 2384 3191 3903 4675 5799 -5904 -4793 -4045 -3308 -2388 -1762 -1258 -788 -372 -26 24 52 268 400 1514 2231 2964 4533 5515 -5515"/>
+        <stop parkingArea="parkingArea_-5904_2_46" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_178_tr" type="ptw" depart="392.11">
+        <route edges="4260 -4260 -3530 3538 4291 -6255 -5052 -4279 4275 -4274 4260"/>
+        <stop parkingArea="parkingArea_-5052_1_39" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_296_tr" type="ptw" depart="395.22">
+        <route edges="26 372 784 1239 1750 -1992 -1010 1022 1498 3565 4525 -6728 -5510 -4529 -3565 -1498 -1022 -648 -386 -268 -52 -24 26"/>
+        <stop parkingArea="parkingArea_-6728_1_116" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_131_tr" type="ptw" depart="395.57">
+        <route edges="-6862 -5650 -3681 -2340 -1132 -752 -402 -382 -268 -52 -24 26 372 788 1258 1762 -1762 -1258 -788 -372 -42 -15 3 19 51 402 752 1132 2340 3671 4539 6759 -6862"/>
+        <stop parkingArea="parkingArea_-1762_1_52" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_0_tr" type="ptw" depart="396.98">
+        <route edges="2235 -2235 -1514 -400 -268 -52 -24 26 372 788 1258 1766 2397 -2396 -1762 -1258 -788 -372 -26 24 52 268 400 1514 2235"/>
+        <stop parkingArea="parkingArea_-2396_2_51" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_469_tr" type="ptw" depart="397.61">
+        <route edges="3555 -2858 -1489 -1016 -648 -386 -268 -52 -24 -5 3 19 51 -382 386 648 1016 1487 1994 2748 3555"/>
+        <stop parkingArea="parkingArea_-5_0_79" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_473_tr" type="ptw" depart="397.82">
+        <route edges="-4260 -3530 3538 4291 -6255 -5052 -4279 4275 -4274 4260 -4260"/>
+        <stop parkingArea="parkingArea_-4279_1_40" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_198_tr" type="ptw" depart="399.78">
+        <route edges="2396 -2397 -1766 -1258 -788 -372 -42 43 158 379 518 1259 -1873 1873 -1259 -518 -379 -158 -43 42 372 788 1258 1762 2396"/>
+        <stop parkingArea="parkingArea_-1873_1_12" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_90_tr" type="ptw" depart="400.14">
+        <route edges="3681 -3681 -2340 -1132 -752 780 1634 2345 3072 4646 -4646 -3072 -2345 -1634 -780 752 1132 2340 3681"/>
+        <stop parkingArea="parkingArea_4646_2_98" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_241_tr" type="ptw" depart="401.26">
+        <route edges="2016 -2016 -1487 -1016 -648 -386 -268 -52 -24 -5 3 19 51 -382 386 648 1016 1487 2016"/>
+        <stop parkingArea="parkingArea_-5_0_79" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_373_tr" type="ptw" depart="402.38">
+        <route edges="2231 -2231 -1514 -400 386 648 1016 1487 2016 3558 -3081 3087 3797 4652 -4652 -3797 -3087 -2353 -1740 1750 -1992 -1010 -648 -386 400 1514 2231"/>
+        <stop parkingArea="parkingArea_-4652_1_70" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_531_tr" type="ptw" depart="402.55">
+        <route edges="-15 15 43 158 379 520 894 1281 1881 2625 -2625 2609 -3411 -1263 -518 -379 -158 -43 -15"/>
+        <stop parkingArea="parkingArea_2625_1_5" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_385_tr" type="ptw" depart="404.69">
+        <route edges="3541 4297 -4297 -3541 -2625 2609 -3411 -1263 -518 -379 -158 -43 42 372 784 1237 2347 2384 3191 3903 4675 5791 7047 -7046 -5787 -4675 -3903 -3191 -2384 -2347 -1237 -784 -372 -42 43 158 379 520 894 1281 1881 2625 3541"/>
+        <stop parkingArea="parkingArea_-7046_1_43" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_535_tr" type="ptw" depart="405.43">
+        <route edges="-1281 -894 906 -1259 1259 -1873 -1281"/>
+        <stop parkingArea="parkingArea_-1259_1_15" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_445_tr" type="ptw" depart="405.6">
+        <route edges="-4642 -3072 -2345 -1634 -780 -402 -51 -19 -3 15 43 158 379 518 1259 -1873 1873 -1259 -518 -379 -158 -43 42 -26 24 52 268 400 1514 2231 2964 4531 -4642"/>
+        <stop parkingArea="parkingArea_-1873_1_12" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_585_tr" type="ptw" depart="407.51">
+        <route edges="-6152 -4948 -4260 -3530 -1872 -1267 -518 -379 -158 -43 42 372 784 1237 2346 2349 -2739 2738 -2738 2739 -2349 -2346 -1237 -784 -372 -42 43 158 379 518 1267 1872 3530 4254 -6034 6036 -6152"/>
+        <stop parkingArea="parkingArea_-2738_1_61" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_435_tr" type="ptw" depart="408.56">
+        <route edges="-784 784 1239 1750 -1992 -1010 1022 1498 3565 4529 5510 6727 -6590 -3557 -2748 -1994 2016 3558 -3080 -2354 -1750 -1239 -784"/>
+        <stop parkingArea="parkingArea_-6590_1_113" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_558_tr" type="ptw" depart="409.49">
+        <route edges="4681 -4687 -3919 -3195 3199 -4673 -3784 -3083 3081 -3558 -2016 1994 2748 3557 -3557 -2748 -1994 2016 3558 -3081 3083 3784 4673 -4682 -3905 3903 4681"/>
+        <stop parkingArea="parkingArea_3557_0_114" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_102_tr" type="ptw" depart="411.11">
+        <route edges="-1489 -1016 1010 1992 -1750 -1239 -784 -372 -42 43 158 379 518 1259 -906 -520 -379 -158 -43 42 372 784 1239 1750 -1992 -1010 1022 1490 -1489"/>
+        <stop parkingArea="parkingArea_-906_1_14" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_110_tr" type="ptw" depart="411.4">
+        <route edges="3905 -3905 3903 -3903 3905"/>
+        <stop parkingArea="parkingArea_-3903_1_55" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_136_tr" type="ptw" depart="414.56">
+        <route edges="-2503 -1870 -1267 -518 -379 -158 -43 -15 3 19 51 402 752 1132 2340 3671 4539 -4539 -3671 -2340 -1132 -752 -402 -51 -19 -3 15 43 158 379 518 1267 1872 3518 -2503"/>
+        <stop parkingArea="parkingArea_4539_1_8" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_71_tr" type="ptw" depart="415.69">
+        <route edges="-6862 -5650 -3681 -2340 -1132 -752 780 1634 2341 -2235 -1514 -400 382 402 752 1132 2340 3671 4539 6759 -6862"/>
+        <stop parkingArea="parkingArea_-2235_2_100" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_265_tr" type="ptw" depart="416.7">
+        <route edges="3558 -3558 -2016 1994 2748 3557 6586 -6728 6728 -6586 -3557 -2748 -1994 2016 3558"/>
+        <stop parkingArea="parkingArea_-6728_1_116" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_30_tr" type="ptw" depart="418.9">
+        <route edges="1132 2338 -1524 -1130 1132"/>
+        <stop parkingArea="parkingArea_2338_1_17" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_425_tr" type="ptw" depart="419.85">
+        <route edges="-6915 -5767 -4672 -3799 -3087 -2353 -1740 -1239 1247 -1248 1258 1766 2397 4809 5903 7161 -7264 -5931 -4808 4794 -4687 -3919 -3195 3199 -4673 -3784 3794 4650 5754 6894 -6915"/>
+        <stop parkingArea="parkingArea_-7264_1_48" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_424_tr" type="ptw" depart="419.99">
+        <route edges="379 518 1267 1872 3518 -2503 -1870 -1267 -518 -379 379"/>
+        <stop parkingArea="parkingArea_-2503_2_34" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_60_tr" type="ptw" depart="422.21">
+        <route edges="-752 752 1132 2340 3681 5626 -5626 -3681 -2340 -1132 -752"/>
+        <stop parkingArea="parkingArea_5626_1_11" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_12_tr" type="ptw" depart="423.35">
+        <route edges="3308 -4022 -2386 -1762 -1258 1248 -1247 1239 1750 -1992 -1010 1022 1498 -1498 -1022 1010 1992 -1750 -1239 1237 2347 2384 3195 -3302 3308"/>
+        <stop parkingArea="parkingArea_1498_1_109" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_561_tr" type="ptw" depart="426.78">
+        <route edges="-41 -11 3 19 51 412 782 1634 2345 3072 4646 -4646 -3072 -2345 -1634 -780 -402 -51 -19 -3 11 41 -41"/>
+        <stop parkingArea="parkingArea_4646_2_98" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_174_tr" type="ptw" depart="427.01">
+        <route edges="3919 -3919 -3302 -2388 2396 -2396 2388 3302 3919"/>
+        <stop parkingArea="parkingArea_-2396_2_51" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_257_tr" type="ptw" depart="429.55">
+        <route edges="-4794 4794 -4681 -3903 -3191 -2384 -2347 2346 -1740 1750 -1992 -1010 -648 -386 -268 -52 -24 26 372 784 1237 2347 2384 3191 3903 4681 -4794"/>
+        <stop parkingArea="parkingArea_-386_1_87" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_485_tr" type="ptw" depart="429.71">
+        <route edges="781 -781 -412 -51 -19 19 51 412 781"/>
+        <stop parkingArea="parkingArea_-19_1_82" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_17_tr" type="ptw" depart="430.22">
+        <route edges="-788 788 1248 -1248 -788"/>
+        <stop parkingArea="parkingArea_1248_1_58" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_406_tr" type="ptw" depart="431.83">
+        <route edges="-1237 1237 2347 2384 3191 3903 4675 5791 -5791 -4675 -3903 -3191 -2384 -2347 -1237"/>
+        <stop parkingArea="parkingArea_5791_1_41" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_449_tr" type="ptw" depart="432.04">
+        <route edges="5762 -5763 -4666 -3799 -3087 -2353 -2346 2347 2384 3191 3903 -3903 -3191 -2384 -2347 2346 2353 3087 3797 4652 5762"/>
+        <stop parkingArea="parkingArea_-3903_1_55" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_316_tr" type="ptw" depart="433.85">
+        <route edges="-373 -158 -43 42 372 784 1237 2346 2349 -2739 2738 -2738 2739 -2349 -2346 -1237 -784 -372 -42 43 158 373 -373"/>
+        <stop parkingArea="parkingArea_-2738_1_61" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_49_tr" type="ptw" depart="435.02">
+        <route edges="-1258 -788 -372 -26 -5 15 42 372 788 1258 -1258"/>
+        <stop parkingArea="parkingArea_-5_0_79" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_238_tr" type="ptw" depart="437.97">
+        <route edges="-4149 -3518 -1872 -1267 1259 -1259 1267 1872 3518 4149 -4149"/>
+        <stop parkingArea="parkingArea_-1259_1_15" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_573_tr" type="ptw" depart="442.28">
+        <route edges="-4022 -2386 -1762 -1258 -788 -372 -42 43 -29 27 -23 21 -24 26 372 788 1258 1762 2386 4022 -4022"/>
+        <stop parkingArea="parkingArea_-23_2_80" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_37_tr" type="ptw" depart="443.55">
+        <route edges="-5 11 41 -373 379 518 1267 1872 3518 4149 4811 -4920 -3517 -2505 -1870 -1267 -518 -379 -158 -43 42 -26 -5"/>
+        <stop parkingArea="parkingArea_4811_1_25" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_455_tr" type="ptw" depart="444.64">
+        <route edges="-3784 -3083 3081 -3558 -2016 -1487 -1016 1010 1992 -1750 -1239 1247 1754 2372 -3784"/>
+        <stop parkingArea="parkingArea_-1016_2_89" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_126_tr" type="ptw" depart="445.27">
+        <route edges="-4149 -3518 -1872 -1267 -518 -379 -158 -43 42 372 784 1237 2346 2353 3087 -3087 -2353 -2346 -1237 -784 -372 -42 43 158 379 518 1267 1872 3518 4149 -4149"/>
+        <stop parkingArea="parkingArea_3087_2_62" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_16_tr" type="ptw" depart="446.67">
+        <route edges="-4666 -3799 -3087 -2353 -2346 2347 2384 3191 3903 4681 -4794 4808 -4808 4794 -4681 -3903 -3191 -2384 -2347 2346 2353 3087 3799 4666 -4666"/>
+        <stop parkingArea="parkingArea_-4808_1_47" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_200_tr" type="ptw" depart="450.36">
+        <route edges="-6892 -4646 -3072 -2345 -1634 -780 -402 -382 386 648 -648 -386 382 402 780 1634 2345 3072 4646 6892 -6892"/>
+        <stop parkingArea="parkingArea_648_1_88" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_575_tr" type="ptw" depart="451.52">
+        <route edges="-1881 1873 -1873 1881 -1881"/>
+        <stop parkingArea="parkingArea_-1873_1_12" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_541_tr" type="ptw" depart="457.92">
+        <route edges="4922 -4922 -3517 -2505 -1870 -1267 -518 -379 -158 -43 -15 3 19 51 412 782 1634 -1634 -780 -402 -51 -19 -3 15 43 158 379 518 1267 1870 2505 3517 4922"/>
+        <stop parkingArea="parkingArea_-1634_1_95" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_597_tr" type="ptw" depart="459.62">
+        <route edges="-3195 3199 -4673 -3784 -3083 -2353 -2346 2347 2384 3195 -3195"/>
+        <stop parkingArea="parkingArea_-2353_2_60" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_478_tr" type="ptw" depart="462.43">
+        <route edges="-4151 -2503 -1870 -1267 -518 -379 -158 -29 41 -373 379 518 1267 1872 3530 4254 -4151"/>
+        <stop parkingArea="parkingArea_41_1_77" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_187_tr" type="ptw" depart="467.34">
+        <route edges="-7047 -5791 -4675 -3903 -3191 -2384 -2347 -1237 -784 -372 -26 -5 15 42 372 784 1237 2347 2384 3191 3903 4675 5787 7046 -7047"/>
+        <stop parkingArea="parkingArea_-5_0_79" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_255_tr" type="ptw" depart="470.08">
+        <route edges="3411 -3411 -1263 -518 -379 -158 -43 42 -26 -5 11 41 -373 379 518 1263 3411"/>
+        <stop parkingArea="parkingArea_-5_0_79" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_222_tr" type="ptw" depart="470.73">
+        <route edges="-6900 -5754 -4650 -3794 3784 -2372 -1754 -1248 1248 1754 2372 -3784 3794 4650 5754 6900 -6900"/>
+        <stop parkingArea="parkingArea_1248_1_58" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_475_tr" type="ptw" depart="472.49">
+        <route edges="7022 -6919 -5767 -4672 -3799 -3087 -2353 -1740 1750 -1992 -1010 -648 -386 382 402 -402 -382 386 648 1016 1487 2016 3558 -3081 3087 3799 4672 5781 7022"/>
+        <stop parkingArea="parkingArea_402_1_85" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_275_tr" type="ptw" depart="473.97">
+        <route edges="4650 -4650 -3794 3784 4673 -4682 -3905 3903 4675 5799 -5904 -4793 -4045 -3308 3302 -3195 3199 -4673 -3784 3794 4650"/>
+        <stop parkingArea="parkingArea_-5904_2_46" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_163_tr" type="ptw" depart="474.39">
+        <route edges="3411 -2609 -1881 1873 -1259 1263 3411"/>
+        <stop parkingArea="parkingArea_1873_1_13" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_227_tr" type="ptw" depart="476.62">
+        <route edges="-3544 -2635 -1883 1873 -1259 -518 -379 -158 -43 43 158 379 518 1259 -1873 1883 2635 3544 -3544"/>
+        <stop parkingArea="parkingArea_-43_1_75" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_211_tr" type="ptw" depart="478.82">
+        <route edges="-2505 2503 4149 4811 -4920 -3517 -2505"/>
+        <stop parkingArea="parkingArea_-4920_1_24" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_89_tr" type="ptw" depart="483.77">
+        <route edges="-1489 -1016 1010 1992 -1750 -1239 -784 -372 -42 43 158 379 518 1259 -1873 1873 -1259 -518 -379 -158 -43 42 372 784 1239 1750 -1992 -1010 1022 1490 -1489"/>
+        <stop parkingArea="parkingArea_-1873_1_12" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_225_tr" type="ptw" depart="484.5">
+        <route edges="-2858 -2740 -1994 2016 -2738 -1991 -1010 1022 1490 2858 -2858"/>
+        <stop parkingArea="parkingArea_-2738_1_61" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_234_tr" type="ptw" depart="494.46">
+        <route edges="-4646 -3072 -2345 -1634 -780 754 1133 -1130 -752 780 1634 2345 3072 4646 -4646"/>
+        <stop parkingArea="parkingArea_-1130_1_20" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_548_tr" type="ptw" depart="506.61">
+        <route edges="3784 -3784 -3083 3081 -3558 -2016 -1487 -1016 -648 -386 382 402 752 1132 2340 -2340 -1132 -752 -402 -382 386 648 1016 1487 2016 3558 -3081 3083 3784"/>
+        <stop parkingArea="parkingArea_-2340_1_9" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_430_tr" type="ptw" depart="516.49">
+        <route edges="43 -43 -15 3 23 -27 29 -43 43"/>
+        <stop parkingArea="parkingArea_23_0_81" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_487_tr" type="ptw" depart="520.51">
+        <route edges="-1248 1248 1754 2372 -3784 -3083 3081 -3558 -2738 -1991 1992 -1750 -1239 1247 -1248"/>
+        <stop parkingArea="parkingArea_-2738_1_61" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_96_tr" type="ptw" depart="520.74">
+        <route edges="1248 1754 2372 -3784 3794 4650 5754 -5754 -4650 -3794 3784 -2372 -1754 -1248 1248"/>
+        <stop parkingArea="parkingArea_5754_1_64" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_547_tr" type="ptw" depart="524.51">
+        <route edges="3797 -3797 -3087 -2353 -2346 -1237 -784 -372 -42 -15 3 23 -27 29 -43 42 372 784 1239 1740 2353 3087 3797"/>
+        <stop parkingArea="parkingArea_23_0_81" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_391_tr" type="ptw" depart="536.36">
+        <route edges="43 -43 42 372 784 1237 2346 2353 -2353 -1740 -1239 -784 -372 -42 43"/>
+        <stop parkingArea="parkingArea_-2353_2_60" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_256_tr" type="ptw" depart="547.26">
+        <route edges="-3554 -2635 -1883 1873 -1259 -518 -379 -158 -43 -15 3 23 -27 29 158 379 518 1259 -1873 1883 2635 3554 4403 5272 -5272 -4403 -3554"/>
+        <stop parkingArea="parkingArea_23_0_81" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_500_tr" type="ptw" depart="550.88">
+        <route edges="-1247 -784 -372 372 784 1247 -1247"/>
+        <stop parkingArea="parkingArea_-372_1_76" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_596_tr" type="ptw" depart="578.59">
+        <route edges="-1281 -894 -520 -379 -158 -43 -15 3 19 51 402 780 -782 -412 -51 -19 -3 15 43 158 379 520 894 1281 -1281"/>
+        <stop parkingArea="parkingArea_780_1_94" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_40_tr" type="ptw" depart="601.34">
+        <route edges="-518 -379 -158 -43 -15 3 19 51 402 752 -752 -402 -51 -19 -3 15 43 158 379 518 -518"/>
+        <stop parkingArea="parkingArea_-752_1_84" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_476_tr" type="ptw" depart="622.3">
+        <route edges="788 1258 1762 2386 4022 4045 4808 -4808 -4045 -3308 -2388 -1762 -1258 -788 788"/>
+        <stop parkingArea="parkingArea_-4808_1_47" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_420_tr" type="ptw" depart="627.51">
+        <route edges="1487 2016 3558 -3081 3083 3794 4650 5754 -5754 -4650 -3794 -3083 3081 -3558 -2016 -1487 1487"/>
+        <stop parkingArea="parkingArea_5754_1_64" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_384_tr" type="ptw" depart="637.47">
+        <route edges="-2227 2227 -2124 -1494 1498 3565 4525 -6728 -5510 -4529 -3565 -1498 1494 2124 -2227"/>
+        <stop parkingArea="parkingArea_-6728_1_116" duration="1200"/>
+    </vehicle>
+
+    <vehicle id="ptw_307_tr" type="ptw" depart="709.19">
+        <route edges="2962 -2962 -2231 -1514 -400 -268 -52 -24 26 372 788 1258 1766 2397 4809 5903 7161 -7264 7264 -7161 -5903 -4809 -2397 -1766 -1258 -788 -372 -26 24 52 268 400 1514 2231 2962"/>
+        <stop parkingArea="parkingArea_-5903_2_49" duration="1200"/>
+    </vehicle>
+
+</routes>
