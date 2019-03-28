@@ -5,3 +5,10 @@ example.trips.xml
 mobilitygen.json
 taz.shape.xml
 taz.weight.csv
+
+test.sumocfg
+*.lanechanges.out.xml
+*.stop.out.xml
+*.summary.xml
+*.tripinfo.xml
+*.vehroute.xml
