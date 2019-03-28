@@ -28,7 +28,7 @@ from pypml import ParkingMonitor
 
 # """ Import SUMO library """
 if 'SUMO_TOOLS' in os.environ:
-    sys.path.append(os.environ['SUMO_TOOLS'])
+    sys.path.append(os.environ['SUMO_110_TOOLS'])
     import traci
 else:
     sys.exit("Please declare environment variable 'SUMO_TOOLS'")
@@ -37,18 +37,21 @@ def _main():
     """ Example of parking management in SUMO. """
 
     ## TESTED WITH: SUMO 1.1.0
-    traci.start(['sumo', '-c', 'test_scenario/sumo.simple.cfg'], port=42041)
+    traci.start(['/home/drone/Applications/SUMO/sumo-1.1.0/bin/sumo',
+                 '-c', 'random_grid/random.sumocfg'], port=42041)
+    ## Running with the last-monday development version
+    # traci.start(['sumo-gui', '-c', 'test_scenario/sumo.simple.cfg'], port=42041)
 
     parking_monitor_options = {
         'addStepListener': True,
         'logging': {
             'stdout': False,
-            'filename': 'simple.example.log',
+            'filename': 'random.example.log',
             'level': logging.DEBUG,
         },
-        'sumo_parking_file': 'test_scenario/parkings.small.add.xml',
+        'sumo_parking_file': 'random_grid/parkingArea.add.xml',
         'blacklist': [],
-        'vclasses': {'truck', 'passenger', 'motorcycle'},
+        'vclasses': {'delivery', 'motorcycle', 'passenger'},
         'generic_conf': [],
         'specific_conf': {},
         'subscriptions': {
@@ -56,7 +59,7 @@ def _main():
         },
     }
 
-    monitor = ParkingMonitor(traci, parking_monitor_options, 0.0)
+    monitor = ParkingMonitor(traci, parking_monitor_options, 383.0)
     # parking travel time structure initialized
     monitor.compute_parking_travel_time()
 
@@ -67,10 +70,6 @@ def _main():
         for vehicle in monitor.get_vehicle_iterator():
             if vehicle['arrived']:
                 ## the vehicle is not in the simulation anymore
-                continue
-            if vehicle['stopped']:
-                ## the vehicle is stopped and it does not require additional 
-                ## parking changes at least for the moment
                 continue
             if not vehicle['edge'] or ':' in vehicle['edge']:
                 ## the vehicle is on an intersection and the change would not be safe.
