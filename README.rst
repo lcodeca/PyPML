@@ -32,6 +32,7 @@ Examples:
 * Given the ~under development~ status of the project, examples are provided.
   * examples/simple.example.py
   * examples/subscriptions.example.py
+  * examples/random_grid is a more complex scenario than test_grid.
 
 Important:
 * PyPML behavior in case of multiple TraCI servers is umpredictable due to how the subscription are
