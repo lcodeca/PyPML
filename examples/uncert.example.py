@@ -37,19 +37,31 @@ def _main():
     """ Example of parking management in SUMO. """
 
     ## TESTED WITH: SUMO 1.1.0
-    traci.start(['sumo', '-c', 'test_scenario/sumo.simple.cfg'], port=42041)
+    traci.start(['sumo', '-c', 'test_scenario/sumo.simple.cfg'], port=42044)
 
     parking_monitor_options = {
+        'seed': 42,
         'addStepListener': True,
         'logging': {
             'stdout': False,
-            'filename': 'simple.example.log',
+            'filename': 'uncert.example.log',
             'level': logging.DEBUG,
         },
         'sumo_parking_file': 'test_scenario/parkings.small.add.xml',
         'blacklist': [],
         'vclasses': {'truck', 'passenger', 'motorcycle'},
-        'generic_conf': [],
+        'generic_conf': [
+            {
+                'cond': ['<', 'total_capacity', 25],
+                'set_to': [
+                    ['uncertainty', {
+                        'mu': 0.0,
+                        'sigma': ['*', 'total_capacity', 0.10]
+                        }
+                    ],
+                ],
+            },
+        ],
         'specific_conf': {},
         'subscriptions': {
             'only_parkings': True,
@@ -82,13 +94,13 @@ def _main():
                     availability = monitor.get_free_places(stopping_place,
                                                            vclass=vehicle['vClass'],
                                                            with_projections=False,
-                                                           with_uncertainty=False)
+                                                           with_uncertainty=True)
                     if availability < 1:
                         alternatives = monitor.get_closest_parkings(stopping_place, num=25)
                         for trtime, alt in alternatives:
                             alt_availability = monitor.get_free_places(
                                 alt, vclass=vehicle['vClass'],
-                                with_projections=False, with_uncertainty=False)
+                                with_projections=False, with_uncertainty=True)
                             print(trtime, alt, alt_availability)
                             if alt_availability > 1:
                                 ## reroute vehicle

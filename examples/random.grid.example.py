@@ -37,12 +37,10 @@ def _main():
     """ Example of parking management in SUMO. """
 
     ## TESTED WITH: SUMO 1.1.0
-    traci.start(['/home/drone/Applications/SUMO/sumo-1.1.0/bin/sumo',
-                 '-c', 'random_grid/random.sumocfg'], port=42041)
-    ## Running with the last-monday development version
-    # traci.start(['sumo-gui', '-c', 'test_scenario/sumo.simple.cfg'], port=42041)
+    traci.start(['sumo', '-c', 'random_grid/random.sumocfg'], port=42043)
 
     parking_monitor_options = {
+        'seed': 42,
         'addStepListener': True,
         'logging': {
             'stdout': False,
@@ -59,7 +57,7 @@ def _main():
         },
     }
 
-    monitor = ParkingMonitor(traci, parking_monitor_options, 383.0)
+    monitor = ParkingMonitor(traci, parking_monitor_options)
     # parking travel time structure initialized
     monitor.compute_parking_travel_time()
 

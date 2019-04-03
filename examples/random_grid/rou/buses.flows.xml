@@ -8,7 +8,7 @@
         <stop busStop="busStop_3083_1_22" duration="30.00" until="233.25"/>
         <stop busStop="busStop_-4682_1_24" duration="30.00" until="294.75"/>
     </route>
-    <flow id="bus:1_eastbound" type="bus" route="bus:1_eastbound" begin="0.0" end="86400" period="300" line="Bus1-EastBound" >
+    <flow id="bus:1_eastbound" type="bus" route="bus:1_eastbound" begin="0.0" end="3600" period="300" line="Bus1-EastBound" >
         <param key="name" value="Bus1-EastBound"/>
     </flow>
 
@@ -19,7 +19,7 @@
         <stop busStop="busStop_-1016_1_10" duration="30.00" until="216.75"/>
         <stop busStop="busStop_402_1_8" duration="30.00" until="283.50"/>
     </route>
-    <flow id="bus:1_westbound" type="bus" route="bus:1_westbound" begin="0.0" end="86400" period="300" line="Bus1-WestBound" >
+    <flow id="bus:1_westbound" type="bus" route="bus:1_westbound" begin="0.0" end="3600" period="300" line="Bus1-WestBound" >
         <param key="name" value="Bus1-WestBound"/>
     </flow>
 
@@ -32,7 +32,7 @@
         <stop busStop="busStop_4675_1_16" duration="30.00" until="356.50"/>
         <stop busStop="busStop_7051_1_18" duration="30.00" until="409.50"/>
     </route>
-    <flow id="bus:2_northbound" type="bus" route="bus:2_northbound" begin="0.0" end="86400" period="300" line="Bus2-NorthBound" >
+    <flow id="bus:2_northbound" type="bus" route="bus:2_northbound" begin="0.0" end="3600" period="300" line="Bus2-NorthBound" >
         <param key="name" value="Bus2-NorthBound"/>
     </flow>
 
@@ -45,7 +45,7 @@
         <stop busStop="busStop_400_1_3" duration="30.00" until="356.50"/>
         <stop busStop="busStop_5517_1_1" duration="30.00" until="435.75"/>
     </route>
-    <flow id="bus:2_southbound" type="bus" route="bus:2_southbound" begin="0.0" end="86400" period="300" line="Bus2-SouthBound" >
+    <flow id="bus:2_southbound" type="bus" route="bus:2_southbound" begin="0.0" end="3600" period="300" line="Bus2-SouthBound" >
         <param key="name" value="Bus2-SouthBound"/>
     </flow>
 </routes>

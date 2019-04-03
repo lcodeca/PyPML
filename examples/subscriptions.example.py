@@ -41,6 +41,7 @@ def _main():
     traci.start(['sumo', '-c', 'test_scenario/sumo.subscriptions.cfg'], port=42042)
 
     parking_monitor_options = {
+        'seed': 42,
         'addStepListener': True,
         'logging': {
             'stdout': False,
@@ -69,7 +70,7 @@ def _main():
         },
     }
 
-    monitor = ParkingMonitor(traci, parking_monitor_options, 0.0)
+    monitor = ParkingMonitor(traci, parking_monitor_options)
     # parking travel time structure initialized
     monitor.compute_parking_travel_time()
 
@@ -84,7 +85,7 @@ def _main():
                 ## the vehicle is not in the simulation anymore
                 continue
             if vehicle['stopped']:
-                ## the vehicle is stopped and it does not require additional 
+                ## the vehicle is stopped and it does not require additional
                 ## parking changes at least for the moment
                 continue
             if vehicle['id'] in vehicles_with_subscriptions:

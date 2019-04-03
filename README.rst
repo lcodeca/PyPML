@@ -11,18 +11,13 @@ December 5-7, 2018, Taipei, Taiwan.
 
 --------
 Reqirements:
-* It requires at least [SUMO 1.0.0](https://github.com/eclipse/sumo/tree/v1_0_0).
-* It requires at least [SUMO 1.0.1](https://github.com/eclipse/sumo/tree/v1_0_1)
-  if multi-threading is needed.
+* It requires at least [SUMO 1.0.1](https://github.com/eclipse/sumo/tree/v1_0_1).
 
 Tested with:
 * Eclipse SUMO Version 1.1.0
  Build features: Linux-4.18.0-3-amd64 x86_64 GNU 8.2.0 Release Proj GUI GDAL FFmpeg OSG GL2PS SWIG
 * Eclipse SUMO Version 1.0.1
  Build features: Linux-4.18.0-1-amd64 Proj GUI GDAL FFmpeg OSG GL2PS SWIG
-* Eclipse SUMO Version 1.0.0
- Build features: Linux-4.18.0-1-amd64 Proj GUI GDAL FFmpeg OSG GL2PS SWIG
-
 
 Installation:
 * Install: `pip3 install .` from the root directory, or `python3 setup.py install`
@@ -31,11 +26,13 @@ Installation:
 Examples:
 * Given the ~under development~ status of the project, examples are provided.
   * examples/simple.example.py
-  * examples/subscriptions.example.py
-  * examples/random_grid is a more complex scenario than test_grid.
+  * examples/subscriptions.example.py (Subscription usage)
+  * examples/uncert.example.py (Uncertainty usage)
+  * examples/random.grid.example.py applies the simple.example.py to random_grid,
+    a more complex scenario than test_grid.
 
 Important:
-* PyPML behavior in case of multiple TraCI servers is umpredictable due to how the subscription are
+* PyPML behavior in case of multiple TraCI servers is unpredictable due to how the subscriptions are
   implemented, to work around this issue we provide functions to retrieve vehicle and simulation
   subscriptions from the library: `get_traci_vehicle_subscriptions` and
   `get_traci_simulation_subscriptions`

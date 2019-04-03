@@ -21,9 +21,10 @@ import copy
 import logging
 import operator
 import os
-import random
 import sys
 import xml.etree.ElementTree
+
+from numpy.random import RandomState
 
 # """ Import TraCI library """
 if 'SUMO_TOOLS' in os.environ:
@@ -39,6 +40,7 @@ class ParkingMonitor(traci.StepListener):
 
     _logger = None
     _options = None
+    _random = None
 
     _parking_db = dict()
     _routers_db = dict()
@@ -89,16 +91,16 @@ class ParkingMonitor(traci.StepListener):
         else:
             self._logger = None
 
-    def __init__(self, traci_handler, options, time=0.0):
+    def __init__(self, traci_handler, options):
         """ Initialize the knowlegde base for the parking monitor.
 
         traci_handler: already initialized TraCI socket that is going to be used by PyPML
         options:       in order to reduce the number of parameters and increase the flexibility,
                        the complete initialization is done using a dict()
-        time:          beginning of the simulation in seconds (for statistical and logging purposes)
 
         Options format:
         {
+            'seed': Integer. Initialization seed for numpy.random.RandomState.
             'addStepListener': Boolean. Ff True, pypml is added as step listener in SUMO.
                                In case it's False the function step() must be called by hand every
                                simulation step.
@@ -163,11 +165,18 @@ class ParkingMonitor(traci.StepListener):
 
         self._options = options
 
+        ## Random generator initialization
+        if 'seed' in options:
+            self._random = RandomState(seed=options['seed'])
+        else:
+            self._random = RandomState()
+
         ## Logs initialization
         self._logs()
 
         ## TraCI initialization
         self._traci_handler = traci_handler
+        time = self._traci_handler.simulation.getTime()
 
         ## Read parkings and routers from SUMO add.xml
         self._load_parkings_and_routers()
@@ -835,8 +844,8 @@ class ParkingMonitor(traci.StepListener):
 
         error = 0
         if with_uncertainty:
-            error = round(random.normalvariate(self._parking_db[parking]['uncertainty']['mu'],
-                                               self._parking_db[parking]['uncertainty']['sigma']))
+            error = round(self._random.normal(self._parking_db[parking]['uncertainty']['mu'],
+                                              self._parking_db[parking]['uncertainty']['sigma']))
 
         current_capacity = dict()
         for key, capacity in self._parking_db[parking]['capacity_by_class'].items():
