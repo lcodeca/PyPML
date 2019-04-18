@@ -9,7 +9,9 @@
 <font color="#000000" face="helvetica, arial"><strong>pypml.ParkingMonitor</strong> = <a name="pypml.ParkingMonitor">class ParkingMonitor</a>(<a href="traci.html#StepListener">traci.StepListener</a>)</font></td></tr>
     
 <tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
-<td colspan=2><tt>SUMO&nbsp;StepListener&nbsp;class&nbsp;for&nbsp;the&nbsp;parking&nbsp;monitoring.<br>&nbsp;</tt></td></tr>
+<td colspan=2><tt>pypml.ParkingMonitor(traci_handler,&nbsp;options)<br>
+&nbsp;<br>
+SUMO&nbsp;StepListener&nbsp;class&nbsp;for&nbsp;the&nbsp;parking&nbsp;monitoring.<br>&nbsp;</tt></td></tr>
 <tr><td>&nbsp;</td>
 <td width="100%"><dl><dt>Method resolution order:</dt>
 <dd><a href="pypml.pypml.html#ParkingMonitor">ParkingMonitor</a></dd>
@@ -18,15 +20,15 @@
 </dl>
 <hr>
 Methods defined here:<br>
-<dl><dt><a name="ParkingMonitor-__init__"><strong>__init__</strong></a>(self, traci_handler, options, time=0.0)</dt><dd><tt>Initialize&nbsp;the&nbsp;knowlegde&nbsp;base&nbsp;for&nbsp;the&nbsp;parking&nbsp;monitor.<br>
+<dl><dt><a name="ParkingMonitor-__init__"><strong>__init__</strong></a>(self, traci_handler, options)</dt><dd><tt>Initialize&nbsp;the&nbsp;knowlegde&nbsp;base&nbsp;for&nbsp;the&nbsp;parking&nbsp;monitor.<br>
 &nbsp;<br>
 traci_handler:&nbsp;already&nbsp;initialized&nbsp;TraCI&nbsp;socket&nbsp;that&nbsp;is&nbsp;going&nbsp;to&nbsp;be&nbsp;used&nbsp;by&nbsp;PyPML<br>
 options:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;in&nbsp;order&nbsp;to&nbsp;reduce&nbsp;the&nbsp;number&nbsp;of&nbsp;parameters&nbsp;and&nbsp;increase&nbsp;the&nbsp;flexibility,<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the&nbsp;complete&nbsp;initialization&nbsp;is&nbsp;done&nbsp;using&nbsp;a&nbsp;dict()<br>
-time:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;beginning&nbsp;of&nbsp;the&nbsp;simulation&nbsp;in&nbsp;seconds&nbsp;(for&nbsp;statistical&nbsp;and&nbsp;logging&nbsp;purposes)<br>
 &nbsp;<br>
 Options&nbsp;format:<br>
 {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'seed':&nbsp;Integer.&nbsp;Initialization&nbsp;seed&nbsp;for&nbsp;numpy.random.RandomState.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;'addStepListener':&nbsp;Boolean.&nbsp;Ff&nbsp;True,&nbsp;pypml&nbsp;is&nbsp;added&nbsp;as&nbsp;step&nbsp;listener&nbsp;in&nbsp;SUMO.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In&nbsp;case&nbsp;it's&nbsp;False&nbsp;the&nbsp;function&nbsp;<a href="#pypml.ParkingMonitor-step">step</a>()&nbsp;must&nbsp;be&nbsp;called&nbsp;by&nbsp;hand&nbsp;every<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;simulation&nbsp;step.<br>
