@@ -37,7 +37,7 @@ def _main():
     """ Example of parking management in SUMO. """
 
     ## TESTED WITH: SUMO 1.1.0
-    traci.start(['sumo', '-c', 'test_scenario/sumo.simple.cfg'], port=42041)
+    traci.start(['sumo', '-c', 'test_scenario/sumo.simple.cfg'])
 
     parking_monitor_options = {
         'addStepListener': True,

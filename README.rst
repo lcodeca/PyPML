@@ -14,10 +14,12 @@ Reqirements:
 * It requires at least [SUMO 1.0.1](https://github.com/eclipse/sumo/tree/v1_0_1).
 
 Tested with:
+* Eclipse SUMO Version 1.2.0
+ Build features: Linux-4.19.0-4-amd64 x86_64 GNU 8.3.0 Release Proj GUI GDAL FFmpeg OSG GL2PS SWIG
 * Eclipse SUMO Version 1.1.0
- Build features: Linux-4.18.0-3-amd64 x86_64 GNU 8.2.0 Release Proj GUI GDAL FFmpeg OSG GL2PS SWIG
+ Build features: Linux-4.19.0-4-amd64 x86_64 GNU 8.3.0 Release Proj GUI GDAL FFmpeg OSG GL2PS SWIG
 * Eclipse SUMO Version 1.0.1
- Build features: Linux-4.18.0-1-amd64 Proj GUI GDAL FFmpeg OSG GL2PS SWIG
+ Build features: Linux-4.19.0-4-amd64 Proj GUI GDAL FFmpeg OSG GL2PS SWIG
 
 Installation:
 * Install: `pip3 install .` from the root directory, or `python3 setup.py install`

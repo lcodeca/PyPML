@@ -37,7 +37,7 @@ def _main():
     """ Example of parking management in SUMO. """
 
     ## TESTED WITH: SUMO 1.1.0
-    traci.start(['sumo', '-c', 'random_grid/random.sumocfg'], port=42043)
+    traci.start(['sumo', '-c', 'random_grid/random.sumocfg'])
 
     parking_monitor_options = {
         'seed': 42,

@@ -10,7 +10,7 @@ def readme():
         return freader.read()
 
 setup(name='pypml',
-      version='0.1',
+      version='0.2',
       description='Parking Monitor Library for SUMO via TraCI.',
       url='http://github.com/lcodeca/pypml',
       classifiers=[
