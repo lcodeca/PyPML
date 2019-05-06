@@ -1,5 +1,5 @@
 """ Python Parking Monitor Library (PyPML)
-    Copyright (C) 2018
+    Copyright (C) 2019
     Lara CODECA
 
     This program is free software: you can redistribute it and/or modify
@@ -355,7 +355,7 @@ class ParkingMonitor(traci.StepListener):
         """
         time = self._traci_handler.simulation.getTime()
         if self._logger:
-            self._logger.debug('Simulation time: %d', time)
+            self._logger.debug('Simulation time: %.2f', time)
         self._monitor_vehicles(time)
         self._update_vehicles_db(time)
         self._update_parking_db(time)
@@ -418,7 +418,7 @@ class ParkingMonitor(traci.StepListener):
                 self._passengers_db.add(passenger)
 
             if self._logger:
-                self._logger.debug('[%d] Vehicle %s added to subscriptions.', step, vehicle)
+                self._logger.debug('[%.2f] Vehicle %s added to subscriptions.', step, vehicle)
             self._traci_handler.vehicle.subscribe(
                 vehicle, varIDs=(tc.VAR_ROAD_ID, tc.VAR_NEXT_STOPS, tc.LAST_STEP_PERSON_ID_LIST))
 
@@ -479,7 +479,7 @@ class ParkingMonitor(traci.StepListener):
                 continue
 
             if self._logger:
-                self._logger.debug('[%d] Stop change for %s.', step, vehicle)
+                self._logger.debug('[%.2f] Stop change for %s.', step, vehicle)
 
             ## update parking projections
             _old_stops = set()
@@ -502,13 +502,13 @@ class ParkingMonitor(traci.StepListener):
 
             if self._options['subscriptions']['only_parkings'] and not current_stops:
                 if self._logger:
-                    self._logger.debug('[%d] Unsubscribing from vehicle %s, no additional stops.',
+                    self._logger.debug('[%.2f] Unsubscribing from vehicle %s, no additional stops.',
                                        step, vehicle)
                 try:
                     self._traci_handler.vehicle.unsubscribe(vehicle)
                 except traci.exceptions.TraCIException:
                     if self._logger:
-                        self._logger.critical('[%d] Unsubscription failed.', step)
+                        self._logger.critical('[%.2f] Unsubscription failed.', step)
 
     def _check_occupancy(self, step):
         """ Gather parking current occupancy. """
@@ -535,9 +535,15 @@ class ParkingMonitor(traci.StepListener):
         if self._traci_ending_stop_subscriptions:
              ## Update parking capacity by vClass
             for vehicle in self._traci_ending_stop_subscriptions:
+                if vehicle not in self._vehicles_db:
+                    if self._logger:
+                        self._logger.critical(
+                            '[%.2f] Vehicle %s stop has ended but it\'s but not in the DB.',
+                            step, vehicle)
+                    continue
                 self._vehicles_db[vehicle]['stopped'] = False
                 if self._logger:
-                    self._logger.debug('[%d] Vehicle %s is not stopped anymore.',
+                    self._logger.debug('[%.2f] Vehicle %s is not stopped anymore.',
                                        step, vehicle)
                 parking_area = self._get_parking_area_from_vehicle(vehicle)
                 if parking_area in self._parking_db:
@@ -547,14 +553,14 @@ class ParkingMonitor(traci.StepListener):
                             vehicle)
                     except KeyError:
                         if self._logger:
-                            self._logger.critical('[%d] Vehicle %s cannot be removed from area %s',
+                            self._logger.critical('[%.2f] Vehicle %s cannot be removed from area %s',
                                                   step, vehicle, parking_area)
                         raise Exception('[{}] Vehicle {} cannot be removed from area {}.'.format(
                             step, vehicle, parking_area))
                     _to_validate.add(parking_area)
                 else:
                     if self._logger:
-                        self._logger.debug('[%d] Parking area %s not monitored.',
+                        self._logger.debug('[%.2f] Parking area %s not monitored.',
                                            step, parking_area)
 
         self._traci_simulation_subscriptions = (
@@ -569,11 +575,12 @@ class ParkingMonitor(traci.StepListener):
             for vehicle in self._traci_starting_stop_subscriptions:
                 if vehicle not in self._vehicles_db:
                     if self._logger:
-                        self._logger.critical('[%d] Vehicle %s is parked but not in the DB.',
+                        self._logger.critical('[%.2f] Vehicle %s is stopped but not in the DB.',
                                               step, vehicle)
+                    continue
                 self._vehicles_db[vehicle]['stopped'] = True
                 if self._logger:
-                    self._logger.debug('[%d] Vehicle %s is stopping.',
+                    self._logger.debug('[%.2f] Vehicle %s is stopping.',
                                        step, vehicle)
                 parking_area = self._get_parking_area_from_vehicle(vehicle)
                 if parking_area in self._parking_db:
@@ -582,7 +589,7 @@ class ParkingMonitor(traci.StepListener):
                     _to_validate.add(parking_area)
                 else:
                     if self._logger:
-                        self._logger.debug('[%d] Parking area %s not monitored.',
+                        self._logger.debug('[%.2f] Parking area %s not monitored.',
                                            step, parking_area)
 
         for pid in _to_validate:
