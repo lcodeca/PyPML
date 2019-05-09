@@ -401,16 +401,14 @@ class ParkingMonitor(traci.StepListener):
             if self._options['subscriptions']['only_parkings'] and v_class in ['bus', 'rail']:
                 continue
 
-            stops = self._traci_handler.vehicle.getNextStops(vehicle)
-            current_stops = list()
-            _new_stops = set()
-            for stop in stops:
+            current_stops = self._traci_handler.vehicle.getNextStops(vehicle)
+            _parking_stops = set()
+            for stop in current_stops:
                 _, _, stopping_place, stop_flags, _, _ = stop
                 if self.is_parking_area(stop_flags):
-                    current_stops.append(stop)
-                    _new_stops.add(stopping_place)
+                    _parking_stops.add(stopping_place)
 
-            if self._options['subscriptions']['only_parkings'] and not current_stops:
+            if self._options['subscriptions']['only_parkings'] and not _parking_stops:
                 continue
 
             passengers = self._traci_handler.vehicle.getPersonIDList(vehicle)
@@ -432,10 +430,11 @@ class ParkingMonitor(traci.StepListener):
                 'passengers': passengers,
                 'arrived': None,
                 'stopped': False,
+                'roadside': False,
             }
 
             ## update parking projections
-            for area in _new_stops:
+            for area in _parking_stops:
                 self._parking_db[area]['projections_by_class'][v_class].add(vehicle)
 
         self._traci_arrived_list = self._traci_handler.simulation.getArrivedIDList()
@@ -465,13 +464,11 @@ class ParkingMonitor(traci.StepListener):
                 self._passengers_db.add(passenger)
 
             ## stop check
-            stops = data[tc.VAR_NEXT_STOPS]
-            current_stops = list()
+            current_stops = data[tc.VAR_NEXT_STOPS]
             _new_stops = set()
-            for stop in stops:
+            for stop in current_stops:
                 _, _, stopping_place, stop_flags, _, _ = stop
                 if self.is_parking_area(stop_flags):
-                    current_stops.append(stop)
                     _new_stops.add(stopping_place)
 
             if self._is_same_destinations(self._vehicles_db[vehicle]['stops'], current_stops):
@@ -483,8 +480,9 @@ class ParkingMonitor(traci.StepListener):
 
             ## update parking projections
             _old_stops = set()
-            for _, _, _stop, _, _, _ in self._vehicles_db[vehicle]['stops']:
-                _old_stops.add(_stop)
+            for _, _, _stop, _flags, _, _ in self._vehicles_db[vehicle]['stops']:
+                if self.is_parking_area(_flags):
+                    _old_stops.add(_stop)
             v_class = self._vehicles_db[vehicle]['vClass']
             for area in _old_stops - _new_stops:
                 self._parking_db[area]['projections_by_class'][v_class].remove(vehicle)
@@ -495,10 +493,6 @@ class ParkingMonitor(traci.StepListener):
             self._vehicles_db[vehicle]['history'].append(
                 self._vehicles_db[vehicle]['stops'])
             self._vehicles_db[vehicle]['stops'] = current_stops
-
-            ## to set it only once whan the current stops are empty the first time.
-            if 'final_stop_arrival' not in self._vehicles_db[vehicle] and not current_stops:
-                self._vehicles_db[vehicle]['final_stop_arrival'] = step
 
             if self._options['subscriptions']['only_parkings'] and not current_stops:
                 if self._logger:
@@ -522,7 +516,10 @@ class ParkingMonitor(traci.StepListener):
     def _get_parking_area_from_vehicle(self, vehicle):
         """ Return the parking area ID of the 'current' stop. """
         if self._vehicles_db[vehicle]['history']:
-            return self._vehicles_db[vehicle]['history'][-1][0][2]
+            _, _, _stop, _flags, _, _ = self._vehicles_db[vehicle]['history'][-1][0]
+            if self.is_parking_area(_flags):
+                return _stop
+        return None
 
     def _update_parking_db(self, step):
         """ Update subscriptions and parking database. """
@@ -537,7 +534,7 @@ class ParkingMonitor(traci.StepListener):
             for vehicle in self._traci_ending_stop_subscriptions:
                 if vehicle not in self._vehicles_db:
                     if self._logger:
-                        self._logger.critical(
+                        self._logger.warning(
                             '[%.2f] Vehicle %s stop has ended but it\'s but not in the DB.',
                             step, vehicle)
                     continue
@@ -545,23 +542,29 @@ class ParkingMonitor(traci.StepListener):
                 if self._logger:
                     self._logger.debug('[%.2f] Vehicle %s is not stopped anymore.',
                                        step, vehicle)
+
                 parking_area = self._get_parking_area_from_vehicle(vehicle)
-                if parking_area in self._parking_db:
-                    v_class = self._vehicles_db[vehicle]['vClass']
-                    try:
-                        self._parking_db[parking_area]['occupancy_by_class'][v_class].remove(
-                            vehicle)
-                    except KeyError:
-                        if self._logger:
-                            self._logger.critical('[%.2f] Vehicle %s cannot be removed from area %s',
-                                                  step, vehicle, parking_area)
-                        raise Exception('[{}] Vehicle {} cannot be removed from area {}.'.format(
-                            step, vehicle, parking_area))
-                    _to_validate.add(parking_area)
+                if not parking_area and self._vehicles_db[vehicle]['roadside']:
+                    self._vehicles_db[vehicle]['roadside'] = False
                 else:
-                    if self._logger:
-                        self._logger.debug('[%.2f] Parking area %s not monitored.',
-                                           step, parking_area)
+                    if parking_area in self._parking_db:
+                        v_class = self._vehicles_db[vehicle]['vClass']
+                        try:
+                            self._parking_db[parking_area]['occupancy_by_class'][v_class].remove(
+                                vehicle)
+                        except KeyError:
+                            if self._logger:
+                                self._logger.critical(
+                                    '[%.2f] Vehicle %s cannot be removed from area %s',
+                                    step, vehicle, parking_area)
+                            raise Exception(
+                                '[{}] Vehicle {} cannot be removed from area {}.'.format(
+                                    step, vehicle, parking_area))
+                        _to_validate.add(parking_area)
+                    else:
+                        if self._logger:
+                            self._logger.debug('[%.2f] Parking area %s not monitored.',
+                                               step, parking_area)
 
         self._traci_simulation_subscriptions = (
             self._traci_handler.simulation.getAllSubscriptionResults())
@@ -575,25 +578,43 @@ class ParkingMonitor(traci.StepListener):
             for vehicle in self._traci_starting_stop_subscriptions:
                 if vehicle not in self._vehicles_db:
                     if self._logger:
-                        self._logger.critical('[%.2f] Vehicle %s is stopped but not in the DB.',
+                        self._logger.warning('[%.2f] Vehicle %s has stopped but not in the DB.',
                                               step, vehicle)
                     continue
                 self._vehicles_db[vehicle]['stopped'] = True
                 if self._logger:
-                    self._logger.debug('[%.2f] Vehicle %s is stopping.',
-                                       step, vehicle)
+                    self._logger.debug('[%.2f] Vehicle %s is stopping.', step, vehicle)
+
                 parking_area = self._get_parking_area_from_vehicle(vehicle)
-                if parking_area in self._parking_db:
-                    v_class = self._vehicles_db[vehicle]['vClass']
-                    self._parking_db[parking_area]['occupancy_by_class'][v_class].add(vehicle)
-                    _to_validate.add(parking_area)
+                if parking_area:
+                    if parking_area in self._parking_db:
+                        parking_edge = self._parking_db[parking_area]['sumo']['lane'].split('_')[0]
+                        if self._vehicles_db[vehicle]['edge'] == parking_edge:
+                            v_class = self._vehicles_db[vehicle]['vClass']
+                            self._parking_db[parking_area]['occupancy_by_class'][v_class].add(
+                                vehicle)
+                            _to_validate.add(parking_area)
+                        else:
+                            raise Exception(
+                                'Vehicle {} [{}] cannot park in {} [{}]: location error.'.format(
+                                    vehicle, self._vehicles_db[vehicle]['edge'],
+                                    parking_area, parking_edge))
+                    else:
+                        if self._logger:
+                            self._logger.debug('[%.2f] Parking area %s not monitored.',
+                                               step, parking_area)
                 else:
+                    self._vehicles_db[vehicle]['roadside'] = True
                     if self._logger:
-                        self._logger.debug('[%.2f] Parking area %s not monitored.',
-                                           step, parking_area)
+                        self._logger.debug(
+                            '[%.2f] Vehicle %s is stopping outside a parking area.', step, vehicle)
 
         for pid in _to_validate:
-            self._validate_parking_occupancy(pid)
+            try:
+                self._validate_parking_occupancy(pid)
+            except Exception as excpt:
+                if self._logger:
+                    self._logger.critical('%s', str(excpt))
 
     ## ===============================    TRACI SUBSCRIPTIONS     ============================== ##
 
