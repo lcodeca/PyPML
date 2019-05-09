@@ -3,7 +3,7 @@
 """ Example of usage of PyPML.
 
     Python Parking Monitor Library (PyPML)
-    Copyright (C) 2018
+    Copyright (C) 2019
     Lara CODECA
 
     This program is free software: you can redistribute it and/or modify
@@ -20,6 +20,7 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """
 
+import argparse
 import logging
 import os
 import sys
@@ -32,6 +33,24 @@ if 'SUMO_TOOLS' in os.environ:
     import traci
 else:
     sys.exit("Please declare environment variable 'SUMO_TOOLS'")
+
+def _args():
+    """
+    Argument Parser
+    ret: parsed arguments.
+    """
+    parser = argparse.ArgumentParser(
+        prog='{}'.format(sys.argv[0]),
+        usage='%(prog)s',
+        description='PyPML Random Grid Scenario Example')
+    parser.add_argument(
+        '--profiling', dest='profiling', action='store_true',
+        help='Enable Python3 cProfile feature.')
+    parser.add_argument(
+        '--no-profiling', dest='profiling', action='store_false',
+        help='Disable Python3 cProfile feature.')
+    parser.set_defaults(profiling=False)
+    return parser.parse_args()
 
 def _main():
     """ Example of parking management in SUMO. """
@@ -111,10 +130,14 @@ def _main():
                                     break
 
 if __name__ == '__main__':
+
+    args = _args()
+
     ## ========================              PROFILER              ======================== ##
-    import cProfile, pstats, io
-    profiler = cProfile.Profile()
-    profiler.enable()
+    if args.profiling:
+        import cProfile, pstats, io
+        profiler = cProfile.Profile()
+        profiler.enable()
     ## ========================              PROFILER              ======================== ##
 
     try:
@@ -123,10 +146,13 @@ if __name__ == '__main__':
         exc_type, exc_value, exc_traceback = sys.exc_info()
         traceback.print_exception(exc_type, exc_value, exc_traceback, limit=10, file=sys.stdout)
     finally:
+
+        ## ====================              PROFILER              ======================== ##
+        if args.profiling:
+            profiler.disable()
+            results = io.StringIO()
+            pstats.Stats(profiler, stream=results).sort_stats('cumulative').print_stats(25)
+            print(results.getvalue())
+        ## ====================              PROFILER              ======================== ##
+
         traci.close()
-        ## ========================              PROFILER              ======================== ##
-        profiler.disable()
-        results = io.StringIO()
-        pstats.Stats(profiler, stream=results).sort_stats('cumulative').print_stats(25)
-        print(results.getvalue())
-        ## ========================              PROFILER              ======================== ##
