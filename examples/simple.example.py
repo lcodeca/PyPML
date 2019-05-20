@@ -3,8 +3,8 @@
 """ Example of usage of PyPML.
 
     Python Parking Monitor Library (PyPML)
-    Copyright (C) 2019
-    Lara CODECA
+
+    Author: Lara CODECA
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -23,8 +23,10 @@
 import argparse
 import logging
 import os
+import pprint
 import sys
 import traceback
+
 from pypml import ParkingMonitor
 
 # """ Import SUMO library """
@@ -55,10 +57,10 @@ def _args():
 def _main():
     """ Example of parking management in SUMO. """
 
-    ## TESTED WITH: SUMO 1.1.0
     traci.start(['sumo', '-c', 'test_scenario/sumo.simple.cfg'])
 
     parking_monitor_options = {
+        'seed': 42,
         'addStepListener': True,
         'logging': {
             'stdout': False,
@@ -128,7 +130,9 @@ def _main():
                                                                             availability, alt,
                                                                             alt_availability))
                                     except traci.exceptions.TraCIException:
-                                        print([monitor.get_parking_access(alt), route])
+                                        pprint.pprint([vehicle,
+                                                       monitor.get_parking_access(alt),
+                                                       route])
                                         raise
                                     break
 

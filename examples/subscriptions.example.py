@@ -3,8 +3,8 @@
 """ Example of usage of PyPML.
 
     Python Parking Monitor Library (PyPML)
-    Copyright (C) 2019
-    Lara CODECA
+
+    Author: Lara CODECA
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -23,9 +23,11 @@
 import argparse
 import logging
 import os
+import pprint
 import random
 import sys
 import traceback
+
 from pypml import ParkingMonitor
 
 # """ Import SUMO library """
@@ -56,7 +58,6 @@ def _args():
 def _main():
     """ Example of parking management in SUMO. """
 
-    ## TESTED WITH: SUMO 1.1.0
     traci.start(['sumo', '-c', 'test_scenario/sumo.subscriptions.cfg'])
 
     parking_monitor_options = {
@@ -80,8 +81,8 @@ def _main():
                     ['subscriptions_by_class', {'truck': [5, set()],
                                                 'passenger': [15, set()],
                                                 'motorcycle': [10, set()]}],
-               ],
-           },
+                    ],
+            },
         ],
         'specific_conf': {},
         'subscriptions': {
@@ -121,7 +122,6 @@ def _main():
                     subscriptions = monitor.get_parking_subscriptions(stopping_place)
                     capacity, vehicles = subscriptions[vehicle['vClass']]
                     free_spots = capacity - len(vehicles)
-                    # print(capacity, free_spots, vehicles)
                     if free_spots >= 1:
                         res = monitor.subscribe_vehicle_to_parking(
                             stopping_place, vehicle['vClass'], vehicle['id'])
@@ -137,36 +137,38 @@ def _main():
                 parking['sumo']['id'], with_subscriptions=True, with_projections=True,
                 with_uncertainty=False)
 
-            # print(parking['sumo']['id'], availability)
-
             for v_type, free_spaces in availability.items():
                 if free_spaces >= 0:
                     continue
 
                 projections = parking['projections_by_class'][v_type]
-                # print(projections)
                 _, subscriptions = parking['subscriptions_by_class'][v_type]
-                # print(subscriptions)
                 candidates = projections - subscriptions
 
                 ## redistribute the problem
                 to_reroute = random.sample(candidates, min(abs(free_spaces), len(candidates)))
-                print(to_reroute)
 
                 for vid in to_reroute:
                     is_rerouted = False
+
                     vehicle = monitor.get_vehicle(vid)
                     if not vehicle['edge'] or ':' in vehicle['edge']:
                         ## the vehicle is on an intersection and the change would not be safe.
                         continue
-                    _, _, stopping_place, _, _, _ = vehicle['stops'][0]
+                    if vehicle['stopped']:
+                        ## the vehicle is stopped and it does not require additional
+                        ## parking changes at least for the moment
+                        continue
+                    _, _, stopping_place, stop_flags, _, _ = vehicle['stops'][0]
+                    if not monitor.is_parking_area(stop_flags):
+                        ## the next stop is not associated to a parking area
+                        continue
 
                     alternatives = monitor.get_closest_parkings(stopping_place, num=25)
                     for trtime, alt in alternatives:
                         alt_availability = monitor.get_free_places(
                             alt, vclass=vehicle['vClass'],
                             with_subscriptions=True, with_uncertainty=True)
-                        print(trtime, alt, alt_availability)
                         if alt_availability > 0:
                             ## reroute vehicle
                             route = None
@@ -182,10 +184,12 @@ def _main():
                                     traci.vehicle.rerouteParkingArea(vehicle['id'], alt)
                                     is_rerouted = True
                                     print("""Vehicle {} is going to be rerouted from {} """
-                                            """to {} [{}].""".format(vehicle['id'], stopping_place,
-                                                                    alt, alt_availability))
+                                          """to {} [{}].""".format(vehicle['id'], stopping_place,
+                                                                   alt, alt_availability))
                                 except traci.exceptions.TraCIException:
-                                    print([monitor.get_parking_access(alt), route])
+                                    pprint.pprint([vehicle,
+                                                   monitor.get_parking_access(alt),
+                                                   route])
                                     raise
                                 break
                     if not is_rerouted:

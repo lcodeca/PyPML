@@ -1,6 +1,6 @@
 """ Python Parking Monitor Library (PyPML)
-    Copyright (C) 2019
-    Lara CODECA
+
+    Author: Lara CODECA
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -366,8 +366,6 @@ class ParkingMonitor(traci.StepListener):
             retrieved using simulation.getTime().
         """
         time = self._traci_handler.simulation.getTime()
-        if self._logger:
-            self._logger.debug('Simulation time: %.2f', time)
         self._monitor_vehicles(time)
         self._update_vehicles_db(time)
         self._update_parking_db(time)
@@ -443,16 +441,37 @@ class ParkingMonitor(traci.StepListener):
                 'arrived': None,
                 'stopped': False,
                 'roadside': False,
+                'current_parking_area': None,
             }
 
             ## update parking projections
             for area in _parking_stops:
                 self._parking_db[area]['projections_by_class'][v_class].add(vehicle)
+                if self._logger:
+                    self._logger.debug('[%.2f] Vehicle %s added to the projections of %s.',
+                                       step, vehicle, area)
 
         self._traci_arrived_list = self._traci_handler.simulation.getArrivedIDList()
         for vehicle in self._traci_arrived_list:
             if vehicle in self._vehicles_db:
                 self._vehicles_db[vehicle]['arrived'] = step
+                if self._logger:
+                    self._logger.debug('[%.2f] Vehicle %s has arrived.', step, vehicle)
+
+                ## TODO: cleanup the parking areas --> Ask Jakob.
+                parking_area = self._get_parking_area_from_vehicle(vehicle)
+                if parking_area:
+                    v_class = self._vehicles_db[vehicle]['vClass']
+                    if vehicle in self._parking_db[parking_area]['projections_by_class'][v_class]:
+                        if self._logger:
+                            self._logger.debug(
+                                '[%.2f] Vehicle %s removed from the projections of %s.',
+                                step, vehicle, parking_area)
+                    if vehicle in self._parking_db[parking_area]['occupancy_by_class'][v_class]:
+                        if self._logger:
+                            self._logger.debug(
+                                '[%.2f] Vehicle %s removed from parking area %s.',
+                                step, vehicle, parking_area)
 
     @staticmethod
     def _is_same_destinations(a_stops, b_stops):
@@ -497,9 +516,18 @@ class ParkingMonitor(traci.StepListener):
                     _old_stops.add(_stop)
             v_class = self._vehicles_db[vehicle]['vClass']
             for area in _old_stops - _new_stops:
-                self._parking_db[area]['projections_by_class'][v_class].remove(vehicle)
+                ## the vehicle may have already been removed (when added to occupancy_by_vclass)
+                ## if the change in stops is due to a vehilce leaving the parking
+                if vehicle in self._parking_db[area]['projections_by_class'][v_class]:
+                    self._parking_db[area]['projections_by_class'][v_class].remove(vehicle)
+                    if self._logger:
+                        self._logger.debug('[%.2f] Vehicle %s removed from the projections of %s.',
+                                           step, vehicle, area)
             for area in _new_stops - _old_stops:
                 self._parking_db[area]['projections_by_class'][v_class].add(vehicle)
+                if self._logger:
+                    self._logger.debug('[%.2f] Vehicle %s added to the projections of %s.',
+                                       step, vehicle, area)
 
             ## update stops
             self._vehicles_db[vehicle]['history'].append(
@@ -527,8 +555,8 @@ class ParkingMonitor(traci.StepListener):
 
     def _get_parking_area_from_vehicle(self, vehicle):
         """ Return the parking area ID of the 'current' stop. """
-        if self._vehicles_db[vehicle]['history']:
-            _, _, _stop, _flags, _, _ = self._vehicles_db[vehicle]['history'][-1][0]
+        if self._vehicles_db[vehicle]['stops']:
+            _, _, _stop, _flags, _, _ = self._vehicles_db[vehicle]['stops'][0]
             if self.is_parking_area(_flags):
                 return _stop
         return None
@@ -555,7 +583,7 @@ class ParkingMonitor(traci.StepListener):
                     self._logger.debug('[%.2f] Vehicle %s is not stopped anymore.',
                                        step, vehicle)
 
-                parking_area = self._get_parking_area_from_vehicle(vehicle)
+                parking_area = self._vehicles_db[vehicle]['current_parking_area']
                 if not parking_area and self._vehicles_db[vehicle]['roadside']:
                     self._vehicles_db[vehicle]['roadside'] = False
                 else:
@@ -564,6 +592,9 @@ class ParkingMonitor(traci.StepListener):
                         try:
                             self._parking_db[parking_area]['occupancy_by_class'][v_class].remove(
                                 vehicle)
+                            if self._logger:
+                                self._logger.debug('[%.2f] Vehicle %s removed from %s.',
+                                                   step, vehicle, parking_area)
                         except KeyError:
                             if self._logger:
                                 self._logger.critical(
@@ -603,10 +634,22 @@ class ParkingMonitor(traci.StepListener):
                         parking_edge = self._parking_db[parking_area]['sumo']['lane'].split('_')[0]
                         if self._vehicles_db[vehicle]['edge'] == parking_edge:
                             v_class = self._vehicles_db[vehicle]['vClass']
+                            self._vehicles_db[vehicle]['current_parking_area'] = parking_area
+                            self._parking_db[parking_area]['projections_by_class'][v_class].remove(
+                                vehicle)
+                            if self._logger:
+                                self._logger.debug(
+                                    '[%.2f] Vehicle %s removed from the projections of %s.',
+                                    step, vehicle, parking_area)
                             self._parking_db[parking_area]['occupancy_by_class'][v_class].add(
                                 vehicle)
+                            if self._logger:
+                                self._logger.debug('[%.2f] Vehicle %s added to %s.',
+                                                   step, vehicle, parking_area)
                             _to_validate.add(parking_area)
                         else:
+                            import pprint
+                            pprint.pprint(self._vehicles_db[vehicle])
                             raise ParkingMonitorGenericError(
                                 'Vehicle {} [{}] cannot park in {} [{}]: location error.'.format(
                                     vehicle, self._vehicles_db[vehicle]['edge'],
@@ -617,6 +660,7 @@ class ParkingMonitor(traci.StepListener):
                                                step, parking_area)
                 else:
                     self._vehicles_db[vehicle]['roadside'] = True
+                    self._vehicles_db[vehicle]['current_parking_area'] = None
                     if self._logger:
                         self._logger.debug(
                             '[%.2f] Vehicle %s is stopping outside a parking area.', step, vehicle)

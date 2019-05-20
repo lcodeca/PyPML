@@ -9,14 +9,6 @@
         <!-- <additional-files value="busStops.add.xml,parkingArea.add.xml,parkingAreaRerouters.add.xml,basic.vType.xml"/> -->
     </input>
 
-    <output>
-        <output-prefix value="test."/>
-        <!-- <summary-output value="summary.xml"/> -->
-        <!-- <tripinfo-output value="tripinfo.xml"/> -->
-        <!-- <vehroute-output value="vehroute.xml"/> -->
-        <!-- <stop-output value="stop.out.xml"/> -->
-    </output>
-
     <time>
         <begin value="0.0"/>
         <step-length value=".25"/>
@@ -27,7 +19,7 @@
         <ignore-route-errors value="true"/>
         <lateral-resolution value="0.3"/>
         <ignore-junction-blocker value="60"/>
-        <collision.action value="warn"/>
+        <collision.action value="none"/>
         <time-to-teleport value="60"/>
         <max-depart-delay value="900"/>
         <time-to-impatience value="30"/>
@@ -44,13 +36,12 @@
         <device.rerouting.probability value="1"/>
         <device.rerouting.period value="300"/>
         <device.rerouting.pre-period value="300"/>
-        <!-- <device.rerouting.threads value="4"/> -->
+        <device.rerouting.threads value="4"/>
     </routing>
 
     <report>
         <verbose value="true"/>
         <duration-log.statistics value="true"/>
-        <log value="sim.log"/>
     </report>
 
     <random_number>
