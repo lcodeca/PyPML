@@ -1,7 +1,9 @@
 PyPML - Python Parking Monitor Library for SUMO
 
 Contacts: Lara CODECA [lara.codeca@gmail.com], Jerome HAERRI [haerri@eurecom.fr]
-This project is licensed under the terms of the GPLv3 license.
+
+This program and the accompanying materials are made available under the terms of
+the Eclipse Public License 2.0 which is available at http://www.eclipse.org/legal/epl-2.0.
 
 If you use PyPML, cite us with:
 L. Codeca; J. Erdmann; J. Härri.
