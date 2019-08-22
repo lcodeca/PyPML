@@ -22,7 +22,7 @@ from pypml import ParkingMonitor
 
 # """ Import SUMO library """
 if 'SUMO_TOOLS' in os.environ:
-    sys.path.append(os.environ['SUMO_110_TOOLS'])
+    sys.path.append(os.environ['SUMO_TOOLS'])
     import traci
 else:
     sys.exit("Please declare environment variable 'SUMO_TOOLS'")
