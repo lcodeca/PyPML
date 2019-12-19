@@ -5,8 +5,8 @@ Contacts: Lara CODECA [lara.codeca@gmail.com], Jerome HAERRI [haerri@eurecom.fr]
 This program and the accompanying materials are made available under the terms of
 the Eclipse Public License 2.0 which is available at http://www.eclipse.org/legal/epl-2.0.
 
-This Source Code may also be made available under the following Secondary Licenses when the 
-conditions for such availability set forth in the Eclipse Public License, v. 2.0 are satisfied: 
+This Source Code may also be made available under the following Secondary Licenses when the
+conditions for such availability set forth in the Eclipse Public License, v. 2.0 are satisfied:
 GNU General Public License version 3 <https://www.gnu.org/licenses/gpl-3.0.txt>.
 
 If you use PyPML, cite us with:
@@ -20,6 +20,12 @@ Reqirements:
 * It requires at least [SUMO 1.0.1](https://github.com/eclipse/sumo/tree/v1_0_1).
 
 Tested with:
+* Eclipse SUMO Version 1.4.0
+ Build features: Linux-4.19.0-4-amd64 x86_64 GNU 8.3.0 Release Proj GUI GDAL FFmpeg OSG GL2PS SWIG
+* Eclipse SUMO Version 1.3.1
+ Build features: Linux-4.19.0-4-amd64 x86_64 GNU 8.3.0 Release Proj GUI GDAL FFmpeg OSG GL2PS SWIG
+* Eclipse SUMO Version 1.3.0
+ Build features: Linux-4.19.0-4-amd64 x86_64 GNU 8.3.0 Release Proj GUI GDAL FFmpeg OSG GL2PS SWIG
 * Eclipse SUMO Version 1.2.0
  Build features: Linux-4.19.0-4-amd64 x86_64 GNU 8.3.0 Release Proj GUI GDAL FFmpeg OSG GL2PS SWIG
 * Eclipse SUMO Version 1.1.0
