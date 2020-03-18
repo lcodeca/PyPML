@@ -275,7 +275,7 @@ class ParkingMonitor(traci.StepListener):
                     self._edges_routers_mapping[edge].append(child.attrib['id'])
 
                 for interval in child:
-                    _end = int(interval.attrib['end']) * 1000 # interval in milliseconds
+                    _end = float(interval.attrib['end']) * 1000 # interval in milliseconds
                     parkings = list()
                     for area in interval:
                         if 'visible' in area.attrib and area.attrib['visible'] == 'true':
